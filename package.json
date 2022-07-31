@@ -1,0 +1,31 @@
+{
+  "name": "vue3-vscode-snippets",
+  "displayName": "Vue 3 VS Code Snippets",
+  "description": "Vue 3 snippets for VS Code",
+  "version": "0.0.0",
+  "publisher": "exer7um",
+  "author": {
+    "name": "Vasily Kuzin",
+    "email": "exer7um@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Sarah Drasner",
+      "email": "sarah.drasner@gmail.com"
+    }
+  ],
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue.code-snippets"
+      }
+    ]
+  }
+}
