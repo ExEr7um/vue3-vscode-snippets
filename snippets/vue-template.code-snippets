@@ -1,0 +1,92 @@
+{
+  "Vue v-for": {
+    "prefix": "vfor",
+    "body": [
+      "<${1:div} v-for=\"${2:item} in ${2:item}s\" :key=\"${2:item}.id\">",
+      "\t{{ ${2:item} }}",
+      "</${1:div}>"
+    ],
+    "description": "v-for statement"
+  },
+  "Vue v-model Directive": {
+    "prefix": "vmodel",
+    "body": ["<input v-model=\"${1:data}\" type=\"text\" />"],
+    "description": "v-model directive"
+  },
+  "Vue v-on Shortcut Directive": {
+    "prefix": "von",
+    "body": ["@click=\"${1:handler}(${2})\""],
+    "description": "v-on click handler"
+  },
+  "Vue Component with Props Binding": {
+    "prefix": "vel-props",
+    "body": ["<${1:component} :${1:propName}=\"${0}\"></${1:component}>"],
+    "description": "component element with props"
+  },
+  "Vue Named Slot": {
+    "prefix": "vslot-named",
+    "body": ["<template v-slot:${0:name}>${1:defaultcontent}</template>"],
+    "description": "named slot"
+  },
+  "Vue Image Source Binding": {
+    "prefix": "vimg",
+    "body": [
+      "<img :src=\"${1:imageSrc}\" :alt=\"${2:altText}\"/>"
+    ],
+    "description": "image source binding"
+  },
+  "Vue Style Binding": {
+    "prefix": "vstyle",
+    "body": [":style=\"{ fontSize: ${2:data} + 'px' }\""],
+    "description": "vue inline style binding"
+  },
+  "Vue Style Binding Object": {
+    "prefix": "vstyle-obj",
+    "body": [
+      ":style=\"[${2:styleObjectA}, ${3:styleObjectB]}\""
+    ],
+    "description": "vue inline style binding, objects"
+  },
+  "Vue Class Binding": {
+    "prefix": "vclass",
+    "body": [":class=\"{ '${2:classList}': ${1:condition} }\""],
+    "description": "vue class binding"
+  },
+  "Vue Class Binding Ternary": {
+    "prefix": "vclass-ter",
+    "body": [
+      ":class=\"[${1:condition} ? '${2:classListOnTrue}' : '${3:classListOnFalse}']\""
+    ],
+    "description": "vue ternary class binding"
+  },
+  "Vue Transition": {
+    "prefix": "vtrans",
+    "body": [
+      "<Transition name=\"${1:transitionName}\">",
+      "\t${0}",
+      "</Transition>"
+    ],
+    "description": "vue transition component"
+  },
+  "Vue Transition Group": {
+    "prefix": "vtrans-group",
+    "body": [
+      "<TransitionGroup name=\"${1:transitionName}\">",
+      "\t${0}",
+      "</TransitionGroup>"
+    ],
+    "description": "vue transition group component"
+  },
+  "Vue Routing Link": {
+    "prefix": "vrlink",
+    "body": ["<router-link to=\"/${1:path}\">${2:linkTitle}</router-link>"],
+    "description": "vue router link"
+  },
+  "Vue Routing Link with param": {
+    "prefix": "vrlink-param",
+    "body": [
+      "<router-link :to=\"`/${1:path}/${${2:param}}`\">${3:linkTitle}</router-link>"
+    ],
+    "description": "vue router link with param"
+  },
+}
