@@ -1,0 +1,138 @@
+{
+  "Vue SFC <script setup>, TS, SCSS": {
+    "prefix": "vbase",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>"
+      ,
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue 3 File with <script setup>, TypeScript and SCSS"
+  },
+  "Vue SFC <script setup>, TS, SASS": {
+    "prefix": "vbase-sass",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>"
+      ,
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"sass\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue 3 File with <script setup>, TypeScript and SASS"
+  },
+  "Vue SFC <script setup>, TS, LESS": {
+    "prefix": "vbase-less",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>"
+      ,
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"less\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue 3 File with <script setup>, TypeScript and LESS"
+  },
+  "Vue SFC <script setup>, TS, PostCSS": {
+    "prefix": "vbase-pcss",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>"
+      ,
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"postcss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue 3 File with <script setup>, TypeScript and PostCSS"
+  },
+  "Vue SFC <script setup>, TS, CSS": {
+    "prefix": "vbase-css",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>"
+      ,
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"css\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue 3 File with <script setup>, TypeScript and CSS"
+  },
+  "Vue SFC <script setup>, TS, Stylus": {
+    "prefix": "vbase-styl",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>"
+      ,
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"stylus\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue 3 File with <script setup>, TypeScript and Stylus"
+  },
+  "Vue SFC <script setup>, TS, No Style": {
+    "prefix": "vbase-ns",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>"
+      ,
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+    ],
+    "description": "Base for Vue 3 File with <script setup>, TypeScript and no style"
+  },
+}
