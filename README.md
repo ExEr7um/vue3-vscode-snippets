@@ -1,65 +1,18 @@
-# vue3-vscode-snippets README
+# Vue 3 VS Code Snippets
 
-This is the README for your extension "vue3-vscode-snippets". After writing up a brief description, we recommend including the following sections.
+## Description
 
-## Features
+These snippets were made to speed up Vue 3 development. With it you can write boilerplate code infinitely faster.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+> I took my inspiration from [vue-vscode-snippets](https://github.com/sdras/vue-vscode-snippets) extension made by @sdras.
+>
+> A lot of snippets here were taken from that extension and then improved by me to be more useful with Vue 3 (and Vue 3 only).
 
-For example if there is an image subfolder under your extension project workspace:
+### Supported versions
 
-\!\[feature X\]\(images/feature-x.png\)
+- Vue 3
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Installation
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- You can do it by finding `Vue 3 VSCode Snippets` by `exer7um` in VS Code marketplace and clicking install.
+- Or you can follow [that link](https://marketplace.visualstudio.com/items?itemName=exer7um.vue3-vscode-snippets) and click install.
