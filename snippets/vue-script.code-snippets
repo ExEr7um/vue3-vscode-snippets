@@ -1,0 +1,101 @@
+{
+  "Vue Ref": {
+    "prefix": "vref",
+    "body": ["const ${1:name} = ref(${2:initialValue})"],
+    "description": "Vue Ref"
+  },
+  "Vue Reactive": {
+    "prefix": "vreactive",
+    "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "})"],
+    "description": "Vue reactive"
+  },
+  "Vue Computed": {
+    "prefix": "vcomputed",
+    "body": ["const ${1:name} = computed(() => {", "\treturn ${2}", "})"],
+    "description": "Vue computed"
+  },
+  "Vue Watch": {
+    "prefix": "vwatch",
+    "body": [
+      "watch(",
+      "\t() => ${1:name},",
+      "\t() => {",
+      "\t\t${2}",
+      "\t}",
+      ")"
+    ],
+    "description": "Vue watcher"
+  },
+  "Vue Watch Effect": {
+    "prefix": "vwatcheffect",
+    "body": [
+      "watchEffect(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "Vue Watch Effect"
+  },
+  "Vue Lifecycle Hooks - onMounted": {
+    "prefix": "vonmounted",
+    "body": [
+      "onMounted(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "Vue onMounted Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onBeforeMount": {
+    "prefix": "vonbeforemount",
+    "body": [
+      "onBeforeMount(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "Vue onBeforeMount Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onBeforeUpdate": {
+    "prefix": "vonbeforeupdate",
+    "body": [
+      "onBeforeUpdate(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "Vue onBeforeUpdate Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onUpdated": {
+    "prefix": "vonupdated",
+    "body": [
+      "onUpdated(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "Vue onUpdated Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onErrorCaptured": {
+    "prefix": "vonerrorcaptured",
+    "body": [
+      "onErrorCaptured(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "Vue onErrorCaptured Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onUnmounted": {
+    "prefix": "vonunmounted",
+    "body": [
+      "onUnmounted(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "Vue onUnmounted Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onBeforeUnmount": {
+    "prefix": "vonbeforeunmount",
+    "body": [
+      "onBeforeUnmount(() => {",
+      "\t${1}",
+      "})"
+    ],
+    "description": "Vue onBeforeUnmount Lifecycle hook"
+  },
+}
