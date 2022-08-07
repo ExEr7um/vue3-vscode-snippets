@@ -45,6 +45,14 @@
       {
         "language": "typescript",
         "path": "./snippets/pinia.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-router.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-router.code-snippets"
       }
     ]
   }
