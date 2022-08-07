@@ -17,6 +17,20 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 - You can do it by finding `Vue 3 VSCode Snippets` by `exer7um` in VS Code marketplace and clicking install.
 - Or you can follow [that link](https://marketplace.visualstudio.com/items?itemName=exer7um.vue3-vscode-snippets) and click install.
 
+## Snippets
+
+### `.vue` files
+
+| Snippet      | Purpose                                                               |
+| ------------ | --------------------------------------------------------------------- |
+| `vbase`      | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SCSS`    |
+| `vbase-sass` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SASS`    |
+| `vbase-less` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `LESS`    |
+| `vbase-pcss` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `PostCSS` |
+| `vbase-css`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `CSS`     |
+| `vbase-styl` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`  |
+| `vbase-ns`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style  |
+
 ## Contributing
 
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).
