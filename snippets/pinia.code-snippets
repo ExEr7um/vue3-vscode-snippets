@@ -1,0 +1,22 @@
+{
+  "Pinia Store Base": {
+    "prefix": "pstore",
+    "body": [
+      "import { defineStore, acceptHMRUpdate } from \"pinia\"",
+      "",
+      "export const use${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}Store = defineStore(\"$TM_FILENAME_BASE\", {",
+      "\tstate: () => ({",
+      "\t\t$0",
+      "\t}),",
+      "\tgetters: {},",
+      "\tactions: {},",
+      "})",
+      "",
+      "if (import.meta.hot) {",
+      "\timport.meta.hot.accept(acceptHMRUpdate(use${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}Store, import.meta.hot))",
+      "}",
+      ""
+    ],
+    "description": "Base code needed for a Pinia store file"
+  }
+}

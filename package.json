@@ -37,6 +37,14 @@
       {
         "language": "typescript",
         "path": "./snippets/vue-script.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/pinia.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/pinia.code-snippets"
       }
     ]
   }
