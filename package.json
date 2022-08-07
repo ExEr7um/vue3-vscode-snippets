@@ -57,6 +57,14 @@
       {
         "language": "html",
         "path": "./snippets/nuxt-template.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/nuxt-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/nuxt-script.code-snippets"
       }
     ]
   }
