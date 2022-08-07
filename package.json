@@ -53,6 +53,10 @@
       {
         "language": "typescript",
         "path": "./snippets/vue-router.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/nuxt-template.code-snippets"
       }
     ]
   }
