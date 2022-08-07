@@ -31,6 +31,25 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vbase-styl` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`  |
 | `vbase-ns`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style  |
 
+### Template
+
+| Snippet        | Purpose                           |
+| -------------- | --------------------------------- |
+| `vfor`         | `v-for` statement                 |
+| `vmodel`       | `v-model` directive               |
+| `von`          | `v-on` click handler              |
+| `vel-props`    | Component element with `props`    |
+| `vslot-named`  | Named slot                        |
+| `vimg`         | Image source binding              |
+| `vstyle`       | Inline style binding              |
+| `vstyle-obj`   | Inline style binding with objects |
+| `vclass`       | Class binding                     |
+| `vclass-ter`   | Ternary class binding             |
+| `vtrans`       | Transition component              |
+| `vtrans-group` | Transition group component        |
+| `vrlink`       | Router link                       |
+| `vrlink-param` | Router link with param            |
+
 ## Contributing
 
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).

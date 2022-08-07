@@ -25,7 +25,7 @@
   },
   "Vue Named Slot": {
     "prefix": "vslot-named",
-    "body": ["<template v-slot:${0:name}>${1:defaultcontent}</template>"],
+    "body": ["<template #${0:name}>${1:defaultcontent}</template>"],
     "description": "named slot"
   },
   "Vue Image Source Binding": {
