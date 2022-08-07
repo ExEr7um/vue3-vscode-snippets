@@ -1,0 +1,30 @@
+{
+  "Nuxt useFetch": {
+    "prefix": "nfetch",
+    "body": [
+      "const { data: ${1:name} } = await useFetch('${2:path}')"
+    ],
+    "description": "Nuxt useFetch composable"
+  },
+  "Nuxt useLazyFetch": {
+    "prefix": "nfetch-lazy",
+    "body": [
+      "const { pending, data: ${1:name} } = await useLazyFetch('${2:path}')"
+    ],
+    "description": "Nuxt useLazyFetch composable"
+  },
+  "Nuxt useAsyncData": {
+    "prefix": "nasyncdata",
+    "body": [
+      "const { data: ${1:name} } = await useAsyncData('${2:requestKey}', () => $fetch('${3:path}'))"
+    ],
+    "description": "Nuxt useAsyncData composable"
+  },
+  "Nuxt useLazyAsyncData": {
+    "prefix": "nasyncdata-lazy",
+    "body": [
+      "const { pending, data: ${1:name} } = await useLazyAsyncData('${2:requestKey}', () => $fetch('${3:path}'))"
+    ],
+    "description": "Nuxt useLazyAsyncData composable"
+  },
+}
