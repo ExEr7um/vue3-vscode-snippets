@@ -17,7 +17,7 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 ## Installation
 
 - You can do it by finding `Vue 3 VSCode Snippets` by `exer7um` in VS Code marketplace and clicking install.
-- Or you can follow [that link](https://marketplace.visualstudio.com/items?itemName=exer7um.vue3-vscode-snippets) and click install.
+- Or you can follow [that link](https://marketplace.visualstudio.com/items?itemName=exer7um.vue-3-vscode-snippets) and click install.
 
 ## Snippets
 
