@@ -50,6 +50,28 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vrlink`       | Router link                       |
 | `vrlink-param` | Router link with param            |
 
+### Script
+
+| Snippet                  | Purpose                                     |
+| ------------------------ | ------------------------------------------- |
+| `vref`                   | Vue ref                                     |
+| `vreactive`              | Vue reactive                                |
+| `vcomputed`              | Vue computed                                |
+| `vwatch`                 | Watcher                                     |
+| `vwatcheffect`           | Watch Effect                                |
+| `vonmounted`             | onMounted hook                              |
+| `vonbeforemount`         | onBeforeMount hook                          |
+| `vonbeforeupdate`        | onBeforeUpdate hook                         |
+| `vonupdated`             | onUpdated hook                              |
+| `vonerrorcaptured`       | onErrorCaptured hook                        |
+| `vonunmounted`           | onUnmounted hook                            |
+| `vonbeforeunmount`       | onBeforeUnmount hook                        |
+| `vdefineprops`           | Define props                                |
+| `vdefineemits`           | Define emits                                |
+| `vdefineemits-nopayload` | Define emits with no payload                |
+| `vsingleemit`            | Single emit for defineEmits                 |
+| `vsingleemit-nopayload`  | Single emit for defineEmits with no payload |
+
 ## Contributing
 
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).
