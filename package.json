@@ -1,22 +1,47 @@
 {
-  "name": "vue3-vscode-snippets",
+  "name": "vue-3-vscode-snippets",
   "displayName": "Vue 3 VS Code Snippets",
   "description": "Vue 3 snippets for VS Code",
+  "icon": "images/vue-logo.png",
   "version": "0.0.0",
   "publisher": "exer7um",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExEr7um/vue3-vscode-snippets.git"
+  },
   "author": {
     "name": "Vasily Kuzin",
-    "email": "exer7um@gmail.com"
+    "email": "exer7um@gmail.com",
+    "url": "https://github.com/ExEr7um"
   },
   "contributors": [
     {
       "name": "Sarah Drasner",
-      "email": "sarah.drasner@gmail.com"
+      "email": "sarah.drasner@gmail.com",
+      "url": "https://github.com/sdras"
+    },
+    {
+      "name": "Daniel Kelly",
+      "email": "me@danielkelly.io",
+      "url": "https://github.com/danielkellyio"
     }
   ],
   "engines": {
     "vscode": "^1.69.0"
   },
+  "keywords": [
+    "Vue",
+    "Vue 3",
+    "Nuxt",
+    "Nuxt 3",
+    "Pinia",
+    "Vue Snippets",
+    "Vue 3 snippets",
+    "Nuxt snippets",
+    "Nuxt 3 snippets",
+    "Pinia snippets",
+    "Composition API"
+  ],
   "categories": [
     "Snippets"
   ],
