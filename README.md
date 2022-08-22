@@ -72,6 +72,12 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vsingleemit`            | Single emit for defineEmits                 |
 | `vsingleemit-nopayload`  | Single emit for defineEmits with no payload |
 
+### Pinia
+
+| Snippet  | Purpose                                 |
+| -------- | --------------------------------------- |
+| `pstore` | Base code needed for a Pinia store file |
+
 ## Contributing
 
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).
