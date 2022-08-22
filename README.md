@@ -1,65 +1,122 @@
-# vue3-vscode-snippets README
+# Vue 3 VS Code Snippets
 
-This is the README for your extension "vue3-vscode-snippets". After writing up a brief description, we recommend including the following sections.
+![vue3-vscode-snippets-hero](https://i.imgur.com/qlgaQhl.gif)
 
-## Features
+## Description
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+These snippets were made to speed up Vue 3 development. With it you can write boilerplate code infinitely faster.
 
-For example if there is an image subfolder under your extension project workspace:
+> I took my inspiration from [vue-vscode-snippets](https://github.com/sdras/vue-vscode-snippets) extension made by @sdras.
+>
+> A lot of snippets here were taken from that extension and then improved by me to be more useful with Vue 3 (and Vue 3 only).
 
-\!\[feature X\]\(images/feature-x.png\)
+### Supported versions
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- Vue 3
 
-## Requirements
+## Installation
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- You can do it by finding `Vue 3 VSCode Snippets` by `exer7um` in VS Code marketplace and clicking install.
+- Or you can follow [that link](https://marketplace.visualstudio.com/items?itemName=exer7um.vue3-vscode-snippets) and click install.
 
-## Extension Settings
+## Snippets
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### `.vue` files
 
-For example:
+| Snippet      | Purpose                                                               |
+| ------------ | --------------------------------------------------------------------- |
+| `vbase`      | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SCSS`    |
+| `vbase-sass` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SASS`    |
+| `vbase-less` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `LESS`    |
+| `vbase-pcss` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `PostCSS` |
+| `vbase-css`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `CSS`     |
+| `vbase-styl` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`  |
+| `vbase-ns`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style  |
 
-This extension contributes the following settings:
+### Template
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+| Snippet        | Purpose                           |
+| -------------- | --------------------------------- |
+| `vfor`         | `v-for` statement                 |
+| `vmodel`       | `v-model` directive               |
+| `von`          | `v-on` click handler              |
+| `vel-props`    | Component element with `props`    |
+| `vslot-named`  | Named slot                        |
+| `vimg`         | Image source binding              |
+| `vstyle`       | Inline style binding              |
+| `vstyle-obj`   | Inline style binding with objects |
+| `vclass`       | Class binding                     |
+| `vclass-ter`   | Ternary class binding             |
+| `vtrans`       | Transition component              |
+| `vtrans-group` | Transition group component        |
+| `vrlink`       | Router link                       |
+| `vrlink-param` | Router link with param            |
 
-## Known Issues
+### Script
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+| Snippet                  | Purpose                                     |
+| ------------------------ | ------------------------------------------- |
+| `vref`                   | Vue `ref`                                   |
+| `vreactive`              | Vue `reactive`                              |
+| `vcomputed`              | Vue `computed`                              |
+| `vwatch`                 | Watcher                                     |
+| `vwatcheffect`           | Watch Effect                                |
+| `vonmounted`             | onMounted hook                              |
+| `vonbeforemount`         | onBeforeMount hook                          |
+| `vonbeforeupdate`        | onBeforeUpdate hook                         |
+| `vonupdated`             | onUpdated hook                              |
+| `vonerrorcaptured`       | onErrorCaptured hook                        |
+| `vonunmounted`           | onUnmounted hook                            |
+| `vonbeforeunmount`       | onBeforeUnmount hook                        |
+| `vdefineprops`           | Define props                                |
+| `vdefineemits`           | Define emits                                |
+| `vdefineemits-nopayload` | Define emits with no payload                |
+| `vsingleemit`            | Single emit for defineEmits                 |
+| `vsingleemit-nopayload`  | Single emit for defineEmits with no payload |
 
-## Release Notes
+### Pinia
 
-Users appreciate release notes as you update your extension.
+| Snippet  | Purpose                                 |
+| -------- | --------------------------------------- |
+| `pstore` | Base code needed for a Pinia store file |
 
-### 1.0.0
+### Vue Router
 
-Initial release of ...
+| Snippet              | Purpose                                         |
+| -------------------- | ----------------------------------------------- |
+| `vrouter`            | Vue Router base                                 |
+| `vscrollbehavior`    | Vue Router `scrollBehavior`                     |
+| `vbeforeeach`        | Vue Router global guards `beforeEach`           |
+| `vbeforeresolve`     | Vue Router global guards `beforeResolve`        |
+| `vaftereach`         | Vue Router global guards `afterEach`            |
+| `vbeforeenter`       | Vue Router per-route guard `beforeEnter`        |
+| `vbeforerouteenter`  | Vue Router component guards `beforeRouteEnter`  |
+| `vbeforerouteupdate` | Vue Router component guards `beforeRouteUpdate` |
+| `vbeforerouteleave`  | Vue Router component guards `beforeRouteLeave`  |
 
-### 1.0.1
+### Nuxt Template
 
-Fixed issue #.
+| Snippet       | Purpose                     |
+| ------------- | --------------------------- |
+| `nlink`       | Nuxt router link            |
+| `nlink-param` | Nuxt router link with param |
 
-### 1.1.0
+### Nuxt Script
 
-Added features X, Y, and Z.
+| Snippet                 | Purpose                                      |
+| ----------------------- | -------------------------------------------- |
+| `nfetch`                | `useFetch` composable                        |
+| `nfetch-lazy`           | `useLazyFetch` composable                    |
+| `nasyncdata`            | `useAsyncData` composable                    |
+| `nasyncdata-lazy`       | `useLazyAsyncData` composable                |
+| `nhead`                 | `useHead` composable                         |
+| `nhead-description`     | `useHead` composable with description        |
+| `nhead-template`        | `useHead` composable with title template     |
+| `npagemeta`             | `definePageMeta` composable                  |
+| `npagemeta-description` | `definePageMeta` composable with description |
 
----
+## Contributing
 
-## Working with Markdown
+This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+If you are contributing a snippet, please be sure to add the documentation for it in the tables in the `README`, the pull request cannot be accepted without this addition. Thanks!
