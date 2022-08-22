@@ -11,12 +11,19 @@
   },
   "author": {
     "name": "Vasily Kuzin",
-    "email": "exer7um@gmail.com"
+    "email": "exer7um@gmail.com",
+    "url": "https://github.com/ExEr7um"
   },
   "contributors": [
     {
       "name": "Sarah Drasner",
-      "email": "sarah.drasner@gmail.com"
+      "email": "sarah.drasner@gmail.com",
+      "url": "https://github.com/sdras"
+    },
+    {
+      "name": "Daniel Kelly",
+      "email": "me@danielkelly.io",
+      "url": "https://github.com/danielkellyio"
     }
   ],
   "engines": {
