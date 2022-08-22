@@ -1,5 +1,7 @@
 # Vue 3 VS Code Snippets
 
+![vue3-vscode-snippets-hero](https://i.imgur.com/qlgaQhl.gif)
+
 ## Description
 
 These snippets were made to speed up Vue 3 development. With it you can write boilerplate code infinitely faster.
