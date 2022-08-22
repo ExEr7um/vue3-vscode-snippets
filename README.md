@@ -54,9 +54,9 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 | Snippet                  | Purpose                                     |
 | ------------------------ | ------------------------------------------- |
-| `vref`                   | Vue ref                                     |
-| `vreactive`              | Vue reactive                                |
-| `vcomputed`              | Vue computed                                |
+| `vref`                   | Vue `ref`                                   |
+| `vreactive`              | Vue `reactive`                              |
+| `vcomputed`              | Vue `computed`                              |
 | `vwatch`                 | Watcher                                     |
 | `vwatcheffect`           | Watch Effect                                |
 | `vonmounted`             | onMounted hook                              |
@@ -80,17 +80,17 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ### Vue Router
 
-| Snippet              | Purpose                                       |
-| -------------------- | --------------------------------------------- |
-| `vrouter`            | Vue Router base                               |
-| `vscrollbehavior`    | Vue Router scrollBehavior                     |
-| `vbeforeeach`        | Vue Router global guards beforeEach           |
-| `vbeforeresolve`     | Vue Router global guards beforeResolve        |
-| `vaftereach`         | Vue Router global guards afterEach            |
-| `vbeforeenter`       | Vue Router per-route guard beforeEnter        |
-| `vbeforerouteenter`  | Vue Router component guards beforeRouteEnter  |
-| `vbeforerouteupdate` | Vue Router component guards beforeRouteUpdate |
-| `vbeforerouteleave`  | Vue Router component guards beforeRouteLeave  |
+| Snippet              | Purpose                                         |
+| -------------------- | ----------------------------------------------- |
+| `vrouter`            | Vue Router base                                 |
+| `vscrollbehavior`    | Vue Router `scrollBehavior`                     |
+| `vbeforeeach`        | Vue Router global guards `beforeEach`           |
+| `vbeforeresolve`     | Vue Router global guards `beforeResolve`        |
+| `vaftereach`         | Vue Router global guards `afterEach`            |
+| `vbeforeenter`       | Vue Router per-route guard `beforeEnter`        |
+| `vbeforerouteenter`  | Vue Router component guards `beforeRouteEnter`  |
+| `vbeforerouteupdate` | Vue Router component guards `beforeRouteUpdate` |
+| `vbeforerouteleave`  | Vue Router component guards `beforeRouteLeave`  |
 
 ### Nuxt Template
 
