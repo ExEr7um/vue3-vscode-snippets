@@ -78,6 +78,20 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | -------- | --------------------------------------- |
 | `pstore` | Base code needed for a Pinia store file |
 
+### Vue Router
+
+| Snippet              | Purpose                                       |
+| -------------------- | --------------------------------------------- |
+| `vrouter`            | Vue Router base                               |
+| `vscrollbehavior`    | Vue Router scrollBehavior                     |
+| `vbeforeeach`        | Vue Router global guards beforeEach           |
+| `vbeforeresolve`     | Vue Router global guards beforeResolve        |
+| `vaftereach`         | Vue Router global guards afterEach            |
+| `vbeforeenter`       | Vue Router per-route guard beforeEnter        |
+| `vbeforerouteenter`  | Vue Router component guards beforeRouteEnter  |
+| `vbeforerouteupdate` | Vue Router component guards beforeRouteUpdate |
+| `vbeforerouteleave`  | Vue Router component guards beforeRouteLeave  |
+
 ## Contributing
 
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).
