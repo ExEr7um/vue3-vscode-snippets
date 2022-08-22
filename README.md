@@ -99,6 +99,20 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `nlink`       | Nuxt router link            |
 | `nlink-param` | Nuxt router link with param |
 
+### Nuxt Script
+
+| Snippet                 | Purpose                                      |
+| ----------------------- | -------------------------------------------- |
+| `nfetch`                | `useFetch` composable                        |
+| `nfetch-lazy`           | `useLazyFetch` composable                    |
+| `nasyncdata`            | `useAsyncData` composable                    |
+| `nasyncdata-lazy`       | `useLazyAsyncData` composable                |
+| `nhead`                 | `useHead` composable                         |
+| `nhead-description`     | `useHead` composable with description        |
+| `nhead-template`        | `useHead` composable with title template     |
+| `npagemeta`             | `definePageMeta` composable                  |
+| `npagemeta-description` | `definePageMeta` composable with description |
+
 ## Contributing
 
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).
