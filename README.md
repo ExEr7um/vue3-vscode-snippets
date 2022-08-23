@@ -1,5 +1,10 @@
 # Vue 3 VS Code Snippets
 
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/exer7um.vue-3-vscode-snippets?color=blue)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/exer7um.vue-3-vscode-snippets?color=success)
+![GitHub](https://img.shields.io/github/license/ExEr7um/vue3-vscode-snippets)
+![Vue Version](https://img.shields.io/badge/vue-3-%234FC08D?logo=vuedotjs)
+
 ![vue3-vscode-snippets-hero](https://i.imgur.com/qlgaQhl.gif)
 
 ## Description
@@ -120,3 +125,9 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).
 
 If you are contributing a snippet, please be sure to add the documentation for it in the tables in the `README`, the pull request cannot be accepted without this addition. Thanks!
+
+## License
+
+Copyright © 2022 Vasily Kuzin.
+
+This project is [MIT](https://github.com/ExEr7um/vue3-vscode-snippets/blob/main/LICENSE) licensed.
