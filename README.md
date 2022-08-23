@@ -1,5 +1,10 @@
 # Vue 3 VS Code Snippets
 
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/exer7um.vue-3-vscode-snippets?color=blue)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/exer7um.vue-3-vscode-snippets?color=success)
+![GitHub](https://img.shields.io/github/license/ExEr7um/vue3-vscode-snippets)
+![Vue Version](https://img.shields.io/badge/vue-3-%234FC08D?logo=vuedotjs)
+
 ![vue3-vscode-snippets-hero](https://i.imgur.com/qlgaQhl.gif)
 
 ## Description
