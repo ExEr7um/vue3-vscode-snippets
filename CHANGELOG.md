@@ -2,6 +2,16 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## `v0.1.1`
+
+### Fixed
+
+* Broken link in `README` by @ExEr7um in <https://github.com/ExEr7um/vue3-vscode-snippets/pull/22>
+
+### Documentation
+
+* Add badges and license to `README` by @ExEr7um in <https://github.com/ExEr7um/vue3-vscode-snippets/pull/24>
+
 ## `v0.1.0`
 
 ### Features
