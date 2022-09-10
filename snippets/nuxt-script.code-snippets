@@ -80,4 +80,13 @@
     ],
     "description": "Nuxt definePageMeta composable with description"
   },
+  "Nuxt define plugin": {
+    "prefix": "nplugin",
+    "body": [
+      "export default defineNuxtPlugin(nuxtApp => {",
+      "\t${0}",
+      "})",
+    ],
+    "description": "Base code for Nuxt plugin"
+  },
 }
