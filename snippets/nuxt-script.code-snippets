@@ -80,4 +80,31 @@
     ],
     "description": "Nuxt definePageMeta composable with description"
   },
+  "Nuxt define plugin": {
+    "prefix": "nplugin",
+    "body": [
+      "export default defineNuxtPlugin(nuxtApp => {",
+      "\t${0}",
+      "})",
+    ],
+    "description": "Base code for Nuxt plugin"
+  },
+  "Nuxt define middleware": {
+    "prefix": "nmiddleware",
+    "body": [
+      "export default defineNuxtRouteMiddleware((to, from) => {",
+      "\t${0}",
+      "})",
+    ],
+    "description": "Base code for Nuxt middleware"
+  },
+  "Nuxt define server route": {
+    "prefix": "nserverroute",
+    "body": [
+      "export default defineEventHandler((event) => {",
+      "\t${0}",
+      "})",
+    ],
+    "description": "Base code for Nuxt server route"
+  },
 }
