@@ -89,4 +89,13 @@
     ],
     "description": "Base code for Nuxt plugin"
   },
+  "Nuxt define middleware": {
+    "prefix": "nmiddleware",
+    "body": [
+      "export default defineNuxtRouteMiddleware((to, from) => {",
+      "\t${0}",
+      "})",
+    ],
+    "description": "Base code for Nuxt middleware"
+  },
 }
