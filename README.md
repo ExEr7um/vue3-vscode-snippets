@@ -81,9 +81,12 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ### Pinia
 
-| Snippet  | Purpose                                 |
-| -------- | --------------------------------------- |
-| `pstore` | Base code needed for a Pinia store file |
+| Snippet                | Purpose                                                      |
+| ---------------------- | ------------------------------------------------------------ |
+| `pstore`               | Base code needed for a Pinia store file                      |
+| ⚠️ `pstore-composition` | Base code needed for a Pinia store file with Composition API |
+
+> Snippets with ⚠️ symbol are unreleased.
 
 ### Vue Router
 
