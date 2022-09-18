@@ -119,6 +119,11 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `nhead-template`        | `useHead` composable with title template     |
 | `npagemeta`             | `definePageMeta` composable                  |
 | `npagemeta-description` | `definePageMeta` composable with description |
+| ⚠️ `nplugin`             | Base code for Nuxt plugin                    |
+| ⚠️ `nmiddleware`         | Base code for Nuxt middleware                |
+| ⚠️ `nserverroute`        | Base code for Nuxt server route              |
+
+> Snippets with ⚠️ symbol are unreleased.
 
 ## Contributing
 
