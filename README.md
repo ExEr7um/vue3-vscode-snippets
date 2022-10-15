@@ -79,6 +79,19 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vsingleemit`            | Single emit for defineEmits                 |
 | `vsingleemit-nopayload`  | Single emit for defineEmits with no payload |
 
+### CSS
+
+| Snippet                            | Purpose                                      |
+| ---------------------------------- | -------------------------------------------- |
+| ⚠️ `vcss-transition`                | Vue Transition styles                        |
+| ⚠️ `vcss-transition-named`          | Vue Named Transition styles                  |
+| ⚠️ `vcss-transition-tailwind`       | Vue Transition styles for Tailwind CSS       |
+| ⚠️ `vcss-transition-named-tailwind` | Vue Named Transition styles for Tailwind CSS |
+| ⚠️ `vcss-transition-group`          | Vue Transition Group styles                  |
+| ⚠️ `vcss-transition-group-tailwind` | Vue Transition Group styles for Tailwind CSS |
+
+> Snippets with ⚠️ symbol are unreleased.
+
 ### Pinia
 
 | Snippet                | Purpose                                                      |
