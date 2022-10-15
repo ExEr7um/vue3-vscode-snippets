@@ -1,0 +1,102 @@
+{
+  "Vue Transition": {
+    "prefix": "vcss-transition",
+    "body": [
+      ".v-enter-active,",
+      ".v-leave-active {",
+      "\ttransition: opacity 0.5s ease;",
+      "}",
+      "",
+      ".v-enter-from,",
+      ".v-leave-to {",
+      "\topacity: 0;",
+      "}"
+    ],
+    "description": "Vue Transition styles"
+  },
+  "Vue Named Transition": {
+    "prefix": "vcss-transition-named",
+    "body": [
+      ".${1:transitionName}-enter-active,",
+      ".${1:transitionName}-leave-active {",
+      "\ttransition: opacity 0.5s ease;",
+      "}",
+      "",
+      ".${1:transitionName}-enter-from,",
+      ".${1:transitionName}-leave-to {",
+      "\topacity: 0;",
+      "}"
+    ],
+    "description": "Vue Named Transition styles"
+  },
+  "Vue Transition - Tailwind": {
+    "prefix": "vcss-transition-tailwind",
+    "body": [
+      ".v-enter-active,",
+      ".v-leave-active {",
+      "\t@apply transition duration-500;",
+      "}",
+      "",
+      ".v-enter-from,",
+      ".v-leave-to {",
+      "\t@apply opacity-0;",
+      "}"
+    ],
+    "description": "Vue Transition styles for Tailwind CSS"
+  },
+  "Vue Named Transition - Tailwind": {
+    "prefix": "vcss-transition-named-tailwind",
+    "body": [
+      ".${1:transitionName}-enter-active,",
+      ".${1:transitionName}-leave-active {",
+      "\t@apply transition duration-500;",
+      "}",
+      "",
+      ".${1:transitionName}-enter-from,",
+      ".${1:transitionName}-leave-to {",
+      "\t@apply opacity-0;",
+      "}"
+    ],
+    "description": "Vue Named Transition styles for Tailwind CSS"
+  },
+  "Vue Transition Group": {
+    "prefix": "vcss-transition-group",
+    "body": [
+      ".${1:transitionName}-move,",
+      ".${1:transitionName}-enter-active,",
+      ".${1:transitionName}-leave-active {",
+      "\ttransition: opacity 0.5s ease;",
+      "}",
+      "",
+      ".${1:transitionName}-enter-from,",
+      ".${1:transitionName}-leave-to {",
+      "\topacity: 0;",
+      "}",
+      "",
+      ".${1:transitionName}-leave-active {",
+      "\tposition: absolute;",
+      "}"
+    ],
+    "description": "Vue Transition Group styles"
+  },
+  "Vue Transition Group - Tailwind": {
+    "prefix": "vcss-transition-group-tailwind",
+    "body": [
+      ".${1:transitionName}-move,",
+      ".${1:transitionName}-enter-active,",
+      ".${1:transitionName}-leave-active {",
+      "\t@apply transition duration-500;",
+      "}",
+      "",
+      ".${1:transitionName}-enter-from,",
+      ".${1:transitionName}-leave-to {",
+      "\t@apply opacity-0;",
+      "}",
+      "",
+      ".${1:transitionName}-leave-active {",
+      "\t@apply absolute;",
+      "}"
+    ],
+    "description": "Vue Transition Group styles for Tailwind CSS"
+  }
+}

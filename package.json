@@ -65,19 +65,31 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/pinia/pinia.code-snippets"
+        "path": "./snippets/vue/vue-router.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/pinia/pinia.code-snippets"
+        "path": "./snippets/vue/vue-router.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/vue/vue-css.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/vue/vue-css.code-snippets"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/vue/vue-css.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vue/vue-router.code-snippets"
+        "path": "./snippets/pinia/pinia.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vue/vue-router.code-snippets"
+        "path": "./snippets/pinia/pinia.code-snippets"
       },
       {
         "language": "html",
