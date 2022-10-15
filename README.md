@@ -81,25 +81,21 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ### CSS
 
-| Snippet                            | Purpose                                      |
-| ---------------------------------- | -------------------------------------------- |
-| ⚠️ `vcss-transition`                | Vue Transition styles                        |
-| ⚠️ `vcss-transition-named`          | Vue Named Transition styles                  |
-| ⚠️ `vcss-transition-tailwind`       | Vue Transition styles for Tailwind CSS       |
-| ⚠️ `vcss-transition-named-tailwind` | Vue Named Transition styles for Tailwind CSS |
-| ⚠️ `vcss-transition-group`          | Vue Transition Group styles                  |
-| ⚠️ `vcss-transition-group-tailwind` | Vue Transition Group styles for Tailwind CSS |
-
-> Snippets with ⚠️ symbol are unreleased.
+| Snippet                          | Purpose                                      |
+| -------------------------------- | -------------------------------------------- |
+| `vcss-transition`                | Vue Transition styles                        |
+| `vcss-transition-named`          | Vue Named Transition styles                  |
+| `vcss-transition-tailwind`       | Vue Transition styles for Tailwind CSS       |
+| `vcss-transition-named-tailwind` | Vue Named Transition styles for Tailwind CSS |
+| `vcss-transition-group`          | Vue Transition Group styles                  |
+| `vcss-transition-group-tailwind` | Vue Transition Group styles for Tailwind CSS |
 
 ### Pinia
 
-| Snippet                | Purpose                                                      |
-| ---------------------- | ------------------------------------------------------------ |
-| `pstore`               | Base code needed for a Pinia store file                      |
-| ⚠️ `pstore-composition` | Base code needed for a Pinia store file with Composition API |
-
-> Snippets with ⚠️ symbol are unreleased.
+| Snippet              | Purpose                                                      |
+| -------------------- | ------------------------------------------------------------ |
+| `pstore`             | Base code needed for a Pinia store file                      |
+| `pstore-composition` | Base code needed for a Pinia store file with Composition API |
 
 ### Vue Router
 
@@ -135,32 +131,28 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `nhead-template`        | `useHead` composable with title template     |
 | `npagemeta`             | `definePageMeta` composable                  |
 | `npagemeta-description` | `definePageMeta` composable with description |
-| ⚠️ `nplugin`             | Base code for Nuxt plugin                    |
-| ⚠️ `nmiddleware`         | Base code for Nuxt middleware                |
-| ⚠️ `nserverroute`        | Base code for Nuxt server route              |
-
-> Snippets with ⚠️ symbol are unreleased.
+| `nplugin`               | Base code for Nuxt plugin                    |
+| `nmiddleware`           | Base code for Nuxt middleware                |
+| `nserverroute`          | Base code for Nuxt server route              |
 
 ### Histoire
 
-| Snippet                   | Purpose                              |
-| ------------------------- | ------------------------------------ |
-| ⚠️ `hconfig`               | Histoire config for Vue 3            |
-| ⚠️ `hconfig-nuxt`          | Histoire config for Nuxt 3           |
-| ⚠️ `hbase`                 | Base code for story                  |
-| ⚠️ `hbase-variant`         | Base code for story with variant     |
-| ⚠️ `hbase-grid`            | Base code for story with grid layout |
-| ⚠️ `hvariant`              | Story variant                        |
-| ⚠️ `hgrid`                 | Histoire grid layout                 |
-| ⚠️ `hcontrols-base`        | Histoire controls base               |
-| ⚠️ `hcontrols-button`      | Histoire controls - Button           |
-| ⚠️ `hcontrols-buttongroup` | Histoire controls - Button Group     |
-| ⚠️ `hcontrols-checkbox`    | Histoire controls - Checkbox         |
-| ⚠️ `hcontrols-number`      | Histoire controls - Number           |
-| ⚠️ `hcontrols-text`        | Histoire controls - Text             |
-| ⚠️ `hcontrols-textarea`    | Histoire controls - Textarea         |
-
-> Snippets with ⚠️ symbol are unreleased.
+| Snippet                 | Purpose                              |
+| ----------------------- | ------------------------------------ |
+| `hconfig`               | Histoire config for Vue 3            |
+| `hconfig-nuxt`          | Histoire config for Nuxt 3           |
+| `hbase`                 | Base code for story                  |
+| `hbase-variant`         | Base code for story with variant     |
+| `hbase-grid`            | Base code for story with grid layout |
+| `hvariant`              | Story variant                        |
+| `hgrid`                 | Histoire grid layout                 |
+| `hcontrols-base`        | Histoire controls base               |
+| `hcontrols-button`      | Histoire controls - Button           |
+| `hcontrols-buttongroup` | Histoire controls - Button Group     |
+| `hcontrols-checkbox`    | Histoire controls - Checkbox         |
+| `hcontrols-number`      | Histoire controls - Number           |
+| `hcontrols-text`        | Histoire controls - Text             |
+| `hcontrols-textarea`    | Histoire controls - Textarea         |
 
 ## Contributing
 
