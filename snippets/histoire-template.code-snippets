@@ -8,4 +8,11 @@
     ],
     "description": "Story variant"
   },
+  "Histoire grid layout": {
+    "prefix": "hgrid",
+    "body": [
+      ":layout='{ type: 'grid', width: ${1:gridWidth} }'",
+    ],
+    "description": "Histoire grid layout"
+  },
 }
