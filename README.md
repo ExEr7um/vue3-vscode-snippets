@@ -128,6 +128,27 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 > Snippets with ⚠️ symbol are unreleased.
 
+### Histoire
+
+| Snippet                   | Purpose                              |
+| ------------------------- | ------------------------------------ |
+| ⚠️ `hconfig`               | Histoire config for Vue 3            |
+| ⚠️ `hconfig-nuxt`          | Histoire config for Nuxt 3           |
+| ⚠️ `hbase`                 | Base code for story                  |
+| ⚠️ `hbase-variant`         | Base code for story with variant     |
+| ⚠️ `hbase-grid`            | Base code for story with grid layout |
+| ⚠️ `hvariant`              | Story variant                        |
+| ⚠️ `hgrid`                 | Histoire grid layout                 |
+| ⚠️ `hcontrols-base`        | Histoire controls base               |
+| ⚠️ `hcontrols-button`      | Histoire controls - Button           |
+| ⚠️ `hcontrols-buttongroup` | Histoire controls - Button Group     |
+| ⚠️ `hcontrols-checkbox`    | Histoire controls - Checkbox         |
+| ⚠️ `hcontrols-number`      | Histoire controls - Number           |
+| ⚠️ `hcontrols-text`        | Histoire controls - Text             |
+| ⚠️ `hcontrols-textarea`    | Histoire controls - Textarea         |
+
+> Snippets with ⚠️ symbol are unreleased.
+
 ## Contributing
 
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).
