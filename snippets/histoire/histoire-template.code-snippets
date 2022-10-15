@@ -1,0 +1,93 @@
+{
+  "Histoire story variant": {
+    "prefix": "hvariant",
+    "body": [
+      "<Variant title='${1:variantTitle}'>",
+      "\t$0",
+      "</Variant>",
+    ],
+    "description": "Story variant"
+  },
+  "Histoire grid layout": {
+    "prefix": "hgrid",
+    "body": [
+      ":layout='{ type: 'grid', width: ${1:gridWidth} }'",
+    ],
+    "description": "Histoire grid layout"
+  },
+  "Histoire controls": {
+    "prefix": "hcontrols-base",
+    "body": [
+      "<template #controls>",
+      "\t$0",
+      "</template>"
+    ],
+    "description": "Histoire controls base"
+  },
+  "Histoire controls - Button": {
+    "prefix": "hcontrols-button",
+    "body": [
+      "<HstButton class='htw-p-2'>",
+      "\t$0",
+      "</HstButton>"
+    ],
+    "description": "Histoire controls - Button"
+  },
+  "Histoire controls - Button Group": {
+    "prefix": "hcontrols-buttongroup",
+    "body": [
+      "<HstButtonGroup",
+      "\tv-model='${2:vModel}'",
+      "\ttitle='${1:label}'",
+      "\t:options='[",
+      "\t\t{",
+      "\t\t\tlabel: '${3:optionTitle}',",
+      "\t\t\tvalue: '${4:optionValue}'",
+      "\t\t}",
+      "\t]'",
+      "/>",
+    ],
+    "description": "Histoire controls - Button Group"
+  },
+  "Histoire controls - Checkbox": {
+    "prefix": "hcontrols-checkbox",
+    "body": [
+      "<HstCheckbox",
+      "\tv-model='${2:vModel}'",
+      "\ttitle='${1:label}'",
+      "/>"
+    ],
+    "description": "Histoire controls - Checkbox"
+  },
+  "Histoire controls - Number": {
+    "prefix": "hcontrols-number",
+    "body": [
+      "<HstNumber",
+      "\tv-model='${2:vModel}'",
+      "\t:step='1'",
+      "\ttitle='${1:label}'",
+      "/>"
+    ],
+    "description": "Histoire controls - Number"
+  },
+  "Histoire controls - Text": {
+    "prefix": "hcontrols-text",
+    "body": [
+      "<HstText",
+      "\tv-model='${2:vModel}'",
+      "\ttitle='${1:label}'",
+      "/>"
+    ],
+    "description": "Histoire controls - Text"
+  },
+  "Histoire controls - Textarea": {
+    "prefix": "hcontrols-textarea",
+    "body": [
+      "<HstTextarea",
+      "\tv-model='${2:vModel}'",
+      "\ttitle='${1:label}'",
+      "/>"
+    ],
+    "description": "Histoire controls - Textarea"
+  },
+}

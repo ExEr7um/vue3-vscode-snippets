@@ -1,0 +1,32 @@
+{
+  "Histoire config": {
+    "prefix": "hconfig",
+    "body": [
+      "import { defineConfig } from 'histoire'",
+      "import { HstVue } from '@histoire/plugin-vue'",
+      "",
+      "export default defineConfig({",
+      "\tplugins: [",
+      "\t\tHstVue(),",
+      "\t],",
+      "})"
+    ],
+    "description": "Histoire config for Vue 3"
+  },
+  "Histoire config - Nuxt": {
+    "prefix": "hconfig-nuxt",
+    "body": [
+      "import { defineConfig } from 'histoire'",
+      "import { HstVue } from '@histoire/plugin-vue'",
+      "import { HstNuxt } from '@histoire/plugin-nuxt'",
+      "",
+      "export default defineConfig({",
+      "\tplugins: [",
+      "\t\tHstVue(),",
+      "\t\tHstNuxt(),",
+      "\t],",
+      "})"
+    ],
+    "description": "Histoire config for Nuxt 3"
+  },
+}

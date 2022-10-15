@@ -1,0 +1,54 @@
+{
+  "Histoire story base": {
+    "prefix": "hbase",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<Story title='${1:storyTitle}'>",
+      "\t\t$0",
+      "\t</Story>",
+      "</template>",
+    ],
+    "description": "Base code for story"
+  },
+  "Histoire story base with variant": {
+    "prefix": "hbase-variant",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<Story title='${1:storyTitle}'>",
+      "\t\t<Variant title='${2:variantTitle}'>",
+      "\t\t\t$0",
+      "\t\t</Variant>",
+      "\t</Story>",
+      "</template>",
+    ],
+    "description": "Base code for story with variant"
+  },
+  "Histoire story base with grid layout": {
+    "prefix": "hbase-grid",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<Story",
+      "\t\ttitle='${1:storyTitle}'",
+      "\t\t:layout='{ type: 'grid', width: 300 }'",
+      "\t/>",
+      "\t\t<Variant title='${2:variantTitle}'>",
+      "\t\t\t$0",
+      "\t\t</Variant>",
+      "\t</Story>",
+      "</template>",
+    ],
+    "description": "Base code for story with grid layout"
+  },
+}
