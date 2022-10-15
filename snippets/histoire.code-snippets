@@ -1,0 +1,17 @@
+{
+  "Histoire story base": {
+    "prefix": "hbase",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<Story title='${1:storyTitle}'>",
+      "\t\t$0",
+      "\t</Story>",
+      "</template>",
+    ],
+    "description": "Base code for story"
+  },
+}

@@ -92,6 +92,10 @@
         "path": "./snippets/nuxt-script.code-snippets"
       },
       {
+        "language": "vue",
+        "path": "./snippets/histoire.code-snippets"
+      },
+      {
         "language": "javascript",
         "path": "./snippets/histoire-script.code-snippets"
       },
