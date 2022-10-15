@@ -49,63 +49,63 @@
     "snippets": [
       {
         "language": "vue",
-        "path": "./snippets/vue.code-snippets"
+        "path": "./snippets/vue/vue.code-snippets"
       },
       {
         "language": "html",
-        "path": "./snippets/vue-template.code-snippets"
+        "path": "./snippets/vue/vue-template.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vue-script.code-snippets"
+        "path": "./snippets/vue/vue-script.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vue-script.code-snippets"
+        "path": "./snippets/vue/vue-script.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/pinia.code-snippets"
+        "path": "./snippets/pinia/pinia.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/pinia.code-snippets"
+        "path": "./snippets/pinia/pinia.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vue-router.code-snippets"
+        "path": "./snippets/vue/vue-router.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vue-router.code-snippets"
+        "path": "./snippets/vue/vue-router.code-snippets"
       },
       {
         "language": "html",
-        "path": "./snippets/nuxt-template.code-snippets"
+        "path": "./snippets/nuxt/nuxt-template.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/nuxt-script.code-snippets"
+        "path": "./snippets/nuxt/nuxt-script.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/nuxt-script.code-snippets"
+        "path": "./snippets/nuxt/nuxt-script.code-snippets"
       },
       {
         "language": "vue",
-        "path": "./snippets/histoire.code-snippets"
+        "path": "./snippets/histoire/histoire.code-snippets"
       },
       {
         "language": "html",
-        "path": "./snippets/histoire-template.code-snippets"
+        "path": "./snippets/histoire/histoire-template.code-snippets"
       },
       {
         "language": "javascript",
-        "path": "./snippets/histoire-script.code-snippets"
+        "path": "./snippets/histoire/histoire-script.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/histoire-script.code-snippets"
+        "path": "./snippets/histoire/histoire-script.code-snippets"
       }
     ]
   }
