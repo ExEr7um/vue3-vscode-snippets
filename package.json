@@ -90,6 +90,14 @@
       {
         "language": "typescript",
         "path": "./snippets/nuxt-script.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/histoire-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/histoire-script.code-snippets"
       }
     ]
   }
