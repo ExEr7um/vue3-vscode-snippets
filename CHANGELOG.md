@@ -2,6 +2,15 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## `v0.2.0`
+
+### Features
+
+* Add more `Nuxt` snippets @ExEr7um in <https://github.com/ExEr7um/vue3-vscode-snippets/pull/28>
+* Add `Pinia` composition store snippets by @ExEr7um in <https://github.com/ExEr7um/vue3-vscode-snippets/pull/29>
+* Add `Histoire` snippets by @ExEr7um in <https://github.com/ExEr7um/vue3-vscode-snippets/pull/31>
+* Add `Vue Transition CSS` snippets by @ExEr7um in <https://github.com/ExEr7um/vue3-vscode-snippets/pull/32>
+
 ## `v0.1.1`
 
 ### Fixed
