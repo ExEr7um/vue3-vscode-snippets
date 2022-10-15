@@ -96,6 +96,10 @@
         "path": "./snippets/histoire.code-snippets"
       },
       {
+        "language": "html",
+        "path": "./snippets/histoire-template.code-snippets"
+      },
+      {
         "language": "javascript",
         "path": "./snippets/histoire-script.code-snippets"
       },

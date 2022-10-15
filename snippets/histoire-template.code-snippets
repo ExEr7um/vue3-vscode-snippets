@@ -1,0 +1,11 @@
+{
+  "Histoire story variant": {
+    "prefix": "hvariant",
+    "body": [
+      "<Variant title='${1:variantTitle}'>",
+      "\t$0",
+      "</Variant>",
+    ],
+    "description": "Story variant"
+  },
+}

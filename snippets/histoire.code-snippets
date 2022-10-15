@@ -14,4 +14,21 @@
     ],
     "description": "Base code for story"
   },
+  "Histoire story base with variant": {
+    "prefix": "hbase-variant",
+    "body": [
+      "<script setup lang='ts'>",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<Story title='${1:storyTitle}'>",
+      "\t\t<Variant title='${2:variantTitle}'>",
+      "\t\t\t$0",
+      "\t\t</Variant>",
+      "\t</Story>",
+      "</template>",
+    ],
+    "description": "Base code for story with variant"
+  },
 }
