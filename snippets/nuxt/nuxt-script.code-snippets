@@ -27,6 +27,44 @@
     ],
     "description": "Nuxt useLazyAsyncData composable"
   },
+  "Nuxt useSeoMeta": {
+    "prefix": "nseo",
+    "body": [
+      "useSeoMeta({",
+      "\ttitle: ${1:pageTitle}",
+      "\tdescription: ${2:pageDescription}",
+      "})"
+    ],
+    "description": "Nuxt useSeoMeta composable"
+  },
+  "Nuxt useSeoMeta - Template": {
+    "prefix": "nseo-template",
+    "body": [
+      "useSeoMeta({",
+      "\ttitleTemplate: '%s | ${0}'",
+      "})"
+    ],
+    "description": "Nuxt useSeoMeta composable with title template"
+  },
+  "Nuxt useServerSeoMeta": {
+    "prefix": "nseo-server",
+    "body": [
+      "useServerSeoMeta({",
+      "\ttitle: ${1:pageTitle}",
+      "\tdescription: ${2:pageDescription}",
+      "})"
+    ],
+    "description": "Nuxt useServerSeoMeta composable"
+  },
+  "Nuxt useServerSeoMeta - Template": {
+    "prefix": "nseo-server-template",
+    "body": [
+      "useServerSeoMeta({",
+      "\ttitleTemplate: '%s | ${0}'",
+      "})"
+    ],
+    "description": "Nuxt useServerSeoMeta composable with title template"
+  },
   "Nuxt define plugin": {
     "prefix": "nplugin",
     "body": [
