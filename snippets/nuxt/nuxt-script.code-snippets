@@ -27,59 +27,6 @@
     ],
     "description": "Nuxt useLazyAsyncData composable"
   },
-  "Nuxt useHead": {
-    "prefix": "nhead",
-    "body": [
-      "useHead({",
-      "\ttitle: ${1:pageTitle},",
-      "})"
-    ],
-    "description": "Nuxt useHead composable"
-  },
-  "Nuxt useHead with description": {
-    "prefix": "nhead-description",
-    "body": [
-      "useHead({",
-      "\ttitle: ${1:pageTitle},",
-      "\tmeta: [",
-      "\t\t{ name: 'description', content: ${2:pageDescription} },",
-      "\t],",
-      "})"
-    ],
-    "description": "Nuxt useHead composable with description"
-  },
-  "Nuxt useHead - Title template": {
-    "prefix": "nhead-template",
-    "body": [
-      "useHead({",
-      "\ttitleTemplate: (titleChunk) => {",
-      "\t\treturn titleChunk ? `\\${titleChunk} - ${1:siteTitle}` : '${1:siteTitle}'",
-      "\t}",
-      "})"
-    ],
-    "description": "Nuxt useHead composable with title template"
-  },
-  "Nuxt definePageMeta": {
-    "prefix": "npagemeta",
-    "body": [
-      "definePageMeta({",
-      "\ttitle: '${1:pageTitle}',",
-      "})"
-    ],
-    "description": "Nuxt definePageMeta composable"
-  },
-  "Nuxt definePageMeta with description": {
-    "prefix": "npagemeta-description",
-    "body": [
-      "definePageMeta({",
-      "\ttitle: '${1:pageTitle}',",
-      "\tmeta: [",
-      "\t\t{ name: 'description', content: '${2:pageDescription}' },",
-      "\t],",
-      "})"
-    ],
-    "description": "Nuxt definePageMeta composable with description"
-  },
   "Nuxt define plugin": {
     "prefix": "nplugin",
     "body": [
