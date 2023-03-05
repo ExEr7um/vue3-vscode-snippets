@@ -27,58 +27,43 @@
     ],
     "description": "Nuxt useLazyAsyncData composable"
   },
-  "Nuxt useHead": {
-    "prefix": "nhead",
+  "Nuxt useSeoMeta": {
+    "prefix": "nseo",
     "body": [
-      "useHead({",
-      "\ttitle: ${1:pageTitle},",
+      "useSeoMeta({",
+      "\ttitle: ${1:pageTitle}",
+      "\tdescription: ${2:pageDescription}",
       "})"
     ],
-    "description": "Nuxt useHead composable"
+    "description": "Nuxt useSeoMeta composable"
   },
-  "Nuxt useHead with description": {
-    "prefix": "nhead-description",
+  "Nuxt useSeoMeta - Template": {
+    "prefix": "nseo-template",
     "body": [
-      "useHead({",
-      "\ttitle: ${1:pageTitle},",
-      "\tmeta: [",
-      "\t\t{ name: 'description', content: ${2:pageDescription} },",
-      "\t],",
+      "useSeoMeta({",
+      "\ttitleTemplate: '%s | ${0}'",
       "})"
     ],
-    "description": "Nuxt useHead composable with description"
+    "description": "Nuxt useSeoMeta composable with title template"
   },
-  "Nuxt useHead - Title template": {
-    "prefix": "nhead-template",
+  "Nuxt useServerSeoMeta": {
+    "prefix": "nseo-server",
     "body": [
-      "useHead({",
-      "\ttitleTemplate: (titleChunk) => {",
-      "\t\treturn titleChunk ? `\\${titleChunk} - ${1:siteTitle}` : '${1:siteTitle}'",
-      "\t}",
+      "useServerSeoMeta({",
+      "\ttitle: ${1:pageTitle}",
+      "\tdescription: ${2:pageDescription}",
       "})"
     ],
-    "description": "Nuxt useHead composable with title template"
+    "description": "Nuxt useServerSeoMeta composable"
   },
-  "Nuxt definePageMeta": {
-    "prefix": "npagemeta",
+  "Nuxt useServerSeoMeta - Template": {
+    "prefix": "nseo-server-template",
     "body": [
-      "definePageMeta({",
-      "\ttitle: '${1:pageTitle}',",
+      "useServerSeoMeta({",
+      "\ttitleTemplate: '%s | ${0}'",
       "})"
     ],
-    "description": "Nuxt definePageMeta composable"
-  },
-  "Nuxt definePageMeta with description": {
-    "prefix": "npagemeta-description",
-    "body": [
-      "definePageMeta({",
-      "\ttitle: '${1:pageTitle}',",
-      "\tmeta: [",
-      "\t\t{ name: 'description', content: '${2:pageDescription}' },",
-      "\t],",
-      "})"
-    ],
-    "description": "Nuxt definePageMeta composable with description"
+    "description": "Nuxt useServerSeoMeta composable with title template"
   },
   "Nuxt define plugin": {
     "prefix": "nplugin",
