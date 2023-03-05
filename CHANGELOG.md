@@ -2,6 +2,12 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## `v0.3.0`
+
+### Features
+
+* Add `Nuxt` SEO composables by @ExEr7um in <https://github.com/ExEr7um/vue3-vscode-snippets/pull/35>
+
 ## `v0.2.0`
 
 ### Features
