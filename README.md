@@ -120,15 +120,19 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ### Nuxt Script
 
-| Snippet                 | Purpose                                      |
-| ----------------------- | -------------------------------------------- |
-| `nfetch`                | `useFetch` composable                        |
-| `nfetch-lazy`           | `useLazyFetch` composable                    |
-| `nasyncdata`            | `useAsyncData` composable                    |
-| `nasyncdata-lazy`       | `useLazyAsyncData` composable                |
-| `nplugin`               | Base code for Nuxt plugin                    |
-| `nmiddleware`           | Base code for Nuxt middleware                |
-| `nserverroute`          | Base code for Nuxt server route              |
+| Snippet                | Purpose                                  |
+| ---------------------- | ---------------------------------------- |
+| `nfetch`               | `useFetch` composable                    |
+| `nfetch-lazy`          | `useLazyFetch` composable                |
+| `nasyncdata`           | `useAsyncData` composable                |
+| `nasyncdata-lazy`      | `useLazyAsyncData` composable            |
+| `nseo`                 | `useSeoMeta` composable                  |
+| `nseo-template`        | `useSeoMeta` composable - Template       |
+| `nseo-server`          | `useServerSeoMeta` composable            |
+| `nseo-server-template` | `useServerSeoMeta` composable - Template |
+| `nplugin`              | Base code for Nuxt plugin                |
+| `nmiddleware`          | Base code for Nuxt middleware            |
+| `nserverroute`         | Base code for Nuxt server route          |
 
 ### Histoire
 
