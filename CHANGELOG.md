@@ -2,6 +2,12 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## `v0.3.1`
+
+### Fixed
+
+* No comma in `Nuxt SEO` snippets by @ExEr7um in <https://github.com/ExEr7um/vue3-vscode-snippets/pull/38>
+
 ## `v0.3.0`
 
 ### Features
