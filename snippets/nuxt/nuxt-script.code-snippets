@@ -31,7 +31,7 @@
     "prefix": "nseo",
     "body": [
       "useSeoMeta({",
-      "\ttitle: ${1:pageTitle}",
+      "\ttitle: ${1:pageTitle},",
       "\tdescription: ${2:pageDescription}",
       "})"
     ],
@@ -50,7 +50,7 @@
     "prefix": "nseo-server",
     "body": [
       "useServerSeoMeta({",
-      "\ttitle: ${1:pageTitle}",
+      "\ttitle: ${1:pageTitle},",
       "\tdescription: ${2:pageDescription}",
       "})"
     ],
