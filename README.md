@@ -75,9 +75,7 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vonbeforeunmount`       | onBeforeUnmount hook                        |
 | `vdefineprops`           | Define props                                |
 | `vdefineemits`           | Define emits                                |
-| `vdefineemits-nopayload` | Define emits with no payload                |
 | `vsingleemit`            | Single emit for defineEmits                 |
-| `vsingleemit-nopayload`  | Single emit for defineEmits with no payload |
 
 ### CSS
 

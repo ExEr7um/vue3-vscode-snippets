@@ -111,32 +111,16 @@
     "prefix": "vdefineemits",
     "body": [
       "defineEmits<{",
-      "\t(e: '${1:eventName}', ${2:payloadName}: ${3:payloadType}): void",
+      "\t${1:eventName}: [${2}]",
       "}>()"
     ],
     "description": "Vue defineEmits"
   },
-  "Vue Define Emits - No Payload": {
-    "prefix": "vdefineemits-nopayload",
-    "body": [
-      "defineEmits<{",
-      "\t(e: '${1:eventName}'): void",
-      "}>()"
-    ],
-    "description": "Vue defineEmits with no payload"
-  },
   "Vue Single Emit": {
     "prefix": "vsingleemit",
     "body": [
-      "(e: '${1:eventName}', ${2:payloadName}: ${3:payloadType}): void",
+      "${1:eventName}: [${2}]",
     ],
     "description": "Vue single emit for defineEmits"
-  },
-  "Vue Single Emit - No Payload": {
-    "prefix": "vsingleemit-nopayload",
-    "body": [
-      "(e: '${1:eventName}'): void",
-    ],
-    "description": "Vue single emit for defineEmits with no payload"
   },
 }
