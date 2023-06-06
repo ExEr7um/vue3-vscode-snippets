@@ -170,6 +170,8 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vitest-todo`             | Vitest Test - Todo             |
 | `visnapshot`              | Vitest Match Snapshot          |
 | `visnapshot-inline`       | Vitest Match Snapshot - Inline |
+| `vimount`                 | Vue Test Utils Mount           |
+| `vicomponent`             | Vue Test Utils Component       |
 
 ## Contributing
 
