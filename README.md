@@ -156,6 +156,7 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | Snippet                   | Purpose                        |
 | ------------------------- | ------------------------------ |
 | `viconfig`                | Vitest config for Vue 3        |
+| `viconfig-nuxt`           | Vitest config for Nuxt 3       |
 | `videscribe`              | Vitest Describe                |
 | `videscribe-concurrent`   | Vitest Describe - Concurrent   |
 | `viit`                    | Vitest It                      |
@@ -170,8 +171,12 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vitest-todo`             | Vitest Test - Todo             |
 | `visnapshot`              | Vitest Match Snapshot          |
 | `visnapshot-inline`       | Vitest Match Snapshot - Inline |
-| `vimount`                 | Vue Test Utils Mount           |
+| `vimount`                 | Vue Test Utils `mount`         |
 | `vicomponent`             | Vue Test Utils Component       |
+| `vimount-suspended`       | nuxt-vitest `mountSuspended`   |
+| `vimocknuxtimport`        | nuxt-vitest `mockNuxtImport`   |
+| `vimockcomponent`         | nuxt-vitest `mockComponent`    |
+| `viregisterendpoint`      | nuxt-vitest `registerEndpoint` |
 
 ## Contributing
 

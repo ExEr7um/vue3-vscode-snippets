@@ -1,0 +1,49 @@
+{
+  "Vitest Config - Nuxt 3": {
+    "prefix": "viconfig-nuxt",
+    "body": [
+      "import { defineVitestConfig } from 'nuxt-vitest/config'",
+      "",
+      "export default defineVitestConfig({",
+      "\ttest: {",
+      "\t\tenvironment: 'nuxt'",
+      "\t}",
+      "})"
+    ],
+    "description": "Vitest config for Nuxt 3"
+  },
+  "Vitest Nuxt Mount Suspended": {
+    "prefix": "vimount-suspended",
+    "body": [
+      "const wrapper = await mountSuspended(${0})",
+    ],
+    "description": "nuxt-vitest mountSuspended"
+  },
+  "Vitest Nuxt Mock Import": {
+    "prefix": "vimocknuxtimport",
+    "body": [
+      "mockNuxtImport('${1:functionName}', () => {",
+      "\treturn () => {",
+      "\t\treturn { ${0} }",
+      "\t}",
+      "})"
+    ],
+    "description": "nuxt-vitest mockNuxtImport"
+  },
+  "Vitest Nuxt Mock Component": {
+    "prefix": "vimockcomponent",
+    "body": [
+      "mockComponent('${0}')",
+    ],
+    "description": "nuxt-vitest mockComponent"
+  },
+  "Vitest Nuxt Register Endpoint": {
+    "prefix": "viregisterendpoint",
+    "body": [
+      "registerEndpoint('/${1:endpoint}/', () => {",
+      "\t{0}",
+      "})"
+    ],
+    "description": "nuxt-vitest registerEndpoint"
+  },
+}

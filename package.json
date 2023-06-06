@@ -134,6 +134,14 @@
       {
         "language": "typescript",
         "path": "./snippets/vitest/vue.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vitest/nuxt.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vitest/nuxt.code-snippets"
       }
     ]
   }
