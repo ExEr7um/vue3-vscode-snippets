@@ -151,6 +151,26 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `hcontrols-text`        | Histoire controls - Text             |
 | `hcontrols-textarea`    | Histoire controls - Textarea         |
 
+### Vitest
+
+| Snippet                   | Purpose                        |
+| ------------------------- | ------------------------------ |
+| `viconfig`                | Vitest config for Vue 3        |
+| `videscribe`              | Vitest Describe                |
+| `videscribe-concurrent`   | Vitest Describe - Concurrent   |
+| `viit`                    | Vitest It                      |
+| `viit-concurrent`         | Vitest It - Concurrent         |
+| `viit-async`              | Vitest It - Async              |
+| `viit-async-concurrent`   | Vitest It - Async Concurrent   |
+| `viit-todo`               | Vitest It - Todo               |
+| `vitest`                  | Vitest Test                    |
+| `vitest-concurrent`       | Vitest Test - Concurrent       |
+| `vitest-async`            | Vitest Test - Async            |
+| `vitest-async-concurrent` | Vitest Test - Async Concurrent |
+| `vitest-todo`             | Vitest Test - Todo             |
+| `visnapshot`              | Vitest Match Snapshot          |
+| `visnapshot-inline`       | Vitest Match Snapshot - Inline |
+
 ## Contributing
 
 This is an open source project open to anyone. Contributors are welcome on [GitHub](https://github.com/exer7um/vue3-vscode-snippets).

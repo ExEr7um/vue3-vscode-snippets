@@ -1,0 +1,131 @@
+{
+  "Vitest Config - Vue 3": {
+    "prefix": "viconfig",
+    "body": [
+      "import { defineConfig } from 'vitest/config'",
+      "",
+      "export default defineConfig({",
+      "\t${0}",
+      "})"
+    ],
+    "description": "Vitest config for Vue 3"
+  },
+  "Vitest Describe": {
+    "prefix": "videscribe",
+    "body": [
+      "describe('${1:name}'), () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest Describe"
+  },
+  "Vitest Describe - Concurrent": {
+    "prefix": "videscribe-concurrent",
+    "body": [
+      "describe.concurrent('${1:name}'), () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest Describe Concurrent"
+  },
+  "Vitest It": {
+    "prefix": "viit",
+    "body": [
+      "it('${1:name}'), () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest It"
+  },
+  "Vitest It - Concurrent": {
+    "prefix": "viit-concurrent",
+    "body": [
+      "it.concurrent('${1:name}'), () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest It Concurrent"
+  },
+  "Vitest It - Async": {
+    "prefix": "viit-async",
+    "body": [
+      "it('${1:name}'), async () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest It Async"
+  },
+  "Vitest It - Async Concurrent": {
+    "prefix": "viit-async-concurrent",
+    "body": [
+      "it.concurrent('${1:name}'), async () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest It Async Concurrent"
+  },
+  "Vitest It - Todo": {
+    "prefix": "viit-todo",
+    "body": [
+      "it.todo('${1:name}')"
+    ],
+    "description": "Vitest It Todo"
+  },
+  "Vitest Test": {
+    "prefix": "vitest",
+    "body": [
+      "test('${1:name}'), () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest Test"
+  },
+  "Vitest Test - Concurrent": {
+    "prefix": "vitest-concurrent",
+    "body": [
+      "test.concurrent('${1:name}'), () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest Test Concurrent"
+  },
+  "Vitest Test - Async": {
+    "prefix": "vitest-async",
+    "body": [
+      "test('${1:name}'), async () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest Test Async"
+  },
+  "Vitest Test - Async Concurrent": {
+    "prefix": "vitest-async-concurrent",
+    "body": [
+      "test.concurrent('${1:name}'), async () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "Vitest Test Async Concurrent"
+  },
+  "Vitest Test - Todo": {
+    "prefix": "vitest-todo",
+    "body": [
+      "test.todo('${1:name}')"
+    ],
+    "description": "Vitest Test Todo"
+  },
+  "Vitest Match Snapshot": {
+    "prefix": "visnapshot",
+    "body": [
+      "expect(${0}).toMatchSnapshot()"
+    ],
+    "description": "Vitest Match Snapshot"
+  },
+  "Vitest Match Snapshot - Inline": {
+    "prefix": "visnapshot-inline",
+    "body": [
+      "expect(${0}).toMatchInlineSnapshot()"
+    ],
+    "description": "Vitest Match Inline Snapshot"
+  },
+}

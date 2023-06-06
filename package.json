@@ -118,6 +118,14 @@
       {
         "language": "typescript",
         "path": "./snippets/histoire/histoire-script.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vitest/vitest.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vitest/vitest.code-snippets"
       }
     ]
   }
