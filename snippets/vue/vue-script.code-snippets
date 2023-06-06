@@ -111,7 +111,7 @@
     "prefix": "vdefineemits",
     "body": [
       "defineEmits<{",
-      "\t${1:eventName}: [${2}]",
+      "\t${1:eventName}: [${0}]",
       "}>()"
     ],
     "description": "Vue defineEmits"
@@ -119,7 +119,7 @@
   "Vue Single Emit": {
     "prefix": "vsingleemit",
     "body": [
-      "${1:eventName}: [${2}]",
+      "${1:eventName}: [${0}]",
     ],
     "description": "Vue single emit for defineEmits"
   },
