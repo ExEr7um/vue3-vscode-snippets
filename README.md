@@ -76,6 +76,10 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vdefineprops`     | Define props                |
 | `vdefineemits`     | Define emits                |
 | `vsingleemit`      | Single emit for defineEmits |
+| `vdefineslots`     | Define slots                |
+| `vsingleslot`      | Single slot for defineSlots |
+| `vdefineoptions`   | Define Options              |
+| `vdefinemodel`     | Define Model                |
 
 ### CSS
 
@@ -171,12 +175,22 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vitest-todo`             | Vitest Test - Todo             |
 | `visnapshot`              | Vitest Match Snapshot          |
 | `visnapshot-inline`       | Vitest Match Snapshot - Inline |
-| `vimount`                 | Vue Test Utils `mount`         |
-| `vicomponent`             | Vue Test Utils Component       |
-| `vimount-suspended`       | nuxt-vitest `mountSuspended`   |
-| `vimocknuxtimport`        | nuxt-vitest `mockNuxtImport`   |
-| `vimockcomponent`         | nuxt-vitest `mockComponent`    |
-| `viregisterendpoint`      | nuxt-vitest `registerEndpoint` |
+
+### Vitest Vue
+
+| Snippet       | Purpose                  |
+| ------------- | ------------------------ |
+| `vimount`     | Vue Test Utils `mount`   |
+| `vicomponent` | Vue Test Utils Component |
+
+### Vitest Nuxt
+
+| Snippet              | Purpose                        |
+| -------------------- | ------------------------------ |
+| `vimount-suspended`  | nuxt-vitest `mountSuspended`   |
+| `vimocknuxtimport`   | nuxt-vitest `mockNuxtImport`   |
+| `vimockcomponent`    | nuxt-vitest `mockComponent`    |
+| `viregisterendpoint` | nuxt-vitest `registerEndpoint` |
 
 ## Contributing
 
