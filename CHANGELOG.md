@@ -2,6 +2,25 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## v0.4.0
+
+[compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.3.1...v0.4.0)
+
+
+### 🚀 Enhancements
+
+  - Update `defineEmits` to Vue 3.3 syntax ([#43](https://github.com/ExEr7um/vue3-vscode-snippets/pull/43))
+  - Add `Vitest` snippets ([#44](https://github.com/ExEr7um/vue3-vscode-snippets/pull/44))
+  - Add Vue 3.3 snippets ([#45](https://github.com/ExEr7um/vue3-vscode-snippets/pull/45))
+
+### 🏡 Chore
+
+  - New release flow ([#46](https://github.com/ExEr7um/vue3-vscode-snippets/pull/46))
+
+### ❤️  Contributors
+
+- Vasily Kuzin ([@ExEr7um](http://github.com/ExEr7um))
+
 ## `v0.3.1`
 
 ### Fixed

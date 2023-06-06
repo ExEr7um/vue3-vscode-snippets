@@ -3,7 +3,7 @@
   "displayName": "Vue 3 VS Code Snippets",
   "description": "Vue 3 snippets for VS Code",
   "icon": "images/vue-logo.png",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "publisher": "exer7um",
   "repository": {
     "type": "git",
