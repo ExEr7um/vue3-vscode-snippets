@@ -59,23 +59,23 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ### Script
 
-| Snippet                  | Purpose                                     |
-| ------------------------ | ------------------------------------------- |
-| `vref`                   | Vue `ref`                                   |
-| `vreactive`              | Vue `reactive`                              |
-| `vcomputed`              | Vue `computed`                              |
-| `vwatch`                 | Watcher                                     |
-| `vwatcheffect`           | Watch Effect                                |
-| `vonmounted`             | onMounted hook                              |
-| `vonbeforemount`         | onBeforeMount hook                          |
-| `vonbeforeupdate`        | onBeforeUpdate hook                         |
-| `vonupdated`             | onUpdated hook                              |
-| `vonerrorcaptured`       | onErrorCaptured hook                        |
-| `vonunmounted`           | onUnmounted hook                            |
-| `vonbeforeunmount`       | onBeforeUnmount hook                        |
-| `vdefineprops`           | Define props                                |
-| `vdefineemits`           | Define emits                                |
-| `vsingleemit`            | Single emit for defineEmits                 |
+| Snippet            | Purpose                     |
+| ------------------ | --------------------------- |
+| `vref`             | Vue `ref`                   |
+| `vreactive`        | Vue `reactive`              |
+| `vcomputed`        | Vue `computed`              |
+| `vwatch`           | Watcher                     |
+| `vwatcheffect`     | Watch Effect                |
+| `vonmounted`       | onMounted hook              |
+| `vonbeforemount`   | onBeforeMount hook          |
+| `vonbeforeupdate`  | onBeforeUpdate hook         |
+| `vonupdated`       | onUpdated hook              |
+| `vonerrorcaptured` | onErrorCaptured hook        |
+| `vonunmounted`     | onUnmounted hook            |
+| `vonbeforeunmount` | onBeforeUnmount hook        |
+| `vdefineprops`     | Define props                |
+| `vdefineemits`     | Define emits                |
+| `vsingleemit`      | Single emit for defineEmits |
 
 ### CSS
 
@@ -150,6 +150,33 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `hcontrols-number`      | Histoire controls - Number           |
 | `hcontrols-text`        | Histoire controls - Text             |
 | `hcontrols-textarea`    | Histoire controls - Textarea         |
+
+### Vitest
+
+| Snippet                   | Purpose                        |
+| ------------------------- | ------------------------------ |
+| `viconfig`                | Vitest config for Vue 3        |
+| `viconfig-nuxt`           | Vitest config for Nuxt 3       |
+| `videscribe`              | Vitest Describe                |
+| `videscribe-concurrent`   | Vitest Describe - Concurrent   |
+| `viit`                    | Vitest It                      |
+| `viit-concurrent`         | Vitest It - Concurrent         |
+| `viit-async`              | Vitest It - Async              |
+| `viit-async-concurrent`   | Vitest It - Async Concurrent   |
+| `viit-todo`               | Vitest It - Todo               |
+| `vitest`                  | Vitest Test                    |
+| `vitest-concurrent`       | Vitest Test - Concurrent       |
+| `vitest-async`            | Vitest Test - Async            |
+| `vitest-async-concurrent` | Vitest Test - Async Concurrent |
+| `vitest-todo`             | Vitest Test - Todo             |
+| `visnapshot`              | Vitest Match Snapshot          |
+| `visnapshot-inline`       | Vitest Match Snapshot - Inline |
+| `vimount`                 | Vue Test Utils `mount`         |
+| `vicomponent`             | Vue Test Utils Component       |
+| `vimount-suspended`       | nuxt-vitest `mountSuspended`   |
+| `vimocknuxtimport`        | nuxt-vitest `mockNuxtImport`   |
+| `vimockcomponent`         | nuxt-vitest `mockComponent`    |
+| `viregisterendpoint`      | nuxt-vitest `registerEndpoint` |
 
 ## Contributing
 

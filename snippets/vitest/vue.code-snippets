@@ -1,0 +1,22 @@
+{
+  "Vitest Vue Mount": {
+    "prefix": "vimount",
+    "body": [
+      "const wrapper = mount(${0})",
+    ],
+    "description": "Vue Test Utils Mount"
+  },
+  "Vitest Test Component": {
+    "prefix": "vicomponent",
+    "body": [
+      "{",
+      "\ttemplate: '${0}'",
+      "\t\tdata() {",
+      "\t\t\treturn {",
+      "\t\t${2:variable}",
+      "\t}",
+      "}"
+    ],
+    "description": "Vue Test Utils Component"
+  }
+}
