@@ -76,6 +76,10 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vdefineprops`     | Define props                |
 | `vdefineemits`     | Define emits                |
 | `vsingleemit`      | Single emit for defineEmits |
+| `vdefineslots`     | Define slots                |
+| `vsingleslot`      | Single slot for defineSlots |
+| `vdefineoptions`   | Define Options              |
+| `vdefinemodel`     | Define Model                |
 
 ### CSS
 

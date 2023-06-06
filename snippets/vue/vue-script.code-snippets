@@ -123,4 +123,36 @@
     ],
     "description": "Vue single emit for defineEmits"
   },
+  "Vue Define Slots": {
+    "prefix": "vdefineslots",
+    "body": [
+      "defineSlots<{",
+      "\tdefault: (props: { ${0} }) => any",
+      "}>()"
+    ],
+    "description": "Vue defineSlots"
+  },
+  "Vue Single Slot": {
+    "prefix": "vsingleslot",
+    "body": [
+      "\t${1:slotName}: (props: { ${0} }) => any",
+    ],
+    "description": "Vue single slot for defineSlots"
+  },
+  "Vue Define Options": {
+    "prefix": "vdefineoptions",
+    "body": [
+      "defineOptions({",
+      "\t${0}",
+      "})"
+    ],
+    "description": "Vue defineOptions"
+  },
+  "Vue Define Model": {
+    "prefix": "vdefinemodel",
+    "body": [
+      "const modelValue = defineModel()",
+    ],
+    "description": "Vue defineModel"
+  },
 }
