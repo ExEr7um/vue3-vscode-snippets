@@ -13,54 +13,54 @@
   "Vitest Describe": {
     "prefix": "videscribe",
     "body": [
-      "describe('${1:name}'), () => {",
+      "describe('${1:name}', () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest Describe"
   },
   "Vitest Describe - Concurrent": {
     "prefix": "videscribe-concurrent",
     "body": [
-      "describe.concurrent('${1:name}'), () => {",
+      "describe.concurrent('${1:name}', () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest Describe Concurrent"
   },
   "Vitest It": {
     "prefix": "viit",
     "body": [
-      "it('${1:name}'), () => {",
+      "it('${1:name}', () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest It"
   },
   "Vitest It - Concurrent": {
     "prefix": "viit-concurrent",
     "body": [
-      "it.concurrent('${1:name}'), () => {",
+      "it.concurrent('${1:name}', () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest It Concurrent"
   },
   "Vitest It - Async": {
     "prefix": "viit-async",
     "body": [
-      "it('${1:name}'), async () => {",
+      "it('${1:name}', async () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest It Async"
   },
   "Vitest It - Async Concurrent": {
     "prefix": "viit-async-concurrent",
     "body": [
-      "it.concurrent('${1:name}'), async () => {",
+      "it.concurrent('${1:name}', async () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest It Async Concurrent"
   },
@@ -74,36 +74,36 @@
   "Vitest Test": {
     "prefix": "vitest",
     "body": [
-      "test('${1:name}'), () => {",
+      "test('${1:name}', () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest Test"
   },
   "Vitest Test - Concurrent": {
     "prefix": "vitest-concurrent",
     "body": [
-      "test.concurrent('${1:name}'), () => {",
+      "test.concurrent('${1:name}', () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest Test Concurrent"
   },
   "Vitest Test - Async": {
     "prefix": "vitest-async",
     "body": [
-      "test('${1:name}'), async () => {",
+      "test('${1:name}', async () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest Test Async"
   },
   "Vitest Test - Async Concurrent": {
     "prefix": "vitest-async-concurrent",
     "body": [
-      "test.concurrent('${1:name}'), async () => {",
+      "test.concurrent('${1:name}', async () => {",
       "\t${0}",
-      "}"
+      "})"
     ],
     "description": "Vitest Test Async Concurrent"
   },
