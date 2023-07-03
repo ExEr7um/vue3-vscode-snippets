@@ -2,7 +2,7 @@
   "Vue SFC <script setup>, TS, SCSS": {
     "prefix": "vbase",
     "body": [
-      "<script setup lang='ts'>",
+      "<script setup lang=\"ts\">",
       "",
       "</script>",
       "",
@@ -21,7 +21,7 @@
   "Vue SFC <script setup>, TS, SASS": {
     "prefix": "vbase-sass",
     "body": [
-      "<script setup lang='ts'>",
+      "<script setup lang=\"ts\">",
       "",
       "</script>",
       "",
@@ -40,7 +40,7 @@
   "Vue SFC <script setup>, TS, LESS": {
     "prefix": "vbase-less",
     "body": [
-      "<script setup lang='ts'>",
+      "<script setup lang=\"ts\">",
       "",
       "</script>",
       "",
@@ -59,7 +59,7 @@
   "Vue SFC <script setup>, TS, PostCSS": {
     "prefix": "vbase-pcss",
     "body": [
-      "<script setup lang='ts'>",
+      "<script setup lang=\"ts\">",
       "",
       "</script>",
       "",
@@ -78,7 +78,7 @@
   "Vue SFC <script setup>, TS, CSS": {
     "prefix": "vbase-css",
     "body": [
-      "<script setup lang='ts'>",
+      "<script setup lang=\"ts\">",
       "",
       "</script>",
       "",
@@ -97,7 +97,7 @@
   "Vue SFC <script setup>, TS, Stylus": {
     "prefix": "vbase-styl",
     "body": [
-      "<script setup lang='ts'>",
+      "<script setup lang=\"ts\">",
       "",
       "</script>",
       "",
@@ -116,7 +116,7 @@
   "Vue SFC <script setup>, TS, No Style": {
     "prefix": "vbase-ns",
     "body": [
-      "<script setup lang='ts'>",
+      "<script setup lang=\"ts\">",
       "",
       "</script>",
       "",
