@@ -2,6 +2,12 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## v0.4.2
+
+### Feature
+*  Update snippets to use double quotes for the value of the lang property in the `<script>` tag 
+
+
 ## v0.4.1
 
 [compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.4.0...v0.4.1)
