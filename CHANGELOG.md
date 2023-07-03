@@ -2,6 +2,19 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## v0.5.0
+
+[compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.4.1...v0.5.0)
+
+
+### 🚀 Enhancements
+
+  - Use double quotes in `vue` file snippets ([#50](https://github.com/ExEr7um/vue3-vscode-snippets/pull/50))
+
+### ❤️  Contributors
+
+- Henrique Kubenda
+
 ## v0.4.1
 
 [compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.4.0...v0.4.1)
