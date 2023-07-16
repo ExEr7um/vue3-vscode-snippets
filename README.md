@@ -1,9 +1,13 @@
 # Vue 3 VS Code Snippets
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/exer7um.vue-3-vscode-snippets?color=blue)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/exer7um.vue-3-vscode-snippets?color=success)
-![GitHub](https://img.shields.io/github/license/ExEr7um/vue3-vscode-snippets)
-![Vue Version](https://img.shields.io/badge/vue-3-%234FC08D?logo=vuedotjs)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/exer7um.vue-3-vscode-snippets?labelColor=18181B&color=4FC08D)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/exer7um.vue-3-vscode-snippets?labelColor=18181B&color=4FC08D)
+![GitHub](https://img.shields.io/github/license/ExEr7um/vue3-vscode-snippets?labelColor=18181B&color=4FC08D)
+![Vue Version](https://img.shields.io/badge/Vue-3-4FC08D?labelColor=18181B&logo=vuedotjs)
+![Nuxt Version](https://img.shields.io/badge/Nuxt-3-4FC08D?labelColor=18181B&logo=nuxtdotjs)
+![Vitest](https://img.shields.io/badge/Vitest-18181B?logo=vitest)
+![Pinia](https://img.shields.io/badge/Pinia-18181B)
+![Histoire](https://img.shields.io/badge/Histoire-18181B)
 
 ![vue3-vscode-snippets-hero](https://i.imgur.com/qlgaQhl.gif)
 
