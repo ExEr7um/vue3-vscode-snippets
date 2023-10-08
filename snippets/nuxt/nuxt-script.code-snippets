@@ -27,6 +27,15 @@
     ],
     "description": "Nuxt useLazyAsyncData composable"
   },
+  "Nuxt definePageMeta": {
+    "prefix": "npagemeta",
+    "body": [
+      "definePageMeta({",
+      "\t${0}",
+      "})"
+    ],
+    "description": "Nuxt definePageMeta composable"
+  },
   "Nuxt useSeoMeta": {
     "prefix": "nseo",
     "body": [
