@@ -132,6 +132,7 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `nfetch-lazy`          | `useLazyFetch` composable                |
 | `nasyncdata`           | `useAsyncData` composable                |
 | `nasyncdata-lazy`      | `useLazyAsyncData` composable            |
+| `npagemeta`            | `definePageMeta` composable              |
 | `nseo`                 | `useSeoMeta` composable                  |
 | `nseo-template`        | `useSeoMeta` composable - Template       |
 | `nseo-server`          | `useServerSeoMeta` composable            |
