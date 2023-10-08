@@ -110,7 +110,7 @@
   "Vue Define Emits": {
     "prefix": "vdefineemits",
     "body": [
-      "defineEmits<{",
+      "const emit = defineEmits<{",
       "\t${1:eventName}: [${0}]",
       "}>()"
     ],
