@@ -2,6 +2,23 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## v0.5.1
+
+[compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.5.0...v0.5.1)
+
+### 🩹 Fixes
+
+- Missing `const` in `defineEmits` ([#56](https://github.com/ExEr7um/vue3-vscode-snippets/pull/56))
+- Missing `definePageMeta` snippet ([#57](https://github.com/ExEr7um/vue3-vscode-snippets/pull/57))
+
+### 📖 Documentation
+
+- Add badges of technologies to `README` ([#52](https://github.com/ExEr7um/vue3-vscode-snippets/pull/52))
+
+### ❤️ Contributors
+
+- Vasily Kuzin ([@ExEr7um](http://github.com/ExEr7um))
+
 ## v0.5.0
 
 [compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.4.1...v0.5.0)
