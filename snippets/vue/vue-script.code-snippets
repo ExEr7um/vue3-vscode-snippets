@@ -4,6 +4,11 @@
     "body": ["const ${1:name} = ref(${2:initialValue})"],
     "description": "Vue Ref"
   },
+  "Vue Ref typed": {
+    "prefix": "vref-typed",
+    "body": ["const ${1:name} = ref<${2:type}>(${3:initialValue})"],
+    "description": "Vue Ref with generic type argument"
+  },
   "Vue Reactive": {
     "prefix": "vreactive",
     "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "})"],
