@@ -78,7 +78,7 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vonunmounted`             | onUnmounted hook            |
 | `vonbeforeunmount`         | onBeforeUnmount hook        |
 | `vdefineprops`             | Define props                |
-| `vdefinepropswithdefaults` | Define props with defaults  |
+| `vdefineprops-withdefaults` | Define props with defaults  |
 | `vdefineemits`             | Define emits                |
 | `vsingleemit`              | Single emit for defineEmits |
 | `vdefineslots`             | Define slots                |

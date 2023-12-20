@@ -108,7 +108,7 @@
     "description": "Vue defineProps"
   },
   "Vue Define Props with defaults": {
-    "prefix": "vdefinepropswithdefaults",
+    "prefix": "vdefineprops-withdefaults",
     "body": [
       "withDefaults(defineProps<{",
       "\t${1:name}: ${2:type}",
