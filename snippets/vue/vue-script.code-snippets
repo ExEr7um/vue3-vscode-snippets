@@ -107,6 +107,17 @@
     ],
     "description": "Vue defineProps"
   },
+  "Vue Define Props with defaults": {
+    "prefix": "vdefineprops-withdefaults",
+    "body": [
+      "withDefaults(defineProps<{",
+      "\t${1:name}: ${2:type}",
+      "}>(), {",
+      "\t${1:name}: ${3:default}",
+      "})"
+    ],
+    "description": "Vue withDefaults(defineProps)"
+  },
   "Vue Define Emits": {
     "prefix": "vdefineemits",
     "body": [

@@ -63,27 +63,28 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ### Script
 
-| Snippet            | Purpose                     |
-| ------------------ | --------------------------- |
-| `vref`             | Vue `ref`                   |
-| `vreactive`        | Vue `reactive`              |
-| `vcomputed`        | Vue `computed`              |
-| `vwatch`           | Watcher                     |
-| `vwatcheffect`     | Watch Effect                |
-| `vonmounted`       | onMounted hook              |
-| `vonbeforemount`   | onBeforeMount hook          |
-| `vonbeforeupdate`  | onBeforeUpdate hook         |
-| `vonupdated`       | onUpdated hook              |
-| `vonerrorcaptured` | onErrorCaptured hook        |
-| `vonunmounted`     | onUnmounted hook            |
-| `vonbeforeunmount` | onBeforeUnmount hook        |
-| `vdefineprops`     | Define props                |
-| `vdefineemits`     | Define emits                |
-| `vsingleemit`      | Single emit for defineEmits |
-| `vdefineslots`     | Define slots                |
-| `vsingleslot`      | Single slot for defineSlots |
-| `vdefineoptions`   | Define Options              |
-| `vdefinemodel`     | Define Model                |
+| Snippet                    | Purpose                     |
+| -------------------------- | --------------------------- |
+| `vref`                     | Vue `ref`                   |
+| `vreactive`                | Vue `reactive`              |
+| `vcomputed`                | Vue `computed`              |
+| `vwatch`                   | Watcher                     |
+| `vwatcheffect`             | Watch Effect                |
+| `vonmounted`               | onMounted hook              |
+| `vonbeforemount`           | onBeforeMount hook          |
+| `vonbeforeupdate`          | onBeforeUpdate hook         |
+| `vonupdated`               | onUpdated hook              |
+| `vonerrorcaptured`         | onErrorCaptured hook        |
+| `vonunmounted`             | onUnmounted hook            |
+| `vonbeforeunmount`         | onBeforeUnmount hook        |
+| `vdefineprops`             | Define props                |
+| `vdefineprops-withdefaults` | Define props with defaults  |
+| `vdefineemits`             | Define emits                |
+| `vsingleemit`              | Single emit for defineEmits |
+| `vdefineslots`             | Define slots                |
+| `vsingleslot`              | Single slot for defineSlots |
+| `vdefineoptions`           | Define Options              |
+| `vdefinemodel`             | Define Model                |
 
 ### CSS
 
