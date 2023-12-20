@@ -66,6 +66,7 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | Snippet                    | Purpose                     |
 | -------------------------- | --------------------------- |
 | `vref`                     | Vue `ref`                   |
+| `vref-typed`               | Vue `ref` with generic type argument |
 | `vreactive`                | Vue `reactive`              |
 | `vcomputed`                | Vue `computed`              |
 | `vwatch`                   | Watcher                     |
