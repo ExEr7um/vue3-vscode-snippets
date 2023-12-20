@@ -2,6 +2,28 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## v0.6.0
+
+[compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.5.1...v0.6.0)
+
+### 🚀 Enhancements
+
+- Add `withDefaults` snippet for `defineProps` ([#58](https://github.com/ExEr7um/vue3-vscode-snippets/pull/58))
+- Add `ref` with generic type argument ([#59](https://github.com/ExEr7um/vue3-vscode-snippets/pull/59))
+
+### 📖 Documentation
+
+- Format tables in `README` ([#60](https://github.com/ExEr7um/vue3-vscode-snippets/pull/60))
+
+### 🏡 Chore
+
+- Update contributors ([#61](https://github.com/ExEr7um/vue3-vscode-snippets/pull/61))
+
+### ❤️ Contributors
+
+- Vasily Kuzin ([@ExEr7um](http://github.com/ExEr7um))
+- Fabian
+
 ## v0.5.1
 
 [compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.5.0...v0.5.1)
