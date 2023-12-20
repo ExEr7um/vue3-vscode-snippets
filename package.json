@@ -24,6 +24,11 @@
       "name": "Daniel Kelly",
       "email": "me@danielkelly.io",
       "url": "https://github.com/danielkellyio"
+    },
+    {
+      "name": "Fabian Kurz",
+      "email": "info@fabian-kurz.de",
+      "url": "https://github.com/pixel-fabian"
     }
   ],
   "engines": {
