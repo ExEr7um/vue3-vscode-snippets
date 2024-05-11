@@ -1,10 +1,24 @@
 {
   "name": "vue-3-vscode-snippets",
   "displayName": "Vue 3 VS Code Snippets",
-  "description": "Vue 3 snippets for VS Code",
-  "icon": "images/vue-logo.png",
   "version": "0.6.0",
-  "publisher": "exer7um",
+  "description": "Vue 3 snippets for VS Code",
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "Vue",
+    "Vue 3",
+    "Nuxt",
+    "Nuxt 3",
+    "Pinia",
+    "Vue Snippets",
+    "Vue 3 snippets",
+    "Nuxt snippets",
+    "Nuxt 3 snippets",
+    "Pinia snippets",
+    "Composition API"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/ExEr7um/vue3-vscode-snippets.git"
@@ -31,25 +45,11 @@
       "url": "https://github.com/pixel-fabian"
     }
   ],
-  "engines": {
-    "vscode": "^1.69.0"
+  "publisher": "exer7um",
+  "scripts": {
+    "prettier": "prettier --check --ignore-unknown --no-error-on-unmatched-pattern *",
+    "prettier:write": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern *"
   },
-  "keywords": [
-    "Vue",
-    "Vue 3",
-    "Nuxt",
-    "Nuxt 3",
-    "Pinia",
-    "Vue Snippets",
-    "Vue 3 snippets",
-    "Nuxt snippets",
-    "Nuxt 3 snippets",
-    "Pinia snippets",
-    "Composition API"
-  ],
-  "categories": [
-    "Snippets"
-  ],
   "contributes": {
     "snippets": [
       {
@@ -149,5 +149,13 @@
         "path": "./snippets/vitest/nuxt.code-snippets"
       }
     ]
-  }
+  },
+  "prettier": "@exer7um/prettier-config",
+  "devDependencies": {
+    "@exer7um/prettier-config": "0.4.2"
+  },
+  "engines": {
+    "vscode": "^1.69.0"
+  },
+  "icon": "images/vue-logo.png"
 }
