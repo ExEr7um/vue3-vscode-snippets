@@ -1,2 +1,12 @@
 *.code-snippets
+bun.lockb
+bunfig.toml
 CHANGELOG.md
+LICENSE
+
+# From .gitignore
+.env
+*.log*
+.eslintcache
+*.DS_Store
+node_modules

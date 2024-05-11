@@ -46,7 +46,10 @@
     }
   ],
   "publisher": "exer7um",
+  "type": "module",
   "scripts": {
+    "eslint": "eslint . --max-warnings=0",
+    "eslint:fix": "eslint . --max-warnings=0 --fix",
     "prettier": "prettier --check --ignore-unknown --no-error-on-unmatched-pattern *",
     "prettier:write": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern *"
   },
@@ -152,6 +155,7 @@
   },
   "prettier": "@exer7um/prettier-config",
   "devDependencies": {
+    "@exer7um/eslint-config": "1.1.1",
     "@exer7um/prettier-config": "0.4.2"
   },
   "engines": {
