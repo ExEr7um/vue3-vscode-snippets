@@ -1,4 +1,11 @@
 {
+  "scopeMap": {
+    "histoire": "Histoire",
+    "nuxt": "Nuxt",
+    "pinia": "Pinia",
+    "vitest": "Vitest",
+    "vue": "Vue"
+  },
   "templates": {
     "commitMessage": "release: `v{{newVersion}}`"
   }
