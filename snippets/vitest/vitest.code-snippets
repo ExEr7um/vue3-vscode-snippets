@@ -67,7 +67,7 @@
   "Vitest It - Todo": {
     "prefix": "viit-todo",
     "body": [
-      "it.todo('${1:name}')"
+      "it.todo('${1:name}', () => {})"
     ],
     "description": "Vitest It Todo"
   },
@@ -110,7 +110,7 @@
   "Vitest Test - Todo": {
     "prefix": "vitest-todo",
     "body": [
-      "test.todo('${1:name}')"
+      "test.todo('${1:name}', () => {})"
     ],
     "description": "Vitest Test Todo"
   },
