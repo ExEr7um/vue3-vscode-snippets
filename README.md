@@ -164,24 +164,27 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ### Vitest
 
-| Snippet                   | Purpose                        |
-| ------------------------- | ------------------------------ |
-| `viconfig`                | Vitest config for Vue 3        |
-| `viconfig-nuxt`           | Vitest config for Nuxt 3       |
-| `videscribe`              | Vitest Describe                |
-| `videscribe-concurrent`   | Vitest Describe - Concurrent   |
-| `viit`                    | Vitest It                      |
-| `viit-concurrent`         | Vitest It - Concurrent         |
-| `viit-async`              | Vitest It - Async              |
-| `viit-async-concurrent`   | Vitest It - Async Concurrent   |
-| `viit-todo`               | Vitest It - Todo               |
-| `vitest`                  | Vitest Test                    |
-| `vitest-concurrent`       | Vitest Test - Concurrent       |
-| `vitest-async`            | Vitest Test - Async            |
-| `vitest-async-concurrent` | Vitest Test - Async Concurrent |
-| `vitest-todo`             | Vitest Test - Todo             |
-| `visnapshot`              | Vitest Match Snapshot          |
-| `visnapshot-inline`       | Vitest Match Snapshot - Inline |
+| Snippet                   | Purpose                                 |
+| ------------------------- | --------------------------------------- |
+| `vibase`                  | Base for Vitest file                    |
+| `vibase-vue`              | Base for Vitest file for Vue component  |
+| `vibase-nuxt`             | Base for Vitest file for Nuxt component |
+| `viconfig`                | Vitest config for Vue 3                 |
+| `viconfig-nuxt`           | Vitest config for Nuxt 3                |
+| `videscribe`              | Vitest Describe                         |
+| `videscribe-concurrent`   | Vitest Describe - Concurrent            |
+| `viit`                    | Vitest It                               |
+| `viit-concurrent`         | Vitest It - Concurrent                  |
+| `viit-async`              | Vitest It - Async                       |
+| `viit-async-concurrent`   | Vitest It - Async Concurrent            |
+| `viit-todo`               | Vitest It - Todo                        |
+| `vitest`                  | Vitest Test                             |
+| `vitest-concurrent`       | Vitest Test - Concurrent                |
+| `vitest-async`            | Vitest Test - Async                     |
+| `vitest-async-concurrent` | Vitest Test - Async Concurrent          |
+| `vitest-todo`             | Vitest Test - Todo                      |
+| `visnapshot`              | Vitest Match Snapshot                   |
+| `visnapshot-inline`       | Vitest Match Snapshot - Inline          |
 
 ### Vitest Vue
 

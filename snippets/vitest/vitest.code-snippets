@@ -138,6 +138,6 @@
       "\t${0}",
       "})"
     ],
-    "description": "Vitest Match Inline Snapshot"
+    "description": "Base for Vitest file"
   },
 }
