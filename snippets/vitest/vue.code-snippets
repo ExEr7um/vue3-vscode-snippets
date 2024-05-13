@@ -18,5 +18,27 @@
       "}"
     ],
     "description": "Vue Test Utils Component"
+  },
+  "Vitest Vue Base": {
+    "prefix": "vibase-vue",
+    "body": [
+      "import type { VueWrapper } from '@vue/test-utils'",
+      "import { mount } from '@vue/test-utils'",
+      "import { afterEach, beforeEach, describe, expect } from 'vitest'",
+      "import ${TM_FILENAME/\\..*//} from '~/components/${TM_FILENAME/\\..*//}.vue'",
+      "",
+      "describe('${TM_FILENAME/\\..*//}', () => {",
+      "\tlet wrapper: VueWrapper",
+      "\t",
+      "\tbeforeEach(() => {",
+      "\t\twrapper = mount(${TM_FILENAME/\\..*//})",
+      "\t})",
+      "\t",
+      "\tafterEach(() => {",
+      "\t\twrapper.unmount()",
+      "\t})",
+      "})"
+    ],
+    "description": "Base for Vitest file for Vue component"
   }
 }
