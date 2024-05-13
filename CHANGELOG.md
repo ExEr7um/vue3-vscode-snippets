@@ -2,6 +2,38 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## v0.7.0
+
+[compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.6.0...v0.7.0)
+
+### 🚀 Enhancements
+
+- **Vitest:** Add function to Vitest `todo` snippets ([#66](https://github.com/ExEr7um/vue3-vscode-snippets/pull/66))
+- **Vitest:** Add base Vitest snippets ([#67](https://github.com/ExEr7um/vue3-vscode-snippets/pull/67))
+
+### 🩹 Fixes
+
+- **Vitest:** ⚠️  Remove config snippets ([dd5410c](https://github.com/ExEr7um/vue3-vscode-snippets/commit/dd5410c))
+
+### 🏡 Chore
+
+- Setup Prettier ([71525f2](https://github.com/ExEr7um/vue3-vscode-snippets/commit/71525f2))
+- Setup ESLint ([4ac649a](https://github.com/ExEr7um/vue3-vscode-snippets/commit/4ac649a))
+- Remove unused `release.yml` file ([33fe21f](https://github.com/ExEr7um/vue3-vscode-snippets/commit/33fe21f))
+- Migrate to `ExEr7um/workflows` for CI ([#65](https://github.com/ExEr7um/vue3-vscode-snippets/pull/65))
+- Add `scopeMap` to Changelogen config ([4587bff](https://github.com/ExEr7um/vue3-vscode-snippets/commit/4587bff))
+- Setup pre-commit hooks ([b8d5d39](https://github.com/ExEr7um/vue3-vscode-snippets/commit/b8d5d39))
+- Setup CI ([#68](https://github.com/ExEr7um/vue3-vscode-snippets/pull/68))
+- Setup semantic PR title check ([#69](https://github.com/ExEr7um/vue3-vscode-snippets/pull/69))
+
+#### ⚠️ Breaking Changes
+
+- **Vitest:** ⚠️  Remove config snippets ([dd5410c](https://github.com/ExEr7um/vue3-vscode-snippets/commit/dd5410c))
+
+### ❤️ Contributors
+
+- Vasily Kuzin ([@ExEr7um](http://github.com/ExEr7um))
+
 ## v0.6.0
 
 [compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.5.1...v0.6.0)

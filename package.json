@@ -1,7 +1,7 @@
 {
   "name": "vue-3-vscode-snippets",
   "displayName": "Vue 3 VS Code Snippets",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Vue 3 snippets for VS Code",
   "categories": [
     "Snippets"
