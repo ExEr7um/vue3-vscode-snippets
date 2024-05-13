@@ -1,0 +1,14 @@
+name: Семантический заголовок PR
+
+on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - edited
+      - synchronize
+
+jobs:
+  semantic-pr-title:
+    uses: ExEr7um/workflows/.github/workflows/semantic-pr-title.yml@v0.7.0
