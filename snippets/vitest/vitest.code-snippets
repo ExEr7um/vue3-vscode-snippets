@@ -128,4 +128,16 @@
     ],
     "description": "Vitest Match Inline Snapshot"
   },
+  "Vitest Base": {
+    "prefix": "vibase",
+    "body": [
+      "// @vitest-environment node",
+      "import { describe, expect } from 'vitest'",
+      "",
+      "describe('${TM_FILENAME/\\..*//}', () => {",
+      "\t${0}",
+      "})"
+    ],
+    "description": "Base for Vitest file"
+  },
 }
