@@ -1,0 +1,10 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    uses: ExEr7um/workflows/.github/workflows/frontend-lint.yml@v0.7.0
