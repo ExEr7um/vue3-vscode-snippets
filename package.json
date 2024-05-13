@@ -50,6 +50,7 @@
   "scripts": {
     "eslint": "eslint . --max-warnings=0",
     "eslint:fix": "eslint . --max-warnings=0 --fix",
+    "postinstall": "husky",
     "prettier": "prettier --check --ignore-unknown --no-error-on-unmatched-pattern *",
     "prettier:write": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern *"
   },
@@ -153,10 +154,16 @@
       }
     ]
   },
+  "lint-staged": {
+    "*.{vue,js,jsx,cjs,mjs,ts,json}": "eslint --cache --fix",
+    "*": "prettier --write --ignore-unknown"
+  },
   "prettier": "@exer7um/prettier-config",
   "devDependencies": {
     "@exer7um/eslint-config": "1.1.1",
-    "@exer7um/prettier-config": "0.4.2"
+    "@exer7um/prettier-config": "0.4.2",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.2"
   },
   "engines": {
     "vscode": "^1.69.0"
