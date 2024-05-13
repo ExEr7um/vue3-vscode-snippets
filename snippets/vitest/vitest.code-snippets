@@ -1,15 +1,4 @@
 {
-  "Vitest Config - Vue 3": {
-    "prefix": "viconfig",
-    "body": [
-      "import { defineConfig } from 'vitest/config'",
-      "",
-      "export default defineConfig({",
-      "\t${0}",
-      "})"
-    ],
-    "description": "Vitest config for Vue 3"
-  },
   "Vitest Describe": {
     "prefix": "videscribe",
     "body": [

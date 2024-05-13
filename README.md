@@ -169,8 +169,6 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 | `vibase`                  | Base for Vitest file                    |
 | `vibase-vue`              | Base for Vitest file for Vue component  |
 | `vibase-nuxt`             | Base for Vitest file for Nuxt component |
-| `viconfig`                | Vitest config for Vue 3                 |
-| `viconfig-nuxt`           | Vitest config for Nuxt 3                |
 | `videscribe`              | Vitest Describe                         |
 | `videscribe-concurrent`   | Vitest Describe - Concurrent            |
 | `viit`                    | Vitest It                               |

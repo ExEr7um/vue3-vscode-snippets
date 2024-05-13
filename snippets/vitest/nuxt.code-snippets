@@ -1,17 +1,4 @@
 {
-  "Vitest Config - Nuxt 3": {
-    "prefix": "viconfig-nuxt",
-    "body": [
-      "import { defineVitestConfig } from 'nuxt-vitest/config'",
-      "",
-      "export default defineVitestConfig({",
-      "\ttest: {",
-      "\t\tenvironment: 'nuxt'",
-      "\t}",
-      "})"
-    ],
-    "description": "Vitest config for Nuxt 3"
-  },
   "Vitest Nuxt Mount Suspended": {
     "prefix": "vimount-suspended",
     "body": [
