@@ -44,22 +44,23 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ### Template
 
-| Snippet        | Purpose                           |
-| -------------- | --------------------------------- |
-| `vfor`         | `v-for` statement                 |
-| `vmodel`       | `v-model` directive               |
-| `von`          | `v-on` click handler              |
-| `vel-props`    | Component element with `props`    |
-| `vslot-named`  | Named slot                        |
-| `vimg`         | Image source binding              |
-| `vstyle`       | Inline style binding              |
-| `vstyle-obj`   | Inline style binding with objects |
-| `vclass`       | Class binding                     |
-| `vclass-ter`   | Ternary class binding             |
-| `vtrans`       | Transition component              |
-| `vtrans-group` | Transition group component        |
-| `vrlink`       | Router link                       |
-| `vrlink-param` | Router link with param            |
+| Snippet        | Purpose                                |
+| -------------- | -------------------------------------- |
+| `vfor`         | `v-for` statement                      |
+| `vmodel`       | `v-model` directive                    |
+| `von`          | `v-on` click handler                   |
+| `vel-props`    | Component element with `props`         |
+| `vslot-named`  | Named slot                             |
+| `vimg`         | Image source binding                   |
+| `vstyle`       | Inline style binding                   |
+| `vstyle-obj`   | Inline style binding with objects      |
+| `vclass`       | Class binding                          |
+| `vclass-ter`   | Ternary class binding                  |
+| `vtrans`       | Transition component                   |
+| `vtrans-group` | Transition group component             |
+| `vrlink`       | Router link                            |
+| `vrlink-param` | Router link with param                 |
+| `vsuspense`    | Suspense wrapper with fallback content |
 
 ### Script
 

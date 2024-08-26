@@ -89,4 +89,15 @@
     ],
     "description": "vue router link with param"
   },
+  "Vue Suspense Wrapper": {
+    "prefix": "vsuspense",
+    "body": [
+      "<Suspense>",
+      "  <template #fallback>",
+      "    ${1:Loading...}",
+      "  </template>",
+      "</Suspense>"
+    ],
+    "description": "Vue 3 Suspense component with fallback template"
+  }
 }
