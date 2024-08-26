@@ -160,10 +160,11 @@
   },
   "prettier": "@exer7um/prettier-config",
   "devDependencies": {
-    "@exer7um/eslint-config": "1.1.1",
-    "@exer7um/prettier-config": "0.4.2",
-    "husky": "9.0.11",
-    "lint-staged": "15.2.2"
+    "@exer7um/eslint-config": "1.2.1",
+    "@exer7um/prettier-config": "0.4.5",
+    "husky": "9.1.5",
+    "lint-staged": "15.2.9",
+    "typescript": "5.5.4"
   },
   "engines": {
     "vscode": "^1.69.0"
