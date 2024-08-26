@@ -2,6 +2,23 @@
 
 All notable changes to the "vue3-vscode-snippets" extension will be documented in this file.
 
+## v0.8.0
+
+[compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.7.0...v0.8.0)
+
+### 🚀 Enhancements
+
+- **Vue:** Add `Suspense` vue-html snippet ([#71](https://github.com/ExEr7um/vue3-vscode-snippets/pull/71))
+
+### 🏡 Chore
+
+- Update dependencies ([cf644d6](https://github.com/ExEr7um/vue3-vscode-snippets/commit/cf644d6))
+
+### ❤️ Contributors
+
+- Vasily Kuzin ([@ExEr7um](http://github.com/ExEr7um))
+- Jan Hromádka <cumlikator1@email.cz>
+
 ## v0.7.0
 
 [compare changes](https://github.com/ExEr7um/vue3-vscode-snippets/compare/v0.6.0...v0.7.0)
