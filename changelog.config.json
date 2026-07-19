@@ -6,7 +6,5 @@
     "vitest": "Vitest",
     "vue": "Vue"
   },
-  "templates": {
-    "commitMessage": "release: `v{{newVersion}}`"
-  }
+  "templates": { "commitMessage": "release: `v{{newVersion}}`" }
 }
