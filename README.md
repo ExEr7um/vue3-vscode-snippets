@@ -28,19 +28,43 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 - You can do it by finding `Vue 3 VSCode Snippets` by `exer7um` in VS Code marketplace and clicking install.
 - Or you can follow [that link](https://marketplace.visualstudio.com/items?itemName=exer7um.vue-3-vscode-snippets) and click install.
 
+## Configuration
+
+The `vbase` snippet can be fully configured in your `settings.json`, so you can make it produce exactly the base file you want without reaching for the other `vbase-*` snippets. Without any configuration it produces a Vue SFC with `<script setup lang="ts">`, a `<template>` with a `div` root tag and a scoped `SCSS` `<style>` block.
+
+| Setting                             | Default                           | Description                                                                                                                      |
+| ----------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| `vueSnippets.vbase.scriptLang`      | `"ts"`                            | Language of the `<script>` block: `ts` or `js` (`js` omits the `lang` attribute)                                                 |
+| `vueSnippets.vbase.scriptSetup`     | `true`                            | Use `<script setup>`                                                                                                             |
+| `vueSnippets.vbase.styleLang`       | `"scss"`                          | Language of the `<style>` block: `scss`, `sass`, `less`, `postcss`, `css`, `stylus` or `none` (`none` omits the `<style>` block) |
+| `vueSnippets.vbase.styleScoped`     | `true`                            | Add the `scoped` attribute to the `<style>` block                                                                                |
+| `vueSnippets.vbase.templateRootTag` | `"div"`                           | Root tag wrapping the cursor inside `<template>` (empty string omits the wrapper)                                                |
+| `vueSnippets.vbase.blockOrder`      | `["script", "template", "style"]` | Order of the blocks; blocks not listed are omitted                                                                               |
+
+Example — `<script setup>` without TypeScript, template first, plain unscoped CSS:
+
+```json
+{
+  "vueSnippets.vbase.scriptLang": "js",
+  "vueSnippets.vbase.styleLang": "css",
+  "vueSnippets.vbase.styleScoped": false,
+  "vueSnippets.vbase.blockOrder": ["template", "script", "style"]
+}
+```
+
 ## Snippets
 
 ### `.vue` files
 
-| Snippet      | Purpose                                                               |
-| ------------ | --------------------------------------------------------------------- |
-| `vbase`      | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SCSS`    |
-| `vbase-sass` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SASS`    |
-| `vbase-less` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `LESS`    |
-| `vbase-pcss` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `PostCSS` |
-| `vbase-css`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `CSS`     |
-| `vbase-styl` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`  |
-| `vbase-ns`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style  |
+| Snippet      | Purpose                                                                                                    |
+| ------------ | ---------------------------------------------------------------------------------------------------------- |
+| `vbase`      | Base for Vue 3 File. [Configurable](#configuration), defaults to `<script setup>`, `TypeScript` and `SCSS` |
+| `vbase-sass` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SASS`                                         |
+| `vbase-less` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `LESS`                                         |
+| `vbase-pcss` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `PostCSS`                                      |
+| `vbase-css`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `CSS`                                          |
+| `vbase-styl` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`                                       |
+| `vbase-ns`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style                                       |
 
 ### Template
 

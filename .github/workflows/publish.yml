@@ -7,6 +7,6 @@ on:
 
 jobs:
   publish:
-    uses: ExEr7um/workflows/.github/workflows/publish-vscode.yml@v0.7.0
+    uses: ExEr7um/workflows/.github/workflows/publish-vscode.yml@v0.9.1
     secrets:
       VSCE_PAT: ${{ secrets.VSCE_PAT }}

@@ -11,4 +11,4 @@ on:
 
 jobs:
   semantic-pr-title:
-    uses: ExEr7um/workflows/.github/workflows/semantic-pr-title.yml@v0.7.0
+    uses: ExEr7um/workflows/.github/workflows/semantic-pr-title.yml@v0.9.1
