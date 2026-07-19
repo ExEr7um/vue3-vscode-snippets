@@ -162,12 +162,13 @@
   "devDependencies": {
     "@exer7um/eslint-config": "2.4.0",
     "@exer7um/prettier-config": "0.8.7",
+    "@types/vscode": "1.100.0",
     "husky": "9.1.7",
     "nano-staged": "1.0.2",
     "typescript": "6.0.3"
   },
   "engines": {
-    "vscode": "^1.69.0"
+    "vscode": "^1.100.0"
   },
   "icon": "images/vue-logo.png"
 }
