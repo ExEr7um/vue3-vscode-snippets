@@ -125,10 +125,10 @@ Example — `<script setup>` without TypeScript, template first, plain unscoped 
 
 ### Pinia
 
-| Snippet              | Purpose                                                      |
-| -------------------- | ------------------------------------------------------------ |
-| `pstore`             | Base code needed for a Pinia store file                      |
-| `pstore-composition` | Base code needed for a Pinia store file with Composition API |
+| Snippet          | Purpose                                                  |
+| ---------------- | -------------------------------------------------------- |
+| `pstore`         | Base code needed for a Pinia store file                  |
+| `pstore-options` | Base code needed for a Pinia store file with Options API |
 
 ### Vue Router
 
