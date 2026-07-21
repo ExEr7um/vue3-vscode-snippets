@@ -8,6 +8,7 @@ description: Commit and Pull Request formatting rules for this repository. ALWAY
 ## Commit message
 
 - Follow **Conventional Commits**: `feat`, `fix`, `chore`, `refactor`, `test`, `docs`, etc. Add a scope when changing a specific module/area (e.g. ``feat(vue): Add `Suspense` vue-html snippet``).
+- Mark a breaking change with a `!` after the type/scope, before the colon (e.g. ``chore!: Update minimum VS Code version to `1.100` ``).
 - Use English.
 - Start the description after the colon with a capitalized verb in the imperative mood: `Add`, `Update`, `Setup`, `Remove`, `Enable`, `Disable`, `Create`, `Rework`, `Improve`, `Use`, `Adapt`.
 - Don't use the past tense or the third person: not `Added`, not `Fixed`, not `Updates`, not `Removed`.
