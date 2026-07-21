@@ -52,7 +52,8 @@
     "eslint:fix": "eslint --max-warnings=0 --fix",
     "postinstall": "husky",
     "prettier": "prettier --check --ignore-unknown --no-error-on-unmatched-pattern *",
-    "prettier:write": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern *"
+    "prettier:write": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern *",
+    "publish": "vsce publish"
   },
   "contributes": {
     "snippets": [
@@ -163,6 +164,7 @@
     "@exer7um/eslint-config": "2.4.0",
     "@exer7um/prettier-config": "0.8.7",
     "@types/vscode": "1.100.0",
+    "@vscode/vsce": "3.9.2",
     "husky": "9.1.7",
     "nano-staged": "1.0.2",
     "typescript": "6.0.3"
