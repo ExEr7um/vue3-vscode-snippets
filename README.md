@@ -30,6 +30,8 @@ These snippets were made to speed up Vue 3 development. With it you can write bo
 
 ## Configuration
 
+### `vbase`
+
 The `vbase` snippet can be fully configured in your `settings.json`, so you can make it produce exactly the base file you want without reaching for the other `vbase-*` snippets. Without any configuration it produces a Vue SFC with `<script setup lang="ts">`, a `<template>` with a `div` root tag and a scoped `SCSS` `<style>` block.
 
 | Setting                             | Default                           | Description                                                                                                                      |
@@ -52,19 +54,34 @@ Example — `<script setup>` without TypeScript, template first, plain unscoped 
 }
 ```
 
+### `pstore`
+
+The `pstore` snippet is configurable too. Without any configuration it produces a Composition API Pinia store with an `acceptHMRUpdate` block.
+
+| Setting                  | Default         | Description                                                                                 |
+| ------------------------ | --------------- | ------------------------------------------------------------------------------------------- |
+| `vueSnippets.pstore.api` | `"composition"` | API style: `composition` (setup function) or `options` (`state`/`getters`/`actions` object) |
+| `vueSnippets.pstore.hmr` | `true`          | Add the `acceptHMRUpdate` block                                                             |
+
+Example — an Options API store without HMR:
+
+```json
+{ "vueSnippets.pstore.api": "options", "vueSnippets.pstore.hmr": false }
+```
+
 ## Snippets
 
 ### `.vue` files
 
-| Snippet      | Purpose                                                                                                    |
-| ------------ | ---------------------------------------------------------------------------------------------------------- |
-| `vbase`      | Base for Vue 3 File. [Configurable](#configuration), defaults to `<script setup>`, `TypeScript` and `SCSS` |
-| `vbase-sass` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SASS`                                         |
-| `vbase-less` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `LESS`                                         |
-| `vbase-pcss` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `PostCSS`                                      |
-| `vbase-css`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `CSS`                                          |
-| `vbase-styl` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`                                       |
-| `vbase-ns`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style                                       |
+| Snippet      | Purpose                                                                                            |
+| ------------ | -------------------------------------------------------------------------------------------------- |
+| `vbase`      | Base for Vue 3 File. [Configurable](#vbase), defaults to `<script setup>`, `TypeScript` and `SCSS` |
+| `vbase-sass` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SASS`                                 |
+| `vbase-less` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `LESS`                                 |
+| `vbase-pcss` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `PostCSS`                              |
+| `vbase-css`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `CSS`                                  |
+| `vbase-styl` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`                               |
+| `vbase-ns`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style                               |
 
 ### Template
 
@@ -125,10 +142,10 @@ Example — `<script setup>` without TypeScript, template first, plain unscoped 
 
 ### Pinia
 
-| Snippet          | Purpose                                                  |
-| ---------------- | -------------------------------------------------------- |
-| `pstore`         | Base code needed for a Pinia store file                  |
-| `pstore-options` | Base code needed for a Pinia store file with Options API |
+| Snippet          | Purpose                                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------------------ |
+| `pstore`         | Base code needed for a Pinia store file. [Configurable](#pstore), defaults to Composition API with HMR |
+| `pstore-options` | Base code needed for a Pinia store file with Options API                                               |
 
 ### Vue Router
 

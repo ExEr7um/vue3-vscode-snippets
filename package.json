@@ -63,6 +63,20 @@
     "configuration": {
       "title": "Vue 3 VS Code Snippets",
       "properties": {
+        "vueSnippets.pstore.api": {
+          "type": "string",
+          "enum": [
+            "composition",
+            "options"
+          ],
+          "default": "composition",
+          "markdownDescription": "API style of the `pstore` snippet: a setup function (`composition`) or a `state`/`getters`/`actions` object (`options`)."
+        },
+        "vueSnippets.pstore.hmr": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Add the `acceptHMRUpdate` block to the `pstore` snippet."
+        },
         "vueSnippets.vbase.scriptLang": {
           "type": "string",
           "enum": [
@@ -221,6 +235,8 @@
     ]
   },
   "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
     "onLanguage:vue"
   ],
   "nano-staged": {
