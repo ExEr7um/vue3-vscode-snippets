@@ -3,9 +3,10 @@ import type * as vscode from "vscode"
 import type { ConfigurableSnippet } from "./types"
 
 import { registerConfigurableSnippet } from "./register"
+import { pstore } from "./snippets/pstore"
 import { vbase } from "./snippets/vbase"
 
-const SNIPPETS: ConfigurableSnippet[] = [vbase]
+const SNIPPETS: ConfigurableSnippet[] = [pstore, vbase]
 
 /**
  * Registers every configurable snippet completion.

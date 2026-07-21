@@ -13,6 +13,13 @@ export interface ConfigurableSnippet {
   section: string
 }
 
+export type PiniaApi = "composition" | "options"
+
+export interface PstoreConfig {
+  api: PiniaApi
+  hmr: boolean
+}
+
 export type ScriptLang = "js" | "ts"
 
 export type StyleLang =

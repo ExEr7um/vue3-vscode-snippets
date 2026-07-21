@@ -8,7 +8,7 @@ describe("activate", () => {
     languages.registerCompletionItemProvider.mockClear()
   })
 
-  test("registers the vbase completion for vue files", () => {
+  test("registers every configurable snippet for its languages", () => {
     activate({ subscriptions: [] } as never)
 
     const languagesRegistered =
@@ -17,5 +17,7 @@ describe("activate", () => {
       )
 
     expect(languagesRegistered).toContain("vue")
+    expect(languagesRegistered).toContain("javascript")
+    expect(languagesRegistered).toContain("typescript")
   })
 })
