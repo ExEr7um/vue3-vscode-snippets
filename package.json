@@ -47,15 +47,80 @@
   ],
   "publisher": "exer7um",
   "type": "module",
+  "main": "./dist/index.mjs",
   "scripts": {
     "eslint": "eslint --max-warnings=0",
     "eslint:fix": "eslint --max-warnings=0 --fix",
     "postinstall": "husky",
     "prettier": "prettier --check --ignore-unknown --no-error-on-unmatched-pattern *",
     "prettier:write": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern *",
-    "publish": "vsce publish"
+    "publish": "vsce publish",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "vscode:prepublish": "tsdown"
   },
   "contributes": {
+    "configuration": {
+      "title": "Vue 3 VS Code Snippets",
+      "properties": {
+        "vueSnippets.vbase.scriptLang": {
+          "type": "string",
+          "enum": [
+            "js",
+            "ts"
+          ],
+          "default": "ts",
+          "markdownDescription": "Language of the `<script>` block in the `vbase` snippet. `js` omits the `lang` attribute."
+        },
+        "vueSnippets.vbase.scriptSetup": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Use `<script setup>` in the `vbase` snippet."
+        },
+        "vueSnippets.vbase.styleLang": {
+          "type": "string",
+          "enum": [
+            "css",
+            "less",
+            "none",
+            "postcss",
+            "sass",
+            "scss",
+            "stylus"
+          ],
+          "default": "scss",
+          "markdownDescription": "Language of the `<style>` block in the `vbase` snippet. `none` omits the `<style>` block entirely."
+        },
+        "vueSnippets.vbase.styleScoped": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Add the `scoped` attribute to the `<style>` block in the `vbase` snippet."
+        },
+        "vueSnippets.vbase.templateRootTag": {
+          "type": "string",
+          "default": "div",
+          "markdownDescription": "Root tag wrapping the cursor inside the `<template>` block in the `vbase` snippet. Empty string omits the wrapper."
+        },
+        "vueSnippets.vbase.blockOrder": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "script",
+              "template",
+              "style"
+            ]
+          },
+          "uniqueItems": true,
+          "default": [
+            "script",
+            "template",
+            "style"
+          ],
+          "markdownDescription": "Order of the blocks in the `vbase` snippet. Blocks not listed here are omitted."
+        }
+      }
+    },
     "snippets": [
       {
         "language": "vue",
@@ -155,6 +220,9 @@
       }
     ]
   },
+  "activationEvents": [
+    "onLanguage:vue"
+  ],
   "nano-staged": {
     "*.{vue,js,jsx,cjs,mjs,ts,json}": "eslint --cache --fix",
     "*": "prettier --write --ignore-unknown"
@@ -163,11 +231,14 @@
   "devDependencies": {
     "@exer7um/eslint-config": "2.4.0",
     "@exer7um/prettier-config": "0.8.7",
+    "@types/node": "26.1.1",
     "@types/vscode": "1.100.0",
     "@vscode/vsce": "3.9.2",
     "husky": "9.1.7",
     "nano-staged": "1.0.2",
-    "typescript": "6.0.3"
+    "tsdown": "0.22.11",
+    "typescript": "6.0.3",
+    "vitest": "4.1.10"
   },
   "engines": {
     "vscode": "^1.100.0"

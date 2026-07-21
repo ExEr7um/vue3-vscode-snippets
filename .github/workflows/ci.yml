@@ -7,4 +7,10 @@ on:
 
 jobs:
   lint:
-    uses: ExEr7um/workflows/.github/workflows/frontend-lint.yml@v0.7.0
+    uses: ExEr7um/workflows/.github/workflows/frontend-lint.yml@v0.9.1
+
+  typecheck:
+    uses: ExEr7um/workflows/.github/workflows/frontend-typecheck.yml@v0.9.1
+
+  test:
+    uses: ExEr7um/workflows/.github/workflows/frontend-test.yml@v0.9.1
