@@ -35,6 +35,7 @@ export interface VbaseConfig {
   blockOrder: Block[]
   scriptLang: ScriptLang
   scriptSetup: boolean
+  scriptVapor: boolean
   styleLang: StyleLang
   styleScoped: boolean
   templateRootTag: string

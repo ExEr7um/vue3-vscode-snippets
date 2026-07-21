@@ -91,6 +91,11 @@
           "default": true,
           "markdownDescription": "Use `<script setup>` in the `vbase` snippet."
         },
+        "vueSnippets.vbase.scriptVapor": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "Use `<script vapor>` in the `vbase` snippet. Vapor mode implies `setup`, so this shorthand is used regardless of `#vueSnippets.vbase.scriptSetup#`."
+        },
         "vueSnippets.vbase.styleLang": {
           "type": "string",
           "enum": [

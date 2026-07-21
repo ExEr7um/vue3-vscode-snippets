@@ -22,14 +22,21 @@ export const vbase: ConfigurableSnippet = {
 /**
  * Builds the `<script>` block of the `vbase` snippet.
  *
+ * Vapor mode implies `setup`, so `<script vapor>` is always emitted as the
+ * shorthand for `<script setup vapor>`.
+ *
  * @param config Resolved `vbase` configuration.
  * @returns The `<script>` block snippet text.
  */
 function buildScriptBlock(config: VbaseConfig): string {
-  const setup = config.scriptSetup ? " setup" : ""
   const lang = config.scriptLang === "ts" ? ' lang="ts"' : ""
 
-  return `<script${setup}${lang}>\n\n</script>`
+  let mode = ""
+
+  if (config.scriptVapor) mode = " vapor"
+  else if (config.scriptSetup) mode = " setup"
+
+  return `<script${mode}${lang}>\n\n</script>`
 }
 
 /**
@@ -107,6 +114,7 @@ function readVbaseConfig(): VbaseConfig {
     blockOrder,
     scriptLang: config.get<ScriptLang>("scriptLang", "ts"),
     scriptSetup: config.get<boolean>("scriptSetup", true),
+    scriptVapor: config.get<boolean>("scriptVapor", false),
     styleLang: config.get<StyleLang>("styleLang", "scss"),
     styleScoped: config.get<boolean>("styleScoped", true),
     templateRootTag: config.get<string>("templateRootTag", "div"),
