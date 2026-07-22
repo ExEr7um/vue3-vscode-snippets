@@ -109,4 +109,23 @@
     ],
     "description": "Base for Vue 3 File with <script setup>, TypeScript and no style",
   },
+  "Vue SFC <script vapor>, TS, SCSS": {
+    "prefix": "vbase-vapor",
+    "body": [
+      "<script vapor lang=\"ts\">",
+      "",
+      "</script>",
+      "",
+      "<template>",
+      "\t<div>",
+      "\t\t${0}",
+      "\t</div>",
+      "</template>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>",
+    ],
+    "description": "Base for Vue 3 File with <script vapor>, TypeScript and SCSS",
+  },
 }

@@ -38,6 +38,7 @@ The `vbase` snippet can be fully configured in your `settings.json`, so you can 
 | ----------------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | `vueSnippets.vbase.scriptLang`      | `"ts"`                            | Language of the `<script>` block: `ts` or `js` (`js` omits the `lang` attribute)                                                 |
 | `vueSnippets.vbase.scriptSetup`     | `true`                            | Use `<script setup>`                                                                                                             |
+| `vueSnippets.vbase.scriptVapor`     | `false`                           | Use `<script vapor>`, the shorthand for `<script setup vapor>` (takes precedence over `scriptSetup`)                             |
 | `vueSnippets.vbase.styleLang`       | `"scss"`                          | Language of the `<style>` block: `scss`, `sass`, `less`, `postcss`, `css`, `stylus` or `none` (`none` omits the `<style>` block) |
 | `vueSnippets.vbase.styleScoped`     | `true`                            | Add the `scoped` attribute to the `<style>` block                                                                                |
 | `vueSnippets.vbase.templateRootTag` | `"div"`                           | Root tag wrapping the cursor inside `<template>` (empty string omits the wrapper)                                                |
@@ -73,15 +74,16 @@ Example — an Options API store without HMR:
 
 ### `.vue` files
 
-| Snippet      | Purpose                                                                                            |
-| ------------ | -------------------------------------------------------------------------------------------------- |
-| `vbase`      | Base for Vue 3 File. [Configurable](#vbase), defaults to `<script setup>`, `TypeScript` and `SCSS` |
-| `vbase-sass` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SASS`                                 |
-| `vbase-less` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `LESS`                                 |
-| `vbase-pcss` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `PostCSS`                              |
-| `vbase-css`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `CSS`                                  |
-| `vbase-styl` | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`                               |
-| `vbase-ns`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style                               |
+| Snippet       | Purpose                                                                                            |
+| ------------- | -------------------------------------------------------------------------------------------------- |
+| `vbase`       | Base for Vue 3 File. [Configurable](#vbase), defaults to `<script setup>`, `TypeScript` and `SCSS` |
+| `vbase-sass`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `SASS`                                 |
+| `vbase-less`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `LESS`                                 |
+| `vbase-pcss`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `PostCSS`                              |
+| `vbase-css`   | Base for Vue 3 File with `<script setup>`, `TypeScript` and `CSS`                                  |
+| `vbase-styl`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`                               |
+| `vbase-ns`    | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style                               |
+| `vbase-vapor` | Base for Vue 3 File with `<script vapor>`, `TypeScript` and `SCSS`                                 |
 
 ### Template
 

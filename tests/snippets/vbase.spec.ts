@@ -45,6 +45,15 @@ describe("vbase snippet", () => {
     expect(vbase.buildBody()).toContain('<script lang="ts">')
   })
 
+  test.each([true, false])(
+    "uses the vapor shorthand when scriptVapor is enabled and scriptSetup is %s",
+    (scriptSetup) => {
+      setSettings({ scriptSetup, scriptVapor: true })
+
+      expect(vbase.buildBody()).toContain('<script vapor lang="ts">')
+    },
+  )
+
   test.each(["sass", "less", "postcss", "css", "stylus"] as const)(
     "uses %s as the style language",
     (lang) => {
@@ -135,6 +144,7 @@ describe("vbase snippet", () => {
       blockOrder: ["template", "script", "style"],
       scriptLang: "js",
       scriptSetup: true,
+      scriptVapor: true,
       styleLang: "css",
       styleScoped: false,
       templateRootTag: "",
@@ -146,7 +156,7 @@ describe("vbase snippet", () => {
         "\t${0}",
         "</template>",
         "",
-        "<script setup>",
+        "<script vapor>",
         "",
         "</script>",
         "",
