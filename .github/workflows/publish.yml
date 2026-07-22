@@ -1,4 +1,4 @@
-name: Publish to VSCode Marketplace
+name: Publish to Marketplaces
 
 on:
   workflow_run:
@@ -7,6 +7,7 @@ on:
 
 jobs:
   publish:
-    uses: ExEr7um/workflows/.github/workflows/publish-vscode.yml@v0.9.1
+    uses: ExEr7um/workflows/.github/workflows/publish-vscode.yml@v0.10.0
     secrets:
       VSCE_PAT: ${{ secrets.VSCE_PAT }}
+      OVSX_PAT: ${{ secrets.OVSX_PAT }}

@@ -55,6 +55,7 @@
     "prettier": "prettier --check --ignore-unknown --no-error-on-unmatched-pattern *",
     "prettier:write": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern *",
     "publish": "vsce publish",
+    "publish:ovsx": "ovsx publish",
     "test": "vitest run",
     "typecheck": "tsc --noEmit",
     "vscode:prepublish": "tsdown"
@@ -257,6 +258,7 @@
     "@vscode/vsce": "3.9.2",
     "husky": "9.1.7",
     "nano-staged": "1.0.2",
+    "ovsx": "1.0.2",
     "tsdown": "0.22.11",
     "typescript": "6.0.3",
     "vitest": "4.1.10"
