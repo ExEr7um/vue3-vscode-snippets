@@ -6,6 +6,21 @@ on:
       - main
 
 jobs:
+  generate:
+    name: Проверка генерации
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Настройка Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Установка зависимостей
+        run: bun install
+
+      - name: Проверка манифеста расширения
+        run: git diff --exit-code packages/vscode/package.json
+
   lint:
     uses: ExEr7um/workflows/.github/workflows/frontend-lint.yml@v0.10.0
 

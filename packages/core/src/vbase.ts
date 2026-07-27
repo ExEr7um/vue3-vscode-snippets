@@ -1,4 +1,4 @@
-import type { Block, VbaseConfig } from "./types"
+import type { Block, SnippetVariant, VbaseConfig } from "./types"
 
 /** Every block a `vbase` snippet can contain, in the default order. */
 export const BLOCKS: Block[] = ["script", "template", "style"]
@@ -13,6 +13,67 @@ export const VBASE_DEFAULTS: VbaseConfig = {
   styleScoped: true,
   templateRootTag: "div",
 }
+
+/**
+ * Ready-made `vbase` variants shipped alongside the configurable snippet.
+ *
+ * Every variant differs from {@link VBASE_DEFAULTS} along a single axis, so
+ * the completion list stays readable. The suffixes are part of the public API
+ * and must not be derived from the configuration.
+ */
+export const VBASE_VARIANTS: SnippetVariant<VbaseConfig>[] = [
+  {
+    config: { styleLang: "sass" },
+    description: "Base for Vue 3 File with <script setup>, TypeScript and SASS",
+    name: "Vue SFC <script setup>, TS, SASS",
+    suffix: "sass",
+  },
+  {
+    config: { styleLang: "less" },
+    description: "Base for Vue 3 File with <script setup>, TypeScript and LESS",
+    name: "Vue SFC <script setup>, TS, LESS",
+    suffix: "less",
+  },
+  {
+    config: { styleLang: "postcss" },
+    description:
+      "Base for Vue 3 File with <script setup>, TypeScript and PostCSS",
+    name: "Vue SFC <script setup>, TS, PostCSS",
+    suffix: "pcss",
+  },
+  {
+    config: { styleLang: "css" },
+    description: "Base for Vue 3 File with <script setup>, TypeScript and CSS",
+    name: "Vue SFC <script setup>, TS, CSS",
+    suffix: "css",
+  },
+  {
+    config: { styleLang: "stylus" },
+    description:
+      "Base for Vue 3 File with <script setup>, TypeScript and Stylus",
+    name: "Vue SFC <script setup>, TS, Stylus",
+    suffix: "styl",
+  },
+  {
+    config: { styleLang: "none" },
+    description:
+      "Base for Vue 3 File with <script setup>, TypeScript and no style",
+    name: "Vue SFC <script setup>, TS, No Style",
+    suffix: "ns",
+  },
+  {
+    config: { scriptVapor: true },
+    description: "Base for Vue 3 File with <script vapor>, TypeScript and SCSS",
+    name: "Vue SFC <script vapor>, TS, SCSS",
+    suffix: "vapor",
+  },
+  {
+    config: { scriptLang: "js" },
+    description: "Base for Vue 3 File with <script setup>, JavaScript and SCSS",
+    name: "Vue SFC <script setup>, JS, SCSS",
+    suffix: "js",
+  },
+]
 
 /**
  * Builds the full body of the `vbase` snippet.

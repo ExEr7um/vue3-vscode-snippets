@@ -1,10 +1,38 @@
-import type { PstoreConfig } from "./types"
+import type { PstoreConfig, SnippetVariant } from "./types"
 
 /** Snippet transform turning the file name into a capitalized store name. */
 export const STORE_NAME = "${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}"
 
 /** Default `pstore` configuration, mirrored by the extension settings. */
 export const PSTORE_DEFAULTS: PstoreConfig = { api: "composition", hmr: true }
+
+/**
+ * Ready-made `pstore` variants shipped alongside the configurable snippet.
+ *
+ * The suffixes are part of the public API and must not be derived from the
+ * configuration.
+ */
+export const PSTORE_VARIANTS: SnippetVariant<PstoreConfig>[] = [
+  {
+    config: { api: "options" },
+    description: "Base code needed for a Pinia store file with Options API",
+    name: "Pinia Store Base - Options API",
+    suffix: "options",
+  },
+  {
+    config: { hmr: false },
+    description: "Base code needed for a Pinia store file without HMR",
+    name: "Pinia Store Base - No HMR",
+    suffix: "nohmr",
+  },
+  {
+    config: { api: "options", hmr: false },
+    description:
+      "Base code needed for a Pinia store file with Options API and without HMR",
+    name: "Pinia Store Base - Options API, No HMR",
+    suffix: "options-nohmr",
+  },
+]
 
 /**
  * Builds the full body of the `pstore` snippet.
