@@ -1,2 +1,5 @@
 [install]
 exact = true
+# Bun defaults to the isolated linker for workspaces, which hides transitive
+# packages such as the Prettier plugins from the root `node_modules`.
+linker = "hoisted"
