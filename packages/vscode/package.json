@@ -137,99 +137,99 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets/generated/pstore.code-snippets"
+        "path": "./snippets/generated/pstore.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/generated/pstore.code-snippets"
+        "path": "./snippets/generated/pstore.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/generated/vbase.code-snippets"
+        "path": "./snippets/generated/vbase.json"
       },
       {
         "language": "vue",
-        "path": "./snippets/histoire/histoire.code-snippets"
+        "path": "./snippets/histoire/histoire.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/histoire/histoire-script.code-snippets"
+        "path": "./snippets/histoire/histoire-script.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/histoire/histoire-script.code-snippets"
+        "path": "./snippets/histoire/histoire-script.json"
       },
       {
         "language": "html",
-        "path": "./snippets/histoire/histoire-template.code-snippets"
+        "path": "./snippets/histoire/histoire-template.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/nuxt/nuxt-script.code-snippets"
+        "path": "./snippets/nuxt/nuxt-script.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/nuxt/nuxt-script.code-snippets"
+        "path": "./snippets/nuxt/nuxt-script.json"
       },
       {
         "language": "html",
-        "path": "./snippets/nuxt/nuxt-template.code-snippets"
+        "path": "./snippets/nuxt/nuxt-template.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vitest/nuxt.code-snippets"
+        "path": "./snippets/vitest/nuxt.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vitest/nuxt.code-snippets"
+        "path": "./snippets/vitest/nuxt.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vitest/vitest.code-snippets"
+        "path": "./snippets/vitest/vitest.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vitest/vitest.code-snippets"
+        "path": "./snippets/vitest/vitest.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vitest/vue.code-snippets"
+        "path": "./snippets/vitest/vue.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vitest/vue.code-snippets"
+        "path": "./snippets/vitest/vue.json"
       },
       {
         "language": "css",
-        "path": "./snippets/vue/vue-css.code-snippets"
+        "path": "./snippets/vue/vue-css.json"
       },
       {
         "language": "less",
-        "path": "./snippets/vue/vue-css.code-snippets"
+        "path": "./snippets/vue/vue-css.json"
       },
       {
         "language": "scss",
-        "path": "./snippets/vue/vue-css.code-snippets"
+        "path": "./snippets/vue/vue-css.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vue/vue-router.code-snippets"
+        "path": "./snippets/vue/vue-router.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vue/vue-router.code-snippets"
+        "path": "./snippets/vue/vue-router.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/vue/vue-script.code-snippets"
+        "path": "./snippets/vue/vue-script.json"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vue/vue-script.code-snippets"
+        "path": "./snippets/vue/vue-script.json"
       },
       {
         "language": "html",
-        "path": "./snippets/vue/vue-template.code-snippets"
+        "path": "./snippets/vue/vue-template.json"
       }
     ]
   },

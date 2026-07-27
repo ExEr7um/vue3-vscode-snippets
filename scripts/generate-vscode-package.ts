@@ -67,7 +67,7 @@ async function writeGeneratedSnippets(): Promise<void> {
   await Promise.all(
     Object.entries(GENERATED_FILES).map(([name, snippets]) =>
       writeFile(
-        path.join(TARGET, "snippets", `${name}.code-snippets`),
+        path.join(TARGET, "snippets", `${name}.json`),
         `${JSON.stringify(snippets, undefined, 2)}\n`,
       ),
     ),
@@ -88,7 +88,7 @@ async function writeSnippetContributions(): Promise<void> {
     ([name, languages]) =>
       languages.map((language) => ({
         language,
-        path: `./snippets/${name}.code-snippets`,
+        path: `./snippets/${name}.json`,
       })),
   )
 

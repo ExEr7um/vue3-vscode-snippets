@@ -16,7 +16,7 @@ const SNIPPETS = path.join(
 
 /**
  * Lists the hand-written snippet files, relative to the `snippets` directory
- * and without the `.code-snippets` extension.
+ * and without the `.json` extension.
  *
  * @returns The sorted file names.
  */
@@ -27,11 +27,11 @@ async function readSnippetFiles(): Promise<string[]> {
   })
 
   return entries
-    .filter((entry) => entry.isFile() && entry.name.endsWith(".code-snippets"))
+    .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
     .map((entry) =>
       path
         .join(path.relative(SNIPPETS, entry.parentPath), entry.name)
-        .replace(".code-snippets", ""),
+        .replace(".json", ""),
     )
     .toSorted((left, right) => left.localeCompare(right))
 }

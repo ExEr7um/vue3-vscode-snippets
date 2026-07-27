@@ -1,0 +1,82 @@
+{
+  "Nuxt define middleware": {
+    "body": [
+      "export default defineNuxtRouteMiddleware((to, from) => {",
+      "\t${0}",
+      "})"
+    ],
+    "description": "Base code for Nuxt middleware",
+    "prefix": "nmiddleware"
+  },
+  "Nuxt define plugin": {
+    "body": ["export default defineNuxtPlugin(nuxtApp => {", "\t${0}", "})"],
+    "description": "Base code for Nuxt plugin",
+    "prefix": "nplugin"
+  },
+  "Nuxt define server route": {
+    "body": ["export default defineEventHandler((event) => {", "\t${0}", "})"],
+    "description": "Base code for Nuxt server route",
+    "prefix": "nserverroute"
+  },
+  "Nuxt definePageMeta": {
+    "body": ["definePageMeta({", "\t${0}", "})"],
+    "description": "Nuxt definePageMeta composable",
+    "prefix": "npagemeta"
+  },
+  "Nuxt useAsyncData": {
+    "body": [
+      "const { data: ${1:name} } = await useAsyncData('${2:requestKey}', () => \\$fetch('${3:path}'))"
+    ],
+    "description": "Nuxt useAsyncData composable",
+    "prefix": "nasyncdata"
+  },
+  "Nuxt useFetch": {
+    "body": ["const { data: ${1:name} } = await useFetch('${2:path}')"],
+    "description": "Nuxt useFetch composable",
+    "prefix": "nfetch"
+  },
+  "Nuxt useLazyAsyncData": {
+    "body": [
+      "const { pending, data: ${1:name} } = await useLazyAsyncData('${2:requestKey}', () => \\$fetch('${3:path}'))"
+    ],
+    "description": "Nuxt useLazyAsyncData composable",
+    "prefix": "nasyncdata-lazy"
+  },
+  "Nuxt useLazyFetch": {
+    "body": [
+      "const { pending, data: ${1:name} } = await useLazyFetch('${2:path}')"
+    ],
+    "description": "Nuxt useLazyFetch composable",
+    "prefix": "nfetch-lazy"
+  },
+  "Nuxt useSeoMeta": {
+    "body": [
+      "useSeoMeta({",
+      "\ttitle: ${1:pageTitle},",
+      "\tdescription: ${2:pageDescription}",
+      "})"
+    ],
+    "description": "Nuxt useSeoMeta composable",
+    "prefix": "nseo"
+  },
+  "Nuxt useSeoMeta - Template": {
+    "body": ["useSeoMeta({", "\ttitleTemplate: '%s | ${0}'", "})"],
+    "description": "Nuxt useSeoMeta composable with title template",
+    "prefix": "nseo-template"
+  },
+  "Nuxt useServerSeoMeta": {
+    "body": [
+      "useServerSeoMeta({",
+      "\ttitle: ${1:pageTitle},",
+      "\tdescription: ${2:pageDescription}",
+      "})"
+    ],
+    "description": "Nuxt useServerSeoMeta composable",
+    "prefix": "nseo-server"
+  },
+  "Nuxt useServerSeoMeta - Template": {
+    "body": ["useServerSeoMeta({", "\ttitleTemplate: '%s | ${0}'", "})"],
+    "description": "Nuxt useServerSeoMeta composable with title template",
+    "prefix": "nseo-server-template"
+  }
+}

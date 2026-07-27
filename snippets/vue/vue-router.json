@@ -1,0 +1,91 @@
+{
+  "Vue Router": {
+    "body": [
+      "import Vue from 'vue';",
+      "import VueRouter from 'vue-router';",
+      "",
+      "Vue.use(VueRouter);",
+      "",
+      "export const router = new VueRouter({",
+      "\tbase: '/',",
+      "\tmode: 'history',",
+      "\troutes: [",
+      "\t\t{ path: '/path', component: component }",
+      "\t]",
+      "});"
+    ],
+    "description": "Base for Vue Router",
+    "prefix": "vrouter"
+  },
+  "Vue Router Route": {
+    "body": [
+      "{",
+      "\tpath: '${1:pathName}',",
+      "\tname: '${2:routeName}',",
+      "\tcomponent: () => import('./${3:pathToComponent}'),",
+      "},"
+    ],
+    "description": "Vue Router route with per route code-splitting",
+    "prefix": "vroute-named"
+  },
+  "Vue Router afterEach": {
+    "body": ["router.afterEach((to, from) => {", "\t", "});"],
+    "description": "Vue Router global guards afterEach",
+    "prefix": "vaftereach"
+  },
+  "Vue Router beforeEach": {
+    "body": [
+      "router.beforeEach((to, from, next) => {",
+      "\t${1:next();}",
+      "});"
+    ],
+    "description": "Vue Router global guards beforeEach",
+    "prefix": "vbeforeeach"
+  },
+  "Vue Router beforeEnter": {
+    "body": ["beforeEnter(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router per-route guard beforeEnter",
+    "prefix": "vbeforeenter"
+  },
+  "Vue Router beforeResolve": {
+    "body": [
+      "router.beforeResolve((to, from, next) => {",
+      "\t${1:next();}",
+      "});"
+    ],
+    "description": "Vue Router global guards beforeResolve",
+    "prefix": "vbeforeresolve"
+  },
+  "Vue Router beforeRouteEnter": {
+    "body": [
+      "beforeRouteEnter(to, from, next) {",
+      "\tnext(vm => {${1:}});",
+      "},"
+    ],
+    "description": "Vue Router component guards beforeRouteEnter",
+    "prefix": "vbeforerouteenter"
+  },
+  "Vue Router beforeRouteLeave": {
+    "body": ["beforeRouteLeave(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router component guards beforeRouteLeave",
+    "prefix": "vbeforerouteleave"
+  },
+  "Vue Router beforeRouteUpdate": {
+    "body": ["beforeRouteUpdate(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router component guards beforeRouteUpdate",
+    "prefix": "vbeforerouteupdate"
+  },
+  "Vue Router scrollBehavior": {
+    "body": [
+      "scrollBehavior(to, from, savedPosition) {",
+      "\tif(savedPosition) {",
+      "\t\treturn savedPosition;",
+      "\t} else {",
+      "\t\treturn { x: 0, y: 0 };",
+      "\t}",
+      "},"
+    ],
+    "description": "Vue Router scrollBehavior",
+    "prefix": "vscrollbehavior"
+  }
+}
