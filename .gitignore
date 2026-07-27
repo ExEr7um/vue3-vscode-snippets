@@ -5,7 +5,7 @@
 node_modules
 dist
 
-# Mirrored into packages/vscode by `bun run sync`
+# Written into packages/vscode by `bun run generate`
 packages/vscode/CHANGELOG.md
 packages/vscode/LICENSE
 packages/vscode/README.md

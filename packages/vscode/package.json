@@ -136,64 +136,28 @@
     },
     "snippets": [
       {
+        "language": "javascript",
+        "path": "./snippets/generated/pstore.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/generated/pstore.code-snippets"
+      },
+      {
         "language": "vue",
-        "path": "./snippets/vue/vue.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/vue/vue-template.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vue/vue-script.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/vue/vue-script.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/vue/vue-router.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/vue/vue-router.code-snippets"
-      },
-      {
-        "language": "css",
-        "path": "./snippets/vue/vue-css.code-snippets"
-      },
-      {
-        "language": "scss",
-        "path": "./snippets/vue/vue-css.code-snippets"
-      },
-      {
-        "language": "less",
-        "path": "./snippets/vue/vue-css.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/pinia/pinia.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/pinia/pinia.code-snippets"
-      },
-      {
-        "language": "html",
-        "path": "./snippets/nuxt/nuxt-template.code-snippets"
-      },
-      {
-        "language": "javascript",
-        "path": "./snippets/nuxt/nuxt-script.code-snippets"
-      },
-      {
-        "language": "typescript",
-        "path": "./snippets/nuxt/nuxt-script.code-snippets"
+        "path": "./snippets/generated/vbase.code-snippets"
       },
       {
         "language": "vue",
         "path": "./snippets/histoire/histoire.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/histoire/histoire-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/histoire/histoire-script.code-snippets"
       },
       {
         "language": "html",
@@ -201,11 +165,23 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/histoire/histoire-script.code-snippets"
+        "path": "./snippets/nuxt/nuxt-script.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/histoire/histoire-script.code-snippets"
+        "path": "./snippets/nuxt/nuxt-script.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/nuxt/nuxt-template.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vitest/nuxt.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vitest/nuxt.code-snippets"
       },
       {
         "language": "javascript",
@@ -224,12 +200,36 @@
         "path": "./snippets/vitest/vue.code-snippets"
       },
       {
+        "language": "css",
+        "path": "./snippets/vue/vue-css.code-snippets"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/vue/vue-css.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/vue/vue-css.code-snippets"
+      },
+      {
         "language": "javascript",
-        "path": "./snippets/vitest/nuxt.code-snippets"
+        "path": "./snippets/vue/vue-router.code-snippets"
       },
       {
         "language": "typescript",
-        "path": "./snippets/vitest/nuxt.code-snippets"
+        "path": "./snippets/vue/vue-router.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue/vue-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue/vue-script.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/vue/vue-template.code-snippets"
       }
     ]
   },

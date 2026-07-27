@@ -84,6 +84,7 @@ Example — an Options API store without HMR:
 | `vbase-styl`  | Base for Vue 3 File with `<script setup>`, `TypeScript` and `Stylus`                               |
 | `vbase-ns`    | Base for Vue 3 File with `<script setup>`, `TypeScript` and no style                               |
 | `vbase-vapor` | Base for Vue 3 File with `<script vapor>`, `TypeScript` and `SCSS`                                 |
+| `vbase-js`    | Base for Vue 3 File with `<script setup>`, `JavaScript` and `SCSS`                                 |
 
 ### Template
 
@@ -144,10 +145,12 @@ Example — an Options API store without HMR:
 
 ### Pinia
 
-| Snippet          | Purpose                                                                                                |
-| ---------------- | ------------------------------------------------------------------------------------------------------ |
-| `pstore`         | Base code needed for a Pinia store file. [Configurable](#pstore), defaults to Composition API with HMR |
-| `pstore-options` | Base code needed for a Pinia store file with Options API                                               |
+| Snippet                | Purpose                                                                                                |
+| ---------------------- | ------------------------------------------------------------------------------------------------------ |
+| `pstore`               | Base code needed for a Pinia store file. [Configurable](#pstore), defaults to Composition API with HMR |
+| `pstore-options`       | Base code needed for a Pinia store file with Options API                                               |
+| `pstore-nohmr`         | Base code needed for a Pinia store file without HMR                                                    |
+| `pstore-options-nohmr` | Base code needed for a Pinia store file with Options API and without HMR                               |
 
 ### Vue Router
 
