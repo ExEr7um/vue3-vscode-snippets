@@ -1,22 +1,22 @@
-import { beforeEach, describe, expect, test } from "vitest"
+import { describe, expect, test } from "vitest"
 
-import { pstore } from "../../src/snippets/pstore"
-import { setSettings } from "../mocks/vscode"
+import type { PstoreConfig } from "../src/types"
 
-const STORE_NAME = "${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}"
+import { buildPstoreBody, PSTORE_DEFAULTS, STORE_NAME } from "../src/pstore"
 
-describe("pstore snippet", () => {
-  beforeEach(() => {
-    setSettings({})
-  })
+/**
+ * Builds a `pstore` body from the defaults with the given overrides applied.
+ *
+ * @param overrides Settings differing from the defaults.
+ * @returns The snippet body.
+ */
+function build(overrides: Partial<PstoreConfig> = {}): string {
+  return buildPstoreBody({ ...PSTORE_DEFAULTS, ...overrides })
+}
 
-  test("targets the script languages with the pstore prefix", () => {
-    expect(pstore.prefix).toBe("pstore")
-    expect(pstore.languages).toStrictEqual(["javascript", "typescript"])
-  })
-
+describe("buildPstoreBody", () => {
   test("produces a Composition API store with HMR by default", () => {
-    expect(pstore.buildBody()).toBe(
+    expect(build()).toBe(
       [
         'import { defineStore, acceptHMRUpdate } from "pinia"',
         "",
@@ -32,9 +32,7 @@ describe("pstore snippet", () => {
   })
 
   test("produces an Options API store when the api is options", () => {
-    setSettings({ api: "options" })
-
-    expect(pstore.buildBody()).toBe(
+    expect(build({ api: "options" })).toBe(
       [
         'import { defineStore, acceptHMRUpdate } from "pinia"',
         "",
@@ -54,9 +52,7 @@ describe("pstore snippet", () => {
   })
 
   test("omits the HMR block and its import when hmr is disabled", () => {
-    setSettings({ hmr: false })
-
-    expect(pstore.buildBody()).toBe(
+    expect(build({ hmr: false })).toBe(
       [
         'import { defineStore } from "pinia"',
         "",
@@ -68,9 +64,7 @@ describe("pstore snippet", () => {
   })
 
   test("combines all settings", () => {
-    setSettings({ api: "options", hmr: false })
-
-    expect(pstore.buildBody()).toBe(
+    expect(build({ api: "options", hmr: false })).toBe(
       [
         'import { defineStore } from "pinia"',
         "",

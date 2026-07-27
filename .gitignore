@@ -4,3 +4,10 @@
 *.DS_Store
 node_modules
 dist
+
+# Mirrored into packages/vscode by `bun run sync`
+packages/vscode/CHANGELOG.md
+packages/vscode/LICENSE
+packages/vscode/README.md
+packages/vscode/images
+packages/vscode/snippets
