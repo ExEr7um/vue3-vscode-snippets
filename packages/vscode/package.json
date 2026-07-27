@@ -1,0 +1,252 @@
+{
+  "name": "vue-3-vscode-snippets",
+  "displayName": "Vue 3 VS Code Snippets",
+  "version": "0.8.0",
+  "description": "Vue 3 snippets for VS Code",
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "Vue",
+    "Vue 3",
+    "Nuxt",
+    "Nuxt 3",
+    "Pinia",
+    "Vue Snippets",
+    "Vue 3 snippets",
+    "Nuxt snippets",
+    "Nuxt 3 snippets",
+    "Pinia snippets",
+    "Composition API"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExEr7um/vue3-vscode-snippets.git"
+  },
+  "author": {
+    "name": "Vasily Kuzin",
+    "email": "exer7um@gmail.com",
+    "url": "https://github.com/ExEr7um"
+  },
+  "contributors": [
+    {
+      "name": "Sarah Drasner",
+      "email": "sarah.drasner@gmail.com",
+      "url": "https://github.com/sdras"
+    },
+    {
+      "name": "Daniel Kelly",
+      "email": "me@danielkelly.io",
+      "url": "https://github.com/danielkellyio"
+    },
+    {
+      "name": "Fabian Kurz",
+      "email": "info@fabian-kurz.de",
+      "url": "https://github.com/pixel-fabian"
+    }
+  ],
+  "publisher": "exer7um",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "scripts": {
+    "publish:ovsx": "ovsx publish --no-dependencies",
+    "publish:vsce": "vsce publish --no-dependencies",
+    "vscode:prepublish": "tsdown"
+  },
+  "contributes": {
+    "configuration": {
+      "title": "Vue 3 VS Code Snippets",
+      "properties": {
+        "vueSnippets.pstore.api": {
+          "type": "string",
+          "enum": [
+            "composition",
+            "options"
+          ],
+          "default": "composition",
+          "markdownDescription": "API style of the `pstore` snippet: a setup function (`composition`) or a `state`/`getters`/`actions` object (`options`)."
+        },
+        "vueSnippets.pstore.hmr": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Add the `acceptHMRUpdate` block to the `pstore` snippet."
+        },
+        "vueSnippets.vbase.scriptLang": {
+          "type": "string",
+          "enum": [
+            "js",
+            "ts"
+          ],
+          "default": "ts",
+          "markdownDescription": "Language of the `<script>` block in the `vbase` snippet. `js` omits the `lang` attribute."
+        },
+        "vueSnippets.vbase.scriptSetup": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Use `<script setup>` in the `vbase` snippet."
+        },
+        "vueSnippets.vbase.scriptVapor": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "Use `<script vapor>` in the `vbase` snippet. Vapor mode implies `setup`, so this shorthand is used regardless of `#vueSnippets.vbase.scriptSetup#`."
+        },
+        "vueSnippets.vbase.styleLang": {
+          "type": "string",
+          "enum": [
+            "css",
+            "less",
+            "none",
+            "postcss",
+            "sass",
+            "scss",
+            "stylus"
+          ],
+          "default": "scss",
+          "markdownDescription": "Language of the `<style>` block in the `vbase` snippet. `none` omits the `<style>` block entirely."
+        },
+        "vueSnippets.vbase.styleScoped": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Add the `scoped` attribute to the `<style>` block in the `vbase` snippet."
+        },
+        "vueSnippets.vbase.templateRootTag": {
+          "type": "string",
+          "default": "div",
+          "markdownDescription": "Root tag wrapping the cursor inside the `<template>` block in the `vbase` snippet. Empty string omits the wrapper."
+        },
+        "vueSnippets.vbase.blockOrder": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "script",
+              "template",
+              "style"
+            ]
+          },
+          "uniqueItems": true,
+          "default": [
+            "script",
+            "template",
+            "style"
+          ],
+          "markdownDescription": "Order of the blocks in the `vbase` snippet. Blocks not listed here are omitted."
+        }
+      }
+    },
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./snippets/vue/vue.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/vue/vue-template.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue/vue-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue/vue-script.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue/vue-router.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue/vue-router.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/vue/vue-css.code-snippets"
+      },
+      {
+        "language": "scss",
+        "path": "./snippets/vue/vue-css.code-snippets"
+      },
+      {
+        "language": "less",
+        "path": "./snippets/vue/vue-css.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/pinia/pinia.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/pinia/pinia.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/nuxt/nuxt-template.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/nuxt/nuxt-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/nuxt/nuxt-script.code-snippets"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/histoire/histoire.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/histoire/histoire-template.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/histoire/histoire-script.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/histoire/histoire-script.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vitest/vitest.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vitest/vitest.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vitest/vue.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vitest/vue.code-snippets"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vitest/nuxt.code-snippets"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vitest/nuxt.code-snippets"
+      }
+    ]
+  },
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:vue"
+  ],
+  "devDependencies": {
+    "@types/vscode": "1.100.0",
+    "@vscode/vsce": "3.9.2",
+    "@vue3-snippets/core": "workspace:*",
+    "ovsx": "1.0.2",
+    "tsdown": "0.22.11"
+  },
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "icon": "images/vue-logo.png"
+}

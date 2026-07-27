@@ -1,7 +1,7 @@
 {
   "configurations": [
     {
-      "args": ["--extensionDevelopmentPath=${workspaceFolder}"],
+      "args": ["--extensionDevelopmentPath=${workspaceFolder}/packages/vscode"],
       "name": "Extension",
       "request": "launch",
       "type": "extensionHost"

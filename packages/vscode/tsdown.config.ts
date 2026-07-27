@@ -1,6 +1,6 @@
 import { defineConfig } from "tsdown"
 
 export default defineConfig({
-  deps: { neverBundle: [/^vscode$/] },
+  deps: { alwaysBundle: [/^@vue3-snippets\//], neverBundle: [/^vscode$/] },
   minify: true,
 })

@@ -1,0 +1,10 @@
+{
+  "name": "@vue3-snippets/core",
+  "version": "0.8.0",
+  "private": true,
+  "description": "Configurable snippet builders shared by the extension packages",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  }
+}
