@@ -1,12 +1,8 @@
 import type * as vscode from "vscode"
 
-import type { ConfigurableSnippet } from "./types"
+import { CONFIGURABLE_SNIPPETS } from "@vue3-snippets/core"
 
 import { registerConfigurableSnippet } from "./register"
-import { pstore } from "./snippets/pstore"
-import { vbase } from "./snippets/vbase"
-
-const SNIPPETS: ConfigurableSnippet[] = [pstore, vbase]
 
 /**
  * Registers every configurable snippet completion.
@@ -14,7 +10,7 @@ const SNIPPETS: ConfigurableSnippet[] = [pstore, vbase]
  * @param context Extension context provided by VS Code.
  */
 export function activate(context: vscode.ExtensionContext): void {
-  for (const snippet of SNIPPETS) {
+  for (const snippet of CONFIGURABLE_SNIPPETS) {
     registerConfigurableSnippet(context, snippet)
   }
 }

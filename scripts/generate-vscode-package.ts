@@ -1,16 +1,21 @@
-import type { SnippetEntry } from "@vue3-snippets/core"
+import type { ConfigurationProperty } from "@vue3-snippets/core"
 
 import {
-  buildPstoreSnippets,
-  buildVbaseSnippets,
+  buildConfigurationProperties,
+  collectSnippetLanguages,
+  GENERATED_FILES,
   SNIPPET_LANGUAGES,
 } from "@vue3-snippets/core"
-import { cp, mkdir, readFile, writeFile } from "node:fs/promises"
+import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
 
 interface Manifest {
-  contributes: { snippets: { language: string; path: string }[] }
+  activationEvents: string[]
+  contributes: {
+    configuration: { properties: Record<string, ConfigurationProperty> }
+    snippets: { language: string; path: string }[]
+  }
 }
 
 /** Repository root, resolved from this script's location. */
@@ -34,25 +39,22 @@ const SHARED_ENTRIES = [
   "snippets",
 ]
 
-/** Snippet files built from the configurable snippet definitions. */
-const GENERATED_FILES: Record<string, Record<string, SnippetEntry>> = {
-  "generated/pstore": buildPstoreSnippets(),
-  "generated/vbase": buildVbaseSnippets(),
-}
-
 /**
  * Mirrors the shared repository files into the VS Code package.
+ *
+ * Every entry is dropped before being copied: copying alone would leave files
+ * that have since been renamed or deleted behind, and `vsce` would pack them.
  *
  * @returns A promise resolved once every entry is copied.
  */
 async function copySharedEntries(): Promise<void> {
   await Promise.all(
-    SHARED_ENTRIES.map((entry) =>
-      cp(path.join(ROOT, entry), path.join(TARGET, entry), {
-        force: true,
-        recursive: true,
-      }),
-    ),
+    SHARED_ENTRIES.map(async (entry) => {
+      const target = path.join(TARGET, entry)
+
+      await rm(target, { force: true, recursive: true })
+      await cp(path.join(ROOT, entry), target, { recursive: true })
+    }),
   )
 }
 
@@ -75,16 +77,22 @@ async function writeGeneratedSnippets(): Promise<void> {
 }
 
 /**
- * Rewrites the `contributes.snippets` entries of the extension manifest from
- * the language map, so every snippet file is wired up in a single place.
+ * Rewrites the generated parts of the extension manifest: the settings schema,
+ * the activation events and the snippet file contributions. Every one of them
+ * comes from the snippet definitions, so they cannot drift from the builders.
  *
  * @returns A promise resolved once the manifest is up to date.
  */
-async function writeSnippetContributions(): Promise<void> {
+async function writeManifest(): Promise<void> {
   const manifestPath = path.join(TARGET, "package.json")
   const manifest = JSON.parse(await readFile(manifestPath, "utf8")) as Manifest
+  const previous = JSON.stringify(manifest)
 
-  const snippets = Object.entries(SNIPPET_LANGUAGES).flatMap(
+  manifest.activationEvents = collectSnippetLanguages().map(
+    (language) => `onLanguage:${language}`,
+  )
+  manifest.contributes.configuration.properties = buildConfigurationProperties()
+  manifest.contributes.snippets = Object.entries(SNIPPET_LANGUAGES).flatMap(
     ([name, languages]) =>
       languages.map((language) => ({
         language,
@@ -92,16 +100,11 @@ async function writeSnippetContributions(): Promise<void> {
       })),
   )
 
-  if (
-    JSON.stringify(manifest.contributes.snippets) === JSON.stringify(snippets)
-  )
-    return
-
-  manifest.contributes.snippets = snippets
+  if (JSON.stringify(manifest) === previous) return
 
   await writeFile(manifestPath, `${JSON.stringify(manifest, undefined, 2)}\n`)
 }
 
 await copySharedEntries()
 await writeGeneratedSnippets()
-await writeSnippetContributions()
+await writeManifest()

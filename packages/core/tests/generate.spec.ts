@@ -1,10 +1,10 @@
 import { describe, expect, test } from "vitest"
 
-import { buildPstoreSnippets, buildVbaseSnippets } from "../src/generate"
-import { STORE_NAME } from "../src/pstore"
+import { PSTORE, STORE_NAME } from "../src/pstore"
+import { VBASE } from "../src/vbase"
 
-const vbase = buildVbaseSnippets()
-const pstore = buildPstoreSnippets()
+const { variants: vbase } = VBASE
+const { variants: pstore } = PSTORE
 
 /**
  * Collects the prefixes of every entry of a generated snippet file.
@@ -16,7 +16,7 @@ function prefixes(snippets: Record<string, { prefix: string }>): string[] {
   return Object.values(snippets).map((snippet) => snippet.prefix)
 }
 
-describe("buildVbaseSnippets", () => {
+describe("vbase variants", () => {
   test("builds a snippet for every variant", () => {
     expect(prefixes(vbase)).toStrictEqual([
       "vbase-sass",
@@ -80,7 +80,7 @@ describe("buildVbaseSnippets", () => {
   })
 })
 
-describe("buildPstoreSnippets", () => {
+describe("pstore variants", () => {
   test("builds a snippet for every variant", () => {
     expect(prefixes(pstore)).toStrictEqual([
       "pstore-options",
