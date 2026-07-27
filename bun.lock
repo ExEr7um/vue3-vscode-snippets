@@ -8,10 +8,12 @@
         "@exer7um/eslint-config": "2.4.0",
         "@exer7um/prettier-config": "0.8.7",
         "@types/node": "26.1.1",
-        "eslint": "10.7.0",
+        "@types/vscode": "1.100.0",
+        "@vscode/vsce": "3.9.2",
         "husky": "9.1.7",
         "nano-staged": "1.0.2",
-        "prettier": "3.9.6",
+        "ovsx": "1.0.2",
+        "tsdown": "0.22.11",
         "typescript": "6.0.3",
         "vitest": "4.1.10",
       },
@@ -23,13 +25,6 @@
     "packages/vscode": {
       "name": "vue-3-vscode-snippets",
       "version": "0.8.0",
-      "devDependencies": {
-        "@types/vscode": "1.100.0",
-        "@vscode/vsce": "3.9.2",
-        "@vue3-snippets/core": "workspace:*",
-        "ovsx": "1.0.2",
-        "tsdown": "0.22.11",
-      },
     },
   },
   "packages": {

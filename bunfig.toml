@@ -1,5 +1,6 @@
 [install]
 exact = true
-# Bun defaults to the isolated linker for workspaces, which hides transitive
-# packages such as the Prettier plugins from the root `node_modules`.
+# Bun defaults to the isolated linker for workspaces. The shared `@exer7um`
+# configs expect a flat `node_modules`: they own `eslint`, `prettier` and the
+# Prettier plugins, which the isolated layout hides from the repository root.
 linker = "hoisted"

@@ -238,13 +238,6 @@
     "onLanguage:typescript",
     "onLanguage:vue"
   ],
-  "devDependencies": {
-    "@types/vscode": "1.100.0",
-    "@vscode/vsce": "3.9.2",
-    "@vue3-snippets/core": "workspace:*",
-    "ovsx": "1.0.2",
-    "tsdown": "0.22.11"
-  },
   "engines": {
     "vscode": "^1.100.0"
   },
