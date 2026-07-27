@@ -157,6 +157,7 @@ Example — an Options API store without HMR:
 | Snippet              | Purpose                                         |
 | -------------------- | ----------------------------------------------- |
 | `vrouter`            | Vue Router base                                 |
+| `vroute-named`       | Vue Router route with per route code-splitting  |
 | `vscrollbehavior`    | Vue Router `scrollBehavior`                     |
 | `vbeforeeach`        | Vue Router global guards `beforeEach`           |
 | `vbeforeresolve`     | Vue Router global guards `beforeResolve`        |
