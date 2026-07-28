@@ -1,6 +1,6 @@
 /**
  * Languages every snippet file is registered for, keyed by its path inside the
- * `snippets` directory without the `.code-snippets` extension.
+ * `snippets` directory without the `.json` extension.
  *
  * This is the single source of the extension manifest `contributes.snippets`
  * entries, so a file listed here needs no further wiring.

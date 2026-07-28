@@ -1,0 +1,51 @@
+{
+  "Vitest Nuxt Base": {
+    "body": [
+      "// @vitest-environment nuxt",
+      "import type { VueWrapper } from '@vue/test-utils'",
+      "import { mountSuspended } from '@nuxt/test-utils/runtime'",
+      "import { afterEach, beforeEach, describe, expect } from 'vitest'",
+      "import ${TM_FILENAME/\\..*//} from '~/components/${TM_FILENAME/\\..*//}.vue'",
+      "",
+      "describe('${TM_FILENAME/\\..*//}', () => {",
+      "\tlet wrapper: VueWrapper",
+      "\t",
+      "\tbeforeEach(async () => {",
+      "\t\twrapper = await mountSuspended(${TM_FILENAME/\\..*//})",
+      "\t})",
+      "\t",
+      "\tafterEach(() => {",
+      "\t\twrapper.unmount()",
+      "\t})",
+      "})"
+    ],
+    "description": "Base for Vitest file for Vue component",
+    "prefix": "vibase-nuxt"
+  },
+  "Vitest Nuxt Mock Component": {
+    "body": ["mockComponent('${0}')"],
+    "description": "nuxt-vitest mockComponent",
+    "prefix": "vimockcomponent"
+  },
+  "Vitest Nuxt Mock Import": {
+    "body": [
+      "mockNuxtImport('${1:functionName}', () => {",
+      "\treturn () => {",
+      "\t\treturn { ${0} }",
+      "\t}",
+      "})"
+    ],
+    "description": "nuxt-vitest mockNuxtImport",
+    "prefix": "vimocknuxtimport"
+  },
+  "Vitest Nuxt Mount Suspended": {
+    "body": ["const wrapper = await mountSuspended(${0})"],
+    "description": "nuxt-vitest mountSuspended",
+    "prefix": "vimount-suspended"
+  },
+  "Vitest Nuxt Register Endpoint": {
+    "body": ["registerEndpoint('/${1:endpoint}/', () => {", "\t{0}", "})"],
+    "description": "nuxt-vitest registerEndpoint",
+    "prefix": "viregisterendpoint"
+  }
+}

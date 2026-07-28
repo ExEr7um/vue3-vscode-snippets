@@ -1,13 +1,5 @@
 {
-  "Vitest Vue Mount": {
-    "prefix": "vimount",
-    "body": [
-      "const wrapper = mount(${0})",
-    ],
-    "description": "Vue Test Utils Mount"
-  },
   "Vitest Test Component": {
-    "prefix": "vicomponent",
     "body": [
       "{",
       "\ttemplate: '${0}'",
@@ -17,10 +9,10 @@
       "\t}",
       "}"
     ],
-    "description": "Vue Test Utils Component"
+    "description": "Vue Test Utils Component",
+    "prefix": "vicomponent"
   },
   "Vitest Vue Base": {
-    "prefix": "vibase-vue",
     "body": [
       "import type { VueWrapper } from '@vue/test-utils'",
       "import { mount } from '@vue/test-utils'",
@@ -39,6 +31,12 @@
       "\t})",
       "})"
     ],
-    "description": "Base for Vitest file for Vue component"
+    "description": "Base for Vitest file for Vue component",
+    "prefix": "vibase-vue"
+  },
+  "Vitest Vue Mount": {
+    "body": ["const wrapper = mount(${0})"],
+    "description": "Vue Test Utils Mount",
+    "prefix": "vimount"
   }
 }

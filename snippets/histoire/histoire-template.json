@@ -1,0 +1,79 @@
+{
+  "Histoire controls": {
+    "body": ["<template #controls>", "\t$0", "</template>"],
+    "description": "Histoire controls base",
+    "prefix": "hcontrols-base"
+  },
+  "Histoire controls - Button": {
+    "body": ["<HstButton class='htw-p-2'>", "\t$0", "</HstButton>"],
+    "description": "Histoire controls - Button",
+    "prefix": "hcontrols-button"
+  },
+  "Histoire controls - Button Group": {
+    "body": [
+      "<HstButtonGroup",
+      "\tv-model='${2:vModel}'",
+      "\ttitle='${1:label}'",
+      "\t:options='[",
+      "\t\t{",
+      "\t\t\tlabel: '${3:optionTitle}',",
+      "\t\t\tvalue: '${4:optionValue}'",
+      "\t\t}",
+      "\t]'",
+      "/>"
+    ],
+    "description": "Histoire controls - Button Group",
+    "prefix": "hcontrols-buttongroup"
+  },
+  "Histoire controls - Checkbox": {
+    "body": [
+      "<HstCheckbox",
+      "\tv-model='${2:vModel}'",
+      "\ttitle='${1:label}'",
+      "/>"
+    ],
+    "description": "Histoire controls - Checkbox",
+    "prefix": "hcontrols-checkbox"
+  },
+  "Histoire controls - Number": {
+    "body": [
+      "<HstNumber",
+      "\tv-model='${2:vModel}'",
+      "\t:step='1'",
+      "\ttitle='${1:label}'",
+      "/>"
+    ],
+    "description": "Histoire controls - Number",
+    "prefix": "hcontrols-number"
+  },
+  "Histoire controls - Text": {
+    "body": [
+      "<HstText",
+      "\tv-model='${2:vModel}'",
+      "\ttitle='${1:label}'",
+      "/>"
+    ],
+    "description": "Histoire controls - Text",
+    "prefix": "hcontrols-text"
+  },
+  "Histoire controls - Textarea": {
+    "body": [
+      "<HstTextarea",
+      "\tv-model='${2:vModel}'",
+      "\ttitle='${1:label}'",
+      "/>"
+    ],
+    "description": "Histoire controls - Textarea",
+    "prefix": "hcontrols-textarea"
+  },
+  "Histoire grid layout": {
+    "body": [":layout='{ type: 'grid', width: ${1:gridWidth} }'"],
+    "description": "Histoire grid layout",
+    "prefix": "hgrid"
+  },
+  "Histoire story variant": {
+    "body": ["<Variant title='${1:variantTitle}'>", "\t$0", "</Variant>"],
+    "description": "Story variant",
+    "prefix": "hvariant"
+  }
+}

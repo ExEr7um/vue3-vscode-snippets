@@ -1,0 +1,120 @@
+{
+  "Vue Computed": {
+    "body": ["const ${1:name} = computed(() => {", "\treturn ${2}", "})"],
+    "description": "Vue computed",
+    "prefix": "vcomputed"
+  },
+  "Vue Define Emits": {
+    "body": ["const emit = defineEmits<{", "\t${1:eventName}: [${0}]", "}>()"],
+    "description": "Vue defineEmits",
+    "prefix": "vdefineemits"
+  },
+  "Vue Define Model": {
+    "body": ["const modelValue = defineModel()"],
+    "description": "Vue defineModel",
+    "prefix": "vdefinemodel"
+  },
+  "Vue Define Options": {
+    "body": ["defineOptions({", "\t${0}", "})"],
+    "description": "Vue defineOptions",
+    "prefix": "vdefineoptions"
+  },
+  "Vue Define Props": {
+    "body": ["defineProps<{", "\t${1:name}: ${2:type}", "}>()"],
+    "description": "Vue defineProps",
+    "prefix": "vdefineprops"
+  },
+  "Vue Define Props with defaults": {
+    "body": [
+      "withDefaults(defineProps<{",
+      "\t${1:name}: ${2:type}",
+      "}>(), {",
+      "\t${1:name}: ${3:default}",
+      "})"
+    ],
+    "description": "Vue withDefaults(defineProps)",
+    "prefix": "vdefineprops-withdefaults"
+  },
+  "Vue Define Slots": {
+    "body": ["defineSlots<{", "\tdefault: (props: { ${0} }) => any", "}>()"],
+    "description": "Vue defineSlots",
+    "prefix": "vdefineslots"
+  },
+  "Vue Lifecycle Hooks - onBeforeMount": {
+    "body": ["onBeforeMount(() => {", "\t${1}", "})"],
+    "description": "Vue onBeforeMount Lifecycle hook",
+    "prefix": "vonbeforemount"
+  },
+  "Vue Lifecycle Hooks - onBeforeUnmount": {
+    "body": ["onBeforeUnmount(() => {", "\t${1}", "})"],
+    "description": "Vue onBeforeUnmount Lifecycle hook",
+    "prefix": "vonbeforeunmount"
+  },
+  "Vue Lifecycle Hooks - onBeforeUpdate": {
+    "body": ["onBeforeUpdate(() => {", "\t${1}", "})"],
+    "description": "Vue onBeforeUpdate Lifecycle hook",
+    "prefix": "vonbeforeupdate"
+  },
+  "Vue Lifecycle Hooks - onErrorCaptured": {
+    "body": ["onErrorCaptured(() => {", "\t${1}", "})"],
+    "description": "Vue onErrorCaptured Lifecycle hook",
+    "prefix": "vonerrorcaptured"
+  },
+  "Vue Lifecycle Hooks - onMounted": {
+    "body": ["onMounted(() => {", "\t${1}", "})"],
+    "description": "Vue onMounted Lifecycle hook",
+    "prefix": "vonmounted"
+  },
+  "Vue Lifecycle Hooks - onUnmounted": {
+    "body": ["onUnmounted(() => {", "\t${1}", "})"],
+    "description": "Vue onUnmounted Lifecycle hook",
+    "prefix": "vonunmounted"
+  },
+  "Vue Lifecycle Hooks - onUpdated": {
+    "body": ["onUpdated(() => {", "\t${1}", "})"],
+    "description": "Vue onUpdated Lifecycle hook",
+    "prefix": "vonupdated"
+  },
+  "Vue Reactive": {
+    "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "})"],
+    "description": "Vue reactive",
+    "prefix": "vreactive"
+  },
+  "Vue Ref": {
+    "body": ["const ${1:name} = ref(${2:initialValue})"],
+    "description": "Vue Ref",
+    "prefix": "vref"
+  },
+  "Vue Ref typed": {
+    "body": ["const ${1:name} = ref<${2:type}>(${3:initialValue})"],
+    "description": "Vue Ref with generic type argument",
+    "prefix": "vref-typed"
+  },
+  "Vue Single Emit": {
+    "body": ["${1:eventName}: [${0}]"],
+    "description": "Vue single emit for defineEmits",
+    "prefix": "vsingleemit"
+  },
+  "Vue Single Slot": {
+    "body": ["\t${1:slotName}: (props: { ${0} }) => any"],
+    "description": "Vue single slot for defineSlots",
+    "prefix": "vsingleslot"
+  },
+  "Vue Watch": {
+    "body": [
+      "watch(",
+      "\t() => ${1:name},",
+      "\t() => {",
+      "\t\t${2}",
+      "\t}",
+      ")"
+    ],
+    "description": "Vue watcher",
+    "prefix": "vwatch"
+  },
+  "Vue Watch Effect": {
+    "body": ["watchEffect(() => {", "\t${1}", "})"],
+    "description": "Vue Watch Effect",
+    "prefix": "vwatcheffect"
+  }
+}
