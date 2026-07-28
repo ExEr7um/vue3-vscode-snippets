@@ -1,5 +1,8 @@
 import type { PstoreConfig, SnippetVariant } from "./types"
 
+import { defineSnippet } from "./define"
+import { PINIA_APIS } from "./types"
+
 /** Snippet transform turning the file name into a capitalized store name. */
 export const STORE_NAME = "${TM_FILENAME_BASE/(.*)/${1:/capitalize}/}"
 
@@ -12,7 +15,7 @@ export const PSTORE_DEFAULTS: PstoreConfig = { api: "composition", hmr: true }
  * The suffixes are part of the public API and must not be derived from the
  * configuration.
  */
-export const PSTORE_VARIANTS: SnippetVariant<PstoreConfig>[] = [
+const VARIANTS: SnippetVariant<PstoreConfig>[] = [
   {
     config: { api: "options" },
     description: "Base code needed for a Pinia store file with Options API",
@@ -33,6 +36,30 @@ export const PSTORE_VARIANTS: SnippetVariant<PstoreConfig>[] = [
     suffix: "options-nohmr",
   },
 ]
+
+/** Configurable `pstore` snippet: a base Pinia store. */
+export const PSTORE = defineSnippet<PstoreConfig>({
+  buildBody: buildPstoreBody,
+  defaults: PSTORE_DEFAULTS,
+  detail: "Base code needed for a Pinia store file",
+  languages: ["javascript", "typescript"],
+  prefix: "pstore",
+  section: "vueSnippets.pstore",
+  settings: [
+    {
+      enum: PINIA_APIS,
+      key: "api",
+      markdownDescription:
+        "API style of the `pstore` snippet: a setup function (`composition`) or a `state`/`getters`/`actions` object (`options`).",
+    },
+    {
+      key: "hmr",
+      markdownDescription:
+        "Add the `acceptHMRUpdate` block to the `pstore` snippet.",
+    },
+  ],
+  variants: VARIANTS,
+})
 
 /**
  * Builds the full body of the `pstore` snippet.

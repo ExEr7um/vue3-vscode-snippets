@@ -1,6 +1,6 @@
-import * as vscode from "vscode"
+import type { ConfigurableSnippet } from "@vue3-snippets/core"
 
-import type { ConfigurableSnippet } from "./types"
+import * as vscode from "vscode"
 
 /**
  * Registers a completion that inserts a configuration-driven snippet for every
@@ -17,7 +17,13 @@ export function registerConfigurableSnippet(
     context.subscriptions.push(
       vscode.languages.registerCompletionItemProvider(language, {
         provideCompletionItems() {
-          const body = snippet.buildBody()
+          const configuration = vscode.workspace.getConfiguration(
+            snippet.section,
+          )
+
+          const body = snippet.buildBody((key, fallback) =>
+            configuration.get(key, fallback),
+          )
 
           const item = new vscode.CompletionItem(
             snippet.prefix,

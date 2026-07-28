@@ -1,7 +1,7 @@
 import type { Block, SnippetVariant, VbaseConfig } from "./types"
 
-/** Every block a `vbase` snippet can contain, in the default order. */
-export const BLOCKS: Block[] = ["script", "template", "style"]
+import { defineSnippet } from "./define"
+import { BLOCKS, SCRIPT_LANGS, STYLE_LANGS } from "./types"
 
 /** Default `vbase` configuration, mirrored by the extension settings. */
 export const VBASE_DEFAULTS: VbaseConfig = {
@@ -21,7 +21,7 @@ export const VBASE_DEFAULTS: VbaseConfig = {
  * the completion list stays readable. The suffixes are part of the public API
  * and must not be derived from the configuration.
  */
-export const VBASE_VARIANTS: SnippetVariant<VbaseConfig>[] = [
+const VARIANTS: SnippetVariant<VbaseConfig>[] = [
   {
     config: { styleLang: "sass" },
     description: "Base for Vue 3 File with <script setup>, TypeScript and SASS",
@@ -74,6 +74,60 @@ export const VBASE_VARIANTS: SnippetVariant<VbaseConfig>[] = [
     suffix: "js",
   },
 ]
+
+/** Configurable `vbase` snippet: a base Vue 3 SFC. */
+export const VBASE = defineSnippet<VbaseConfig>({
+  buildBody: buildVbaseBody,
+  defaults: VBASE_DEFAULTS,
+  detail: "Base for Vue 3 File",
+  languages: ["vue"],
+  normalize: (config) => ({
+    ...config,
+    blockOrder: normalizeBlockOrder(config.blockOrder),
+  }),
+  prefix: "vbase",
+  section: "vueSnippets.vbase",
+  settings: [
+    {
+      enum: SCRIPT_LANGS,
+      key: "scriptLang",
+      markdownDescription:
+        "Language of the `<script>` block in the `vbase` snippet. `js` omits the `lang` attribute.",
+    },
+    {
+      key: "scriptSetup",
+      markdownDescription: "Use `<script setup>` in the `vbase` snippet.",
+    },
+    {
+      key: "scriptVapor",
+      markdownDescription:
+        "Use `<script vapor>` in the `vbase` snippet. Vapor mode implies `setup`, so this shorthand is used regardless of `#vueSnippets.vbase.scriptSetup#`.",
+    },
+    {
+      enum: STYLE_LANGS,
+      key: "styleLang",
+      markdownDescription:
+        "Language of the `<style>` block in the `vbase` snippet. `none` omits the `<style>` block entirely.",
+    },
+    {
+      key: "styleScoped",
+      markdownDescription:
+        "Add the `scoped` attribute to the `<style>` block in the `vbase` snippet.",
+    },
+    {
+      key: "templateRootTag",
+      markdownDescription:
+        "Root tag wrapping the cursor inside the `<template>` block in the `vbase` snippet. Empty string omits the wrapper.",
+    },
+    {
+      enum: BLOCKS,
+      key: "blockOrder",
+      markdownDescription:
+        "Order of the blocks in the `vbase` snippet. Blocks not listed here are omitted.",
+    },
+  ],
+  variants: VARIANTS,
+})
 
 /**
  * Builds the full body of the `vbase` snippet.
