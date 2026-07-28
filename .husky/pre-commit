@@ -1,1 +1,3 @@
+bun run generate
+git add packages/vscode/package.json
 bun run nano-staged
