@@ -19,7 +19,7 @@
       "\t})",
       "})"
     ],
-    "description": "Base for Vitest file for Vue component",
+    "description": "Base for Vitest file for Nuxt component",
     "prefix": "vibase-nuxt"
   },
   "Vitest Nuxt Mock Component": {

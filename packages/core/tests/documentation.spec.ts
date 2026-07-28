@@ -6,7 +6,10 @@ import { describe, expect, test } from "vitest"
 import type { SnippetEntry } from "../src/types"
 
 import { GENERATED_FILES } from "../src/generate"
-import { CONFIGURABLE_SNIPPETS } from "../src/settings"
+import {
+  buildConfigurationProperties,
+  CONFIGURABLE_SNIPPETS,
+} from "../src/settings"
 
 /** Repository root, resolved from this file's location. */
 const ROOT = path.join(
@@ -15,6 +18,27 @@ const ROOT = path.join(
   "..",
   "..",
 )
+
+/**
+ * Collects the settings documented in the README, with the default value each
+ * row claims.
+ *
+ * @returns The defaults, keyed by the fully qualified setting name.
+ */
+async function readDocumentedDefaults(): Promise<Record<string, unknown>> {
+  const readme = await readFile(path.join(ROOT, "README.md"), "utf8")
+
+  const rows = readme.matchAll(
+    /^\| `(vueSnippets\.[\w.]+)`\s*\| `(.+?)`\s*\|/gm,
+  )
+
+  return Object.fromEntries(
+    Array.from(rows, ([, name, value]) => [
+      name as string,
+      JSON.parse(value as string) as unknown,
+    ]),
+  )
+}
 
 /**
  * Collects the snippet prefixes documented in the README tables.
@@ -94,5 +118,20 @@ describe("snippets", () => {
     expect(
       [...documented].filter((prefix) => !prefixes.has(prefix)),
     ).toStrictEqual([])
+  })
+})
+
+describe("settings", () => {
+  test("are all documented in the README with their default", async () => {
+    const documented = await readDocumentedDefaults()
+
+    const defaults = Object.fromEntries(
+      Object.entries(buildConfigurationProperties()).map(([name, property]) => [
+        name,
+        property.default,
+      ]),
+    )
+
+    expect(documented).toStrictEqual(defaults)
   })
 })
