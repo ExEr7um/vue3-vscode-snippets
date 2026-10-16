@@ -21,17 +21,12 @@ const SNIPPETS = path.join(
  * @returns The sorted file names.
  */
 async function readSnippetFiles(): Promise<string[]> {
-  const entries = await readdir(SNIPPETS, {
-    recursive: true,
-    withFileTypes: true,
-  })
+  const entries = await readdir(SNIPPETS, { recursive: true, withFileTypes: true })
 
   return entries
     .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
     .map((entry) =>
-      path
-        .join(path.relative(SNIPPETS, entry.parentPath), entry.name)
-        .replace(".json", ""),
+      path.join(path.relative(SNIPPETS, entry.parentPath), entry.name).replace(".json", ""),
     )
     .toSorted((left, right) => left.localeCompare(right))
 }

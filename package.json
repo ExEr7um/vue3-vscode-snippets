@@ -3,45 +3,39 @@
   "version": "0.8.0",
   "private": true,
   "description": "Vue 3 snippets for VS Code",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ExEr7um/vue3-vscode-snippets.git"
-  },
   "author": {
     "name": "Vasily Kuzin",
     "email": "exer7um@gmail.com",
     "url": "https://github.com/ExEr7um"
   },
-  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExEr7um/vue3-vscode-snippets.git"
+  },
   "workspaces": [
     "packages/*"
   ],
+  "type": "module",
   "scripts": {
+    "check": "vp check",
+    "check:fix": "vp check --fix",
     "eslint": "eslint --max-warnings=0",
     "eslint:fix": "eslint --max-warnings=0 --fix",
     "generate": "bun run scripts/generate-vscode-package.ts",
-    "postinstall": "husky && bun run generate",
-    "prettier": "prettier --check --ignore-unknown --no-error-on-unmatched-pattern *",
-    "prettier:write": "prettier --write --ignore-unknown --no-error-on-unmatched-pattern *",
+    "postinstall": "bun run generate",
+    "prepare": "vp config",
     "publish": "bun run release && bun run --filter vue-3-vscode-snippets publish:vsce",
     "publish:ovsx": "bun run release && bun run --filter vue-3-vscode-snippets publish:ovsx",
     "release": "bun run generate && bun run scripts/sync-vscode-version.ts",
     "test": "vitest run",
     "typecheck": "tsc --noEmit"
   },
-  "nano-staged": {
-    "*.{vue,js,jsx,cjs,mjs,ts,json}": "eslint --cache --fix",
-    "*": "prettier --write --ignore-unknown"
-  },
-  "prettier": "@exer7um/prettier-config",
   "devDependencies": {
     "@exer7um/eslint-config": "2.4.0",
-    "@exer7um/prettier-config": "0.8.7",
+    "@exer7um/vp-config": "0.1.0",
     "@types/node": "26.1.1",
     "@types/vscode": "1.100.0",
     "@vscode/vsce": "3.9.2",
-    "husky": "9.1.7",
-    "nano-staged": "1.0.2",
     "ovsx": "1.0.2",
     "tsdown": "0.22.11",
     "typescript": "6.0.3",

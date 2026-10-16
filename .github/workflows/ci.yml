@@ -21,11 +21,16 @@ jobs:
       - name: Проверка манифеста расширения
         run: git diff --exit-code packages/vscode/package.json
 
+  check:
+    uses: ExEr7um/workflows/.github/workflows/frontend-vp-check.yml@v0.12.1
+
   lint:
-    uses: ExEr7um/workflows/.github/workflows/frontend-lint.yml@v0.10.0
+    uses: ExEr7um/workflows/.github/workflows/frontend-lint.yml@v0.12.1
+    with:
+      prettier: false
 
   typecheck:
-    uses: ExEr7um/workflows/.github/workflows/frontend-typecheck.yml@v0.10.0
+    uses: ExEr7um/workflows/.github/workflows/frontend-typecheck.yml@v0.12.1
 
   test:
-    uses: ExEr7um/workflows/.github/workflows/frontend-test.yml@v0.10.0
+    uses: ExEr7um/workflows/.github/workflows/frontend-test.yml@v0.12.1

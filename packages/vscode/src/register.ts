@@ -17,18 +17,11 @@ export function registerConfigurableSnippet(
     context.subscriptions.push(
       vscode.languages.registerCompletionItemProvider(language, {
         provideCompletionItems() {
-          const configuration = vscode.workspace.getConfiguration(
-            snippet.section,
-          )
+          const configuration = vscode.workspace.getConfiguration(snippet.section)
 
-          const body = snippet.buildBody((key, fallback) =>
-            configuration.get(key, fallback),
-          )
+          const body = snippet.buildBody((key, fallback) => configuration.get(key, fallback))
 
-          const item = new vscode.CompletionItem(
-            snippet.prefix,
-            vscode.CompletionItemKind.Snippet,
-          )
+          const item = new vscode.CompletionItem(snippet.prefix, vscode.CompletionItemKind.Snippet)
 
           item.insertText = new vscode.SnippetString(body)
           item.detail = snippet.detail

@@ -15,6 +15,6 @@ on:
 
 jobs:
   changelog:
-    uses: ExEr7um/workflows/.github/workflows/changelog.yml@v0.10.0
+    uses: ExEr7um/workflows/.github/workflows/changelog.yml@v0.12.1
     with:
       updateType: ${{ inputs.updateType }}

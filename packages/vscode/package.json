@@ -7,22 +7,18 @@
     "Snippets"
   ],
   "keywords": [
-    "Vue",
-    "Vue 3",
+    "Composition API",
     "Nuxt",
     "Nuxt 3",
-    "Pinia",
-    "Vue Snippets",
-    "Vue 3 snippets",
-    "Nuxt snippets",
     "Nuxt 3 snippets",
+    "Nuxt snippets",
+    "Pinia",
     "Pinia snippets",
-    "Composition API"
+    "Vue",
+    "Vue 3",
+    "Vue 3 snippets",
+    "Vue Snippets"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ExEr7um/vue3-vscode-snippets.git"
-  },
   "author": {
     "name": "Vasily Kuzin",
     "email": "exer7um@gmail.com",
@@ -45,6 +41,10 @@
       "url": "https://github.com/pixel-fabian"
     }
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ExEr7um/vue3-vscode-snippets.git"
+  },
   "publisher": "exer7um",
   "type": "module",
   "main": "./dist/index.mjs",
@@ -238,8 +238,8 @@
     "onLanguage:typescript",
     "onLanguage:vue"
   ],
+  "icon": "images/vue-logo.png",
   "engines": {
     "vscode": "^1.100.0"
-  },
-  "icon": "images/vue-logo.png"
+  }
 }

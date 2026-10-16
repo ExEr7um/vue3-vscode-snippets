@@ -1,10 +1,6 @@
 {
   "Nuxt define middleware": {
-    "body": [
-      "export default defineNuxtRouteMiddleware((to, from) => {",
-      "\t${0}",
-      "})"
-    ],
+    "body": ["export default defineNuxtRouteMiddleware((to, from) => {", "\t${0}", "})"],
     "description": "Base code for Nuxt middleware",
     "prefix": "nmiddleware"
   },
@@ -43,9 +39,7 @@
     "prefix": "nasyncdata-lazy"
   },
   "Nuxt useLazyFetch": {
-    "body": [
-      "const { pending, data: ${1:name} } = await useLazyFetch('${2:path}')"
-    ],
+    "body": ["const { pending, data: ${1:name} } = await useLazyFetch('${2:path}')"],
     "description": "Nuxt useLazyFetch composable",
     "prefix": "nfetch-lazy"
   },

@@ -7,10 +7,7 @@ import { beforeEach, describe, expect, test } from "vitest"
 import { registerConfigurableSnippet } from "../src/register"
 import { languages, setSettings } from "./mocks/vscode"
 
-const snippet: ConfigurableSnippet = defineSnippet<{
-  loud: boolean
-  what: string
-}>({
+const snippet: ConfigurableSnippet = defineSnippet<{ loud: boolean; what: string }>({
   buildBody: (config) => `${config.what}${config.loud ? "!" : ""}`,
   defaults: { loud: false, what: "BODY" },
   detail: "Fake snippet",
@@ -60,10 +57,7 @@ function register(): [string, CompletionItemProvider][] {
 
   registerConfigurableSnippet({ subscriptions } as never, snippet)
 
-  return languages.registerCompletionItemProvider.mock.calls as [
-    string,
-    CompletionItemProvider,
-  ][]
+  return languages.registerCompletionItemProvider.mock.calls as [string, CompletionItemProvider][]
 }
 
 describe("registerConfigurableSnippet", () => {
@@ -90,9 +84,7 @@ describe("registerConfigurableSnippet", () => {
 
     expect(item?.label).toBe("fake")
     expect(item?.detail).toBe("Fake snippet")
-    expect((item?.documentation as { value: string }).value).toContain(
-      "vueSnippets.fake",
-    )
+    expect((item?.documentation as { value: string }).value).toContain("vueSnippets.fake")
   })
 
   test("falls back to the defaults when nothing is configured", () => {

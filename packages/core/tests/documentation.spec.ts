@@ -6,18 +6,10 @@ import { describe, expect, test } from "vitest"
 import type { SnippetEntry } from "../src/types"
 
 import { GENERATED_FILES } from "../src/generate"
-import {
-  buildConfigurationProperties,
-  CONFIGURABLE_SNIPPETS,
-} from "../src/settings"
+import { buildConfigurationProperties, CONFIGURABLE_SNIPPETS } from "../src/settings"
 
 /** Repository root, resolved from this file's location. */
-const ROOT = path.join(
-  path.dirname(fileURLToPath(import.meta.url)),
-  "..",
-  "..",
-  "..",
-)
+const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..", "..", "..")
 
 /**
  * Collects the settings documented in the README, with the default value each
@@ -28,15 +20,10 @@ const ROOT = path.join(
 async function readDocumentedDefaults(): Promise<Record<string, unknown>> {
   const readme = await readFile(path.join(ROOT, "README.md"), "utf8")
 
-  const rows = readme.matchAll(
-    /^\| `(vueSnippets\.[\w.]+)`\s*\| `(.+?)`\s*\|/gm,
-  )
+  const rows = readme.matchAll(/^\| `(vueSnippets\.[\w.]+)`\s*\| `(.+?)`\s*\|/gm)
 
   return Object.fromEntries(
-    Array.from(rows, ([, name, value]) => [
-      name as string,
-      JSON.parse(value as string) as unknown,
-    ]),
+    Array.from(rows, ([, name, value]) => [name as string, JSON.parse(value as string) as unknown]),
   )
 }
 
@@ -66,10 +53,7 @@ async function readDocumentedPrefixes(): Promise<Set<string>> {
 async function readPrefixes(): Promise<string[]> {
   const directory = path.join(ROOT, "snippets")
 
-  const entries = await readdir(directory, {
-    recursive: true,
-    withFileTypes: true,
-  })
+  const entries = await readdir(directory, { recursive: true, withFileTypes: true })
 
   const files = await Promise.all(
     entries
@@ -87,17 +71,13 @@ async function readPrefixes(): Promise<string[]> {
     ...CONFIGURABLE_SNIPPETS.map((snippet) => ({
       [snippet.prefix]: { prefix: snippet.prefix } as SnippetEntry,
     })),
-  ].flatMap((snippets) =>
-    Object.values(snippets).map((snippet) => snippet.prefix),
-  )
+  ].flatMap((snippets) => Object.values(snippets).map((snippet) => snippet.prefix))
 }
 
 describe("snippets", () => {
   test("have a unique prefix", async () => {
     const prefixes = await readPrefixes()
-    const repeated = prefixes.filter(
-      (prefix, index) => prefixes.indexOf(prefix) !== index,
-    )
+    const repeated = prefixes.filter((prefix, index) => prefixes.indexOf(prefix) !== index)
 
     expect(repeated).toStrictEqual([])
   })
@@ -106,18 +86,14 @@ describe("snippets", () => {
     const documented = await readDocumentedPrefixes()
     const prefixes = await readPrefixes()
 
-    expect(prefixes.filter((prefix) => !documented.has(prefix))).toStrictEqual(
-      [],
-    )
+    expect(prefixes.filter((prefix) => !documented.has(prefix))).toStrictEqual([])
   })
 
   test("are the only ones the README documents", async () => {
     const documented = await readDocumentedPrefixes()
     const prefixes = new Set(await readPrefixes())
 
-    expect(
-      [...documented].filter((prefix) => !prefixes.has(prefix)),
-    ).toStrictEqual([])
+    expect([...documented].filter((prefix) => !prefixes.has(prefix))).toStrictEqual([])
   })
 })
 

@@ -20,9 +20,7 @@ describe("CONFIGURABLE_SNIPPETS", () => {
       .toSorted((left, right) => left.localeCompare(right))
 
     expect(described).toStrictEqual(
-      Object.keys(defaults).toSorted((left, right) =>
-        left.localeCompare(right),
-      ),
+      Object.keys(defaults).toSorted((left, right) => left.localeCompare(right)),
     )
   })
 
@@ -51,12 +49,8 @@ describe("buildConfigurationProperties", () => {
   })
 
   test("takes the defaults from the snippet definitions", () => {
-    expect(properties["vueSnippets.vbase.styleLang"]?.default).toBe(
-      VBASE_DEFAULTS.styleLang,
-    )
-    expect(properties["vueSnippets.pstore.hmr"]?.default).toBe(
-      PSTORE_DEFAULTS.hmr,
-    )
+    expect(properties["vueSnippets.vbase.styleLang"]?.default).toBe(VBASE_DEFAULTS.styleLang)
+    expect(properties["vueSnippets.pstore.hmr"]?.default).toBe(PSTORE_DEFAULTS.hmr)
   })
 
   test("derives the JSON type from the default value", () => {
@@ -73,18 +67,12 @@ describe("buildConfigurationProperties", () => {
   })
 
   test("keeps settings without an enumeration free-form", () => {
-    expect(
-      properties["vueSnippets.vbase.templateRootTag"]?.enum,
-    ).toBeUndefined()
+    expect(properties["vueSnippets.vbase.templateRootTag"]?.enum).toBeUndefined()
   })
 })
 
 describe("collectSnippetLanguages", () => {
   test("collects the languages of every snippet without repeats", () => {
-    expect(collectSnippetLanguages()).toStrictEqual([
-      "javascript",
-      "typescript",
-      "vue",
-    ])
+    expect(collectSnippetLanguages()).toStrictEqual(["javascript", "typescript", "vue"])
   })
 })

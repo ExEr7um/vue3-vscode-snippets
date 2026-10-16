@@ -36,8 +36,7 @@ const VARIANTS: SnippetVariant<VbaseConfig>[] = [
   },
   {
     config: { styleLang: "postcss" },
-    description:
-      "Base for Vue 3 File with <script setup>, TypeScript and PostCSS",
+    description: "Base for Vue 3 File with <script setup>, TypeScript and PostCSS",
     name: "Vue SFC <script setup>, TS, PostCSS",
     suffix: "pcss",
   },
@@ -49,15 +48,13 @@ const VARIANTS: SnippetVariant<VbaseConfig>[] = [
   },
   {
     config: { styleLang: "stylus" },
-    description:
-      "Base for Vue 3 File with <script setup>, TypeScript and Stylus",
+    description: "Base for Vue 3 File with <script setup>, TypeScript and Stylus",
     name: "Vue SFC <script setup>, TS, Stylus",
     suffix: "styl",
   },
   {
     config: { styleLang: "none" },
-    description:
-      "Base for Vue 3 File with <script setup>, TypeScript and no style",
+    description: "Base for Vue 3 File with <script setup>, TypeScript and no style",
     name: "Vue SFC <script setup>, TS, No Style",
     suffix: "ns",
   },
@@ -81,10 +78,7 @@ export const VBASE = defineSnippet<VbaseConfig>({
   defaults: VBASE_DEFAULTS,
   detail: "Base for Vue 3 File",
   languages: ["vue"],
-  normalize: (config) => ({
-    ...config,
-    blockOrder: normalizeBlockOrder(config.blockOrder),
-  }),
+  normalize: (config) => ({ ...config, blockOrder: normalizeBlockOrder(config.blockOrder) }),
   prefix: "vbase",
   section: "vueSnippets.vbase",
   settings: [
@@ -94,10 +88,7 @@ export const VBASE = defineSnippet<VbaseConfig>({
       markdownDescription:
         "Language of the `<script>` block in the `vbase` snippet. `js` omits the `lang` attribute.",
     },
-    {
-      key: "scriptSetup",
-      markdownDescription: "Use `<script setup>` in the `vbase` snippet.",
-    },
+    { key: "scriptSetup", markdownDescription: "Use `<script setup>` in the `vbase` snippet." },
     {
       key: "scriptVapor",
       markdownDescription:

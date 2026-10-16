@@ -101,14 +101,7 @@
     "prefix": "vsingleslot"
   },
   "Vue Watch": {
-    "body": [
-      "watch(",
-      "\t() => ${1:name},",
-      "\t() => {",
-      "\t\t${2}",
-      "\t}",
-      ")"
-    ],
+    "body": ["watch(", "\t() => ${1:name},", "\t() => {", "\t\t${2}", "\t}", ")"],
     "description": "Vue watcher",
     "prefix": "vwatch"
   },

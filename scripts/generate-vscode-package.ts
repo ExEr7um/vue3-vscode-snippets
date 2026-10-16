@@ -31,13 +31,7 @@ const TARGET = path.join(ROOT, "packages", "vscode")
  * shared sources and the marketplace pages are mirrored into the package
  * instead of being duplicated in the repository.
  */
-const SHARED_ENTRIES = [
-  "CHANGELOG.md",
-  "LICENSE",
-  "README.md",
-  "images",
-  "snippets",
-]
+const SHARED_ENTRIES = ["CHANGELOG.md", "LICENSE", "README.md", "images", "snippets"]
 
 /**
  * Mirrors the shared repository files into the VS Code package.
@@ -88,16 +82,10 @@ async function writeManifest(): Promise<void> {
   const manifest = JSON.parse(await readFile(manifestPath, "utf8")) as Manifest
   const previous = JSON.stringify(manifest)
 
-  manifest.activationEvents = collectSnippetLanguages().map(
-    (language) => `onLanguage:${language}`,
-  )
+  manifest.activationEvents = collectSnippetLanguages().map((language) => `onLanguage:${language}`)
   manifest.contributes.configuration.properties = buildConfigurationProperties()
-  manifest.contributes.snippets = Object.entries(SNIPPET_LANGUAGES).flatMap(
-    ([name, languages]) =>
-      languages.map((language) => ({
-        language,
-        path: `./snippets/${name}.json`,
-      })),
+  manifest.contributes.snippets = Object.entries(SNIPPET_LANGUAGES).flatMap(([name, languages]) =>
+    languages.map((language) => ({ language, path: `./snippets/${name}.json` })),
   )
 
   if (JSON.stringify(manifest) === previous) return

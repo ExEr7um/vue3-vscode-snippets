@@ -30,8 +30,7 @@ const VARIANTS: SnippetVariant<PstoreConfig>[] = [
   },
   {
     config: { api: "options", hmr: false },
-    description:
-      "Base code needed for a Pinia store file with Options API and without HMR",
+    description: "Base code needed for a Pinia store file with Options API and without HMR",
     name: "Pinia Store Base - Options API, No HMR",
     suffix: "options-nohmr",
   },
@@ -52,11 +51,7 @@ export const PSTORE = defineSnippet<PstoreConfig>({
       markdownDescription:
         "API style of the `pstore` snippet: a setup function (`composition`) or a `state`/`getters`/`actions` object (`options`).",
     },
-    {
-      key: "hmr",
-      markdownDescription:
-        "Add the `acceptHMRUpdate` block to the `pstore` snippet.",
-    },
+    { key: "hmr", markdownDescription: "Add the `acceptHMRUpdate` block to the `pstore` snippet." },
   ],
   variants: VARIANTS,
 })

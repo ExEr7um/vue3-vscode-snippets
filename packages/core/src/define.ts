@@ -17,17 +17,13 @@ export function defineSnippet<TConfig extends object>(
 ): ConfigurableSnippet {
   const { buildBody, defaults, normalize } = definition
 
-  const build = (config: TConfig): string =>
-    buildBody(normalize ? normalize(config) : config)
+  const build = (config: TConfig): string => buildBody(normalize ? normalize(config) : config)
 
   return {
     buildBody: (read) =>
       build(
         Object.fromEntries(
-          Object.entries(defaults).map(([key, fallback]) => [
-            key,
-            read(key, fallback),
-          ]),
+          Object.entries(defaults).map(([key, fallback]) => [key, read(key, fallback)]),
         ) as TConfig,
       ),
     detail: definition.detail,

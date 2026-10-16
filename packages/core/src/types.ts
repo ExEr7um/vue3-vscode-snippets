@@ -8,15 +8,7 @@ export const PINIA_APIS = ["composition", "options"] as const
 export const SCRIPT_LANGS = ["js", "ts"] as const
 
 /** Every language the `<style>` block of a Vue SFC can be written in. */
-export const STYLE_LANGS = [
-  "css",
-  "less",
-  "none",
-  "postcss",
-  "sass",
-  "scss",
-  "stylus",
-] as const
+export const STYLE_LANGS = ["css", "less", "none", "postcss", "sass", "scss", "stylus"] as const
 
 export type Block = (typeof BLOCKS)[number]
 
