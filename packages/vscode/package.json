@@ -51,7 +51,7 @@
   "scripts": {
     "publish:ovsx": "ovsx publish --no-dependencies",
     "publish:vsce": "vsce publish --no-dependencies",
-    "vscode:prepublish": "tsdown"
+    "vscode:prepublish": "vp pack"
   },
   "contributes": {
     "configuration": {

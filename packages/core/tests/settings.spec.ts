@@ -1,4 +1,4 @@
-import { describe, expect, test } from "vitest"
+import { describe, expect, test } from "vite-plus/test"
 
 import { PSTORE, PSTORE_DEFAULTS } from "../src/pstore"
 import {
