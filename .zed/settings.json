@@ -1,0 +1,97 @@
+{
+  "language_servers": ["!oxlint", "..."],
+  "languages": {
+    "CSS": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "GraphQL": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "HTML": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "Handlebars": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "JSON": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "JSON5": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "JSONC": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "JSX": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "JavaScript": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "Less": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "MDX": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "Markdown": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "SCSS": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "TSX": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "TypeScript": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "Vue.js": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    },
+    "YAML": {
+      "format_on_save": "on",
+      "formatter": [{ "language_server": { "name": "oxfmt" } }],
+      "prettier": { "allowed": false }
+    }
+  },
+  "lsp": {
+    "oxfmt": {
+      "initialization_options": {
+        "settings": { "fmt.configPath": "./vite.config.ts", "run": "onSave" }
+      }
+    }
+  }
+}
