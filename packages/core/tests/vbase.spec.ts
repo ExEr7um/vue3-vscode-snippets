@@ -2,11 +2,7 @@ import { describe, expect, test } from "vitest"
 
 import type { VbaseConfig } from "../src/types"
 
-import {
-  buildVbaseBody,
-  normalizeBlockOrder,
-  VBASE_DEFAULTS,
-} from "../src/vbase"
+import { buildVbaseBody, normalizeBlockOrder, VBASE_DEFAULTS } from "../src/vbase"
 
 /**
  * Builds a `vbase` body from the defaults with the given overrides applied.
@@ -50,18 +46,14 @@ describe("buildVbaseBody", () => {
   test.each([true, false])(
     "uses the vapor shorthand when scriptVapor is enabled and scriptSetup is %s",
     (scriptSetup) => {
-      expect(build({ scriptSetup, scriptVapor: true })).toContain(
-        '<script vapor lang="ts">',
-      )
+      expect(build({ scriptSetup, scriptVapor: true })).toContain('<script vapor lang="ts">')
     },
   )
 
   test.each(["sass", "less", "postcss", "css", "stylus"] as const)(
     "uses %s as the style language",
     (styleLang) => {
-      expect(build({ styleLang })).toContain(
-        `<style lang="${styleLang}" scoped>`,
-      )
+      expect(build({ styleLang })).toContain(`<style lang="${styleLang}" scoped>`)
     },
   )
 
@@ -80,9 +72,7 @@ describe("buildVbaseBody", () => {
   })
 
   test("places the cursor directly inside the template when the root tag is empty", () => {
-    expect(build({ templateRootTag: "" })).toContain(
-      "<template>\n\t${0}\n</template>",
-    )
+    expect(build({ templateRootTag: "" })).toContain("<template>\n\t${0}\n</template>")
   })
 
   test("escapes snippet syntax in the template root tag", () => {
@@ -110,9 +100,7 @@ describe("buildVbaseBody", () => {
   })
 
   test("omits blocks missing from blockOrder", () => {
-    expect(build({ blockOrder: ["script"] })).toBe(
-      '<script setup lang="ts">\n\n</script>',
-    )
+    expect(build({ blockOrder: ["script"] })).toBe('<script setup lang="ts">\n\n</script>')
   })
 
   test("combines all settings", () => {
@@ -154,8 +142,9 @@ describe("normalizeBlockOrder", () => {
   })
 
   test("drops unknown and duplicated entries", () => {
-    expect(
-      normalizeBlockOrder(["style", "style", "nonsense", "script"]),
-    ).toStrictEqual(["style", "script"])
+    expect(normalizeBlockOrder(["style", "style", "nonsense", "script"])).toStrictEqual([
+      "style",
+      "script",
+    ])
   })
 })

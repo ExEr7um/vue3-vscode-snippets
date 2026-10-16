@@ -26,43 +26,22 @@
     "prefix": "hcontrols-buttongroup"
   },
   "Histoire controls - Checkbox": {
-    "body": [
-      "<HstCheckbox",
-      "\tv-model='${2:vModel}'",
-      "\ttitle='${1:label}'",
-      "/>"
-    ],
+    "body": ["<HstCheckbox", "\tv-model='${2:vModel}'", "\ttitle='${1:label}'", "/>"],
     "description": "Histoire controls - Checkbox",
     "prefix": "hcontrols-checkbox"
   },
   "Histoire controls - Number": {
-    "body": [
-      "<HstNumber",
-      "\tv-model='${2:vModel}'",
-      "\t:step='1'",
-      "\ttitle='${1:label}'",
-      "/>"
-    ],
+    "body": ["<HstNumber", "\tv-model='${2:vModel}'", "\t:step='1'", "\ttitle='${1:label}'", "/>"],
     "description": "Histoire controls - Number",
     "prefix": "hcontrols-number"
   },
   "Histoire controls - Text": {
-    "body": [
-      "<HstText",
-      "\tv-model='${2:vModel}'",
-      "\ttitle='${1:label}'",
-      "/>"
-    ],
+    "body": ["<HstText", "\tv-model='${2:vModel}'", "\ttitle='${1:label}'", "/>"],
     "description": "Histoire controls - Text",
     "prefix": "hcontrols-text"
   },
   "Histoire controls - Textarea": {
-    "body": [
-      "<HstTextarea",
-      "\tv-model='${2:vModel}'",
-      "\ttitle='${1:label}'",
-      "/>"
-    ],
+    "body": ["<HstTextarea", "\tv-model='${2:vModel}'", "\ttitle='${1:label}'", "/>"],
     "description": "Histoire controls - Textarea",
     "prefix": "hcontrols-textarea"
   },

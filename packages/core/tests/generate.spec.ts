@@ -47,8 +47,7 @@ describe("vbase variants", () => {
         "",
         "</style>",
       ],
-      description:
-        "Base for Vue 3 File with <script setup>, TypeScript and SASS",
+      description: "Base for Vue 3 File with <script setup>, TypeScript and SASS",
       prefix: "vbase-sass",
     })
   })
@@ -68,15 +67,11 @@ describe("vbase variants", () => {
   })
 
   test("uses the vapor shorthand in the vapor variant", () => {
-    expect(vbase["Vue SFC <script vapor>, TS, SCSS"]?.body[0]).toBe(
-      '<script vapor lang="ts">',
-    )
+    expect(vbase["Vue SFC <script vapor>, TS, SCSS"]?.body[0]).toBe('<script vapor lang="ts">')
   })
 
   test("omits the lang attribute in the js variant", () => {
-    expect(vbase["Vue SFC <script setup>, JS, SCSS"]?.body[0]).toBe(
-      "<script setup>",
-    )
+    expect(vbase["Vue SFC <script setup>, JS, SCSS"]?.body[0]).toBe("<script setup>")
   })
 })
 
@@ -112,10 +107,7 @@ describe("pstore variants", () => {
   })
 
   test("omits the HMR block in the no HMR variants", () => {
-    for (const name of [
-      "Pinia Store Base - No HMR",
-      "Pinia Store Base - Options API, No HMR",
-    ]) {
+    for (const name of ["Pinia Store Base - No HMR", "Pinia Store Base - Options API, No HMR"]) {
       expect(pstore[name]?.body.join("\n")).not.toContain("acceptHMRUpdate")
     }
   })

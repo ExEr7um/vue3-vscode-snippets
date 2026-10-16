@@ -29,10 +29,7 @@ export const CONFIGURABLE_SNIPPETS: ConfigurableSnippet[] = [PSTORE, VBASE]
  *
  * @returns The settings schema, keyed by the fully qualified setting name.
  */
-export function buildConfigurationProperties(): Record<
-  string,
-  ConfigurationProperty
-> {
+export function buildConfigurationProperties(): Record<string, ConfigurationProperty> {
   return Object.fromEntries(
     CONFIGURABLE_SNIPPETS.flatMap((snippet) =>
       snippet.settings.map((setting) => [
@@ -49,13 +46,9 @@ export function buildConfigurationProperties(): Record<
  * @returns The sorted language identifiers.
  */
 export function collectSnippetLanguages(): string[] {
-  const languages = CONFIGURABLE_SNIPPETS.flatMap(
-    (snippet) => snippet.languages,
-  )
+  const languages = CONFIGURABLE_SNIPPETS.flatMap((snippet) => snippet.languages)
 
-  return [...new Set(languages)].toSorted((left, right) =>
-    left.localeCompare(right),
-  )
+  return [...new Set(languages)].toSorted((left, right) => left.localeCompare(right))
 }
 
 /**

@@ -26,9 +26,4 @@ export type {
   VbaseConfig,
 } from "./types"
 export { BLOCKS, PINIA_APIS, SCRIPT_LANGS, STYLE_LANGS } from "./types"
-export {
-  buildVbaseBody,
-  normalizeBlockOrder,
-  VBASE,
-  VBASE_DEFAULTS,
-} from "./vbase"
+export { buildVbaseBody, normalizeBlockOrder, VBASE, VBASE_DEFAULTS } from "./vbase"

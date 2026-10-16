@@ -5,9 +5,7 @@
     "prefix": "nlink"
   },
   "NuxtLink with param": {
-    "body": [
-      "<NuxtLink :to=\"`/${1:path}/${${2:param}}`\">${3:linkTitle}</NuxtLink>"
-    ],
+    "body": ["<NuxtLink :to=\"`/${1:path}/${${2:param}}`\">${3:linkTitle}</NuxtLink>"],
     "description": "Nuxt router link with param",
     "prefix": "nlink-param"
   }

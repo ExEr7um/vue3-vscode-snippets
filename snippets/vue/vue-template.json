@@ -5,9 +5,7 @@
     "prefix": "vclass"
   },
   "Vue Class Binding Ternary": {
-    "body": [
-      ":class=\"[${1:condition} ? '${2:classListOnTrue}' : '${3:classListOnFalse}']\""
-    ],
+    "body": [":class=\"[${1:condition} ? '${2:classListOnTrue}' : '${3:classListOnFalse}']\""],
     "description": "vue ternary class binding",
     "prefix": "vclass-ter"
   },
@@ -32,9 +30,7 @@
     "prefix": "vrlink"
   },
   "Vue Routing Link with param": {
-    "body": [
-      "<router-link :to=\"`/${1:path}/${${2:param}}`\">${3:linkTitle}</router-link>"
-    ],
+    "body": ["<router-link :to=\"`/${1:path}/${${2:param}}`\">${3:linkTitle}</router-link>"],
     "description": "vue router link with param",
     "prefix": "vrlink-param"
   },
@@ -60,20 +56,12 @@
     "prefix": "vsuspense"
   },
   "Vue Transition": {
-    "body": [
-      "<Transition name=\"${1:transitionName}\">",
-      "\t${0}",
-      "</Transition>"
-    ],
+    "body": ["<Transition name=\"${1:transitionName}\">", "\t${0}", "</Transition>"],
     "description": "vue transition component",
     "prefix": "vtrans"
   },
   "Vue Transition Group": {
-    "body": [
-      "<TransitionGroup name=\"${1:transitionName}\">",
-      "\t${0}",
-      "</TransitionGroup>"
-    ],
+    "body": ["<TransitionGroup name=\"${1:transitionName}\">", "\t${0}", "</TransitionGroup>"],
     "description": "vue transition group component",
     "prefix": "vtrans-group"
   },
