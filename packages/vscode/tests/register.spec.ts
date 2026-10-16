@@ -2,7 +2,7 @@ import type { ConfigurableSnippet } from "@vue3-snippets/core"
 import type { CompletionItem, CompletionItemProvider } from "vscode"
 
 import { defineSnippet } from "@vue3-snippets/core"
-import { beforeEach, describe, expect, test } from "vitest"
+import { beforeEach, describe, expect, test } from "vite-plus/test"
 
 import { registerConfigurableSnippet } from "../src/register"
 import { languages, setSettings } from "./mocks/vscode"

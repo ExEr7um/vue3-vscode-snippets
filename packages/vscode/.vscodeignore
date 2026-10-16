@@ -2,4 +2,4 @@
 node_modules/**
 src/**
 tests/**
-tsdown.config.ts
+vite.config.ts

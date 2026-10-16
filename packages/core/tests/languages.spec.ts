@@ -1,7 +1,7 @@
 import { readdir } from "node:fs/promises"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
-import { describe, expect, test } from "vitest"
+import { describe, expect, test } from "vite-plus/test"
 
 import { GENERATED_SNIPPETS, SNIPPET_LANGUAGES } from "../src/languages"
 

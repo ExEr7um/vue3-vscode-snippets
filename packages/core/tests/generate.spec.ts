@@ -1,4 +1,4 @@
-import { describe, expect, test } from "vitest"
+import { describe, expect, test } from "vite-plus/test"
 
 import { PSTORE, STORE_NAME } from "../src/pstore"
 import { VBASE } from "../src/vbase"

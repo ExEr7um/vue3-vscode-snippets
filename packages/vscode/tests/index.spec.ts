@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, test } from "vitest"
+import { beforeEach, describe, expect, test } from "vite-plus/test"
 
 import { activate } from "../src/index"
 import { languages } from "./mocks/vscode"

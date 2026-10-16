@@ -26,7 +26,7 @@
     "publish": "bun run release && bun run --filter vue-3-vscode-snippets publish:vsce",
     "publish:ovsx": "bun run release && bun run --filter vue-3-vscode-snippets publish:ovsx",
     "release": "bun run generate && bun run scripts/sync-vscode-version.ts",
-    "test": "vitest run",
+    "test": "vp test run",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
@@ -36,8 +36,6 @@
     "@types/vscode": "1.100.0",
     "@vscode/vsce": "3.9.2",
     "ovsx": "1.0.2",
-    "tsdown": "0.22.11",
-    "typescript": "6.0.3",
-    "vitest": "4.1.11"
+    "typescript": "6.0.3"
   }
 }

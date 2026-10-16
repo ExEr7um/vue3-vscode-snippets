@@ -4,6 +4,7 @@ import {
   defineLintConfig,
   defineStagedConfig,
 } from "@exer7um/vp-config"
+import { fileURLToPath } from "node:url"
 import { defineConfig } from "vite-plus"
 
 export default defineConfig({
@@ -11,4 +12,9 @@ export default defineConfig({
   fmt: defineFmtConfig(),
   lint: defineLintConfig(),
   staged: defineStagedConfig({}, { eslint: "*.{vue,js,jsx,cjs,mjs,ts,json}" }),
+  test: {
+    alias: {
+      vscode: fileURLToPath(new URL("packages/vscode/tests/mocks/vscode.ts", import.meta.url)),
+    },
+  },
 })
